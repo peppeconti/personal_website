@@ -1,15 +1,15 @@
 import './Band.css';
 
-const Band = ({ text, gradient }) => {
+const Band = ({ gradient, start, end }) => {
 
     const style = {
-        background: `linear-gradient(${gradient})`
+        background: `linear-gradient(${gradient})`,
+        gridRowStart: `${start}`,
+        gridRowEnd: `${end}`
     }
 
     return (
-        <div className="band" style={style}>
-            <p class="text"><span>{text}</span></p>
-        </div>
+        <div className="band" style={style}></div>
     );
 }
 

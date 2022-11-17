@@ -1,11 +1,10 @@
 
 .band {
-    height: 25%;
-    display: flex;
-    justify-content: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 11;
 }
 
-.text {
+/*.text {
     color: #fff;
     width: 60%;
     display: flex;
@@ -13,7 +12,6 @@
     align-items: center;
     font-size: 3rem;
     font-family: 'Zen Dots', cursive;
-    border: 1px solid white;
 }
 
 .text span {
@@ -37,4 +35,4 @@
 
 .text span:before {
     right: -3rem;
-}
+}*/
