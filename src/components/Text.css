@@ -1,0 +1,104 @@
+.text {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .8rem;
+    z-index: 1;
+}
+
+p {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Zen Dots', cursive;
+}
+
+.text p span {
+    position: relative;
+}
+
+.text p span:before,
+.text p span:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text p span:after {
+    left: -3rem;
+}
+
+.text p span:before {
+    right: -3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 2.5rem;
+    }
+
+    .text p span:after {
+        left: -2.5rem;
+    }
+
+    .text p span:before {
+        right: -2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    p {
+        font-size: 2.3rem;
+    }
+
+    .text p span:after {
+        left: -2.3rem;
+        height: .8rem;
+        width: .8rem;
+    }
+
+    .text p span:before {
+        right: -2.3rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        font-size: 2rem;
+    }
+
+    .text p span:after {
+        left: -2rem;
+    }
+
+    .text p span:before {
+        right: -2rem;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .text {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 11;
+    }
+
+    p {
+        font-size: 2.8rem;
+    }
+
+}

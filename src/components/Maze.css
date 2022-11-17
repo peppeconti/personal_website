@@ -18,3 +18,10 @@ img {
     padding: .8rem;
     border: .8rem solid #15263f;
 }
+
+@media screen and (max-width: 680px) {
+    .maze {
+        display: none;
+    } 
+
+}

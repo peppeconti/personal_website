@@ -1,11 +1,13 @@
 import './MainHeader.css';
 import Band from './Band';
-import Maze from './Maze'
+import Maze from './Maze';
+import Text from './Text';
 
 const MainHeader = () => {
   return (
     <div className="main__header">
         <Maze/>
+        <Text first="Giuseppe Conti" second="Webdeveloper" third="Milan" />
         <Band start="1" end="2" gradient="270deg, #FF005C 0%, rgba(255, 0, 92, 0) 86.39%"/>
         <Band start="2" end="3" gradient="270deg, #61DAFB 0%, rgba(60, 220, 183, 0) 88.33%"/>
         <Band start="3" end="4" gradient="270deg, #F7DF1E 0%, rgba(15, 15, 15, 0) 85.83%"/>
