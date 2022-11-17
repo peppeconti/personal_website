@@ -1,9 +1,23 @@
 .header {
     height: 100vh;
     background-color: #15263f;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
 }
 
-img {
-    height: 100%;
-    width: 100%;
+.main__header {
+    grid-area: main;
+}
+
+.footer__header {
+    grid-area: footer;
+}
+
+.nav {
+    grid-area: nav;
 }

@@ -1,0 +1,7 @@
+.main__header {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+}

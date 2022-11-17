@@ -1,11 +1,11 @@
 import './Header.css';
-import maze from '../assets/maze.svg';
+import MainHeader from './MainHeader';
 
-function Header() {
+const Header = () => {
   return (
-    <div className="header">
-      <img src={maze} alt="maze"></img>
-    </div>
+    <section className="header">
+      <MainHeader />
+    </section>
   );
 }
 

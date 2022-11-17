@@ -1,0 +1,40 @@
+
+.band {
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text {
+    color: #fff;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Zen Dots', cursive;
+    border: 1px solid white;
+}
+
+.text span {
+    position: relative;
+}
+
+.text span:before, .text span:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text span:after {
+    left: -3rem;
+}
+
+.text span:before {
+    right: -3rem;
+}
