@@ -24,6 +24,14 @@ const Header = () => {
           }
         })
         .to('.text', { duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: .5 })
+        .to('.nav ul li', {
+          duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: .5 })
+        .to('.footer__header ul li', {
+          duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: {
+            from: "end",
+            each: .5
+          }
+        })
     }, header);
 
     return () => ctx.revert();

@@ -10,8 +10,13 @@
     align-items: center;
     padding: .75rem;
     cursor: pointer;
+    caret-color: transparent;
 }
 
 .link li img {
     width: 100%;
+}
+
+.link:hover {
+    opacity: .8;
 }

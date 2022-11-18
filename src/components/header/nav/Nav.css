@@ -3,3 +3,7 @@
     padding: 2rem;
     gap: 2rem;
 }
+
+.nav ul li {
+    opacity: 0;
+}

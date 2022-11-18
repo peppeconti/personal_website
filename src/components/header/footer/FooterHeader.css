@@ -11,3 +11,7 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+.footer__header ul li {
+opacity: 0;
+}
