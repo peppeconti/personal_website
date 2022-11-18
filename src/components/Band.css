@@ -4,6 +4,9 @@
     grid-column-end: 11;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    transform: translateY(110%);
+    opacity: 0;
+    border: .4rem solid #15263f;
 }
 
 .text {
@@ -15,6 +18,7 @@
     align-items: center;
     font-size: 3rem;
     font-family: 'Zen Dots', cursive;
+    opacity: 0;
 }
 
 .text span {

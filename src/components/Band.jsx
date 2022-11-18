@@ -1,6 +1,6 @@
 import './Band.css';
 
-const Band = ({ gradient, start, end, text }) => {
+const Band = ({ gradient, start, end, text, cl }) => {
 
     const style = {
         background: `linear-gradient(${gradient})`,
@@ -9,7 +9,7 @@ const Band = ({ gradient, start, end, text }) => {
     }
 
     return (
-        <div className="band" style={style}>
+        <div className={`band ${cl}`} style={style}>
             <p className="text"><span>{text}</span></p>
         </div>
     );
