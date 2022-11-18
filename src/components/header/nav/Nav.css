@@ -1,8 +1,5 @@
-.nav {
-    border: 1px solid white;
-}
-
-ul {
-    background-color: red;
+.nav ul {
     display: flex;
+    padding: 2rem;
+    gap: 2rem;
 }
