@@ -5,8 +5,14 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     transform: translateY(110%);
-    opacity: 0;
     border: .4rem solid #15263f;
+    caret-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.band:hover {
+    text-shadow: 2.5px 5px 2.5px rgb(54, 54, 54);
 }
 
 .text {
@@ -35,6 +41,10 @@
     background-color: #fff;
     top: 50%;
     transform: translateY(-50%);
+}
+
+span:hover:after, span:hover:before {
+    box-shadow: 2.5px 5px 2.5px rgb(54, 54, 54);
 }
 
 .text span:after {
