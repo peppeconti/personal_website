@@ -25,13 +25,13 @@ const Header = () => {
         })
         .to('.text', { duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: .5 })
         .to('.nav ul li', {
-          duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: .5 })
+          duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: .5 },"-=.6")
         .to('.footer__header ul li', {
           duration: .6, y: '0', opacity: 1, ease: 'easeOut', stagger: {
             from: "end",
             each: .5
           }
-        })
+        }, "-=.6")
     }, header);
 
     return () => ctx.revert();
