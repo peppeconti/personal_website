@@ -5,7 +5,8 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     transform: translateY(110%);
-    border: .4rem solid #15263f;
+    border-top: .4rem solid #15263f;
+    border-bottom: .4rem solid #15263f;
     caret-color: transparent;
     cursor: pointer;
     opacity: 0;
