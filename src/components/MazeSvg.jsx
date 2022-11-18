@@ -18,7 +18,7 @@ const MazeSvg = () => {
 
         const ctx = gsap.context(() => {
             tl.current = gsap.timeline()
-                .to('.maze', 40, { strokeDashoffset: 0 })
+                .to('.maze', { duration: 100, strokeDashoffset: 0 })
                 .to('.maze', { fill: 'red'});
         }, svg);
 
