@@ -5,7 +5,7 @@ const Maze = () => {
 
     return (
         <figure className="maze">
-            <img src={maze} alt="maze" />
+            {maze}
         </figure>
     );
 }
