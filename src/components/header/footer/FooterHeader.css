@@ -1,0 +1,13 @@
+.footer__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer__header ul {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
