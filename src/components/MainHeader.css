@@ -4,15 +4,3 @@
     grid-template-rows: repeat(3, 1fr);
     grid-gap: .8rem;
 }
-
-/*.maze {
-    position: absolute;
-    border-radius: 50%;
-    left: 7.5%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
-    padding: .5rem;
-    background-color: rgb(204, 204, 204);
-    border: .8rem solid #15263f;
-}*/

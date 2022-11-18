@@ -1,12 +1,14 @@
 import './Maze.css';
-import maze from '../assets/maze.svg';
+import MazeSvg from './MazeSvg';
 
 const Maze = () => {
 
     return (
-        <figure className="maze">
-            {maze}
-        </figure>
+        <div className="maze">
+            <figure>
+                <MazeSvg />
+            </figure>
+        </div>
     );
 }
 
