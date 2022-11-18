@@ -13,5 +13,10 @@
 }
 
 .footer__header ul li {
-opacity: 0;
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.footer__header ul li img {
+    opacity: 0;
 }

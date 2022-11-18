@@ -6,4 +6,9 @@
 
 .nav ul li {
     opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.nav ul li img {
+    opacity: 0;
 }
