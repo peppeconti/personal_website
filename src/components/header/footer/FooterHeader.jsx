@@ -1,16 +1,16 @@
 import './FooterHeader.css';
 import Link from '../Link';
-import envelope from '../../../assets/envelope-solid.svg';
-import info from '../../../assets/circle-info-solid.svg';
-import laptop from '../../../assets/laptop-code-solid.svg';
+import linkedin from '../../../assets/linkedin-in.svg';
+import github from '../../../assets/github.svg';
+import codewars from '../../../assets/cib-codewars.svg';
 
 const FooterHeader = () => {
   return (
     <nav className="footer__header">
       <ul>
-        <Link source={info} alt="about me"/>
-        <Link source={envelope} alt="about me"/>
-        <Link source={laptop} alt="about me"/>
+        <Link source={linkedin} alt="linkedin"/>
+        <Link source={github} alt="github"/>
+        <Link source={codewars} alt="codewars"/>
       </ul>
     </nav>
   );
