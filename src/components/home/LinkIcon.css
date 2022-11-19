@@ -1,4 +1,4 @@
-.link li {
+li.link {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -13,10 +13,10 @@
     caret-color: transparent;
 }
 
-.link li img {
+li.link img {
     width: 100%;
 }
 
-.link:hover {
+li.link:hover {
     opacity: .8;
 }

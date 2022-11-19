@@ -1,5 +1,5 @@
 import './FooterHeader.css';
-import Link from '../Link';
+import Link from '../LinkIcon';
 import linkedin from '../../../assets/linkedin-in.svg';
 import github from '../../../assets/github.svg';
 import codewars from '../../../assets/cib-codewars.svg';

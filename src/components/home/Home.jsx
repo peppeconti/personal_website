@@ -1,11 +1,11 @@
 import { useLayoutEffect, useRef } from 'react';
-import './Header.css';
+import './Home.css';
 import MainHeader from './main/MainHeader';
 import Nav from './nav/Nav';
 import FooterHeader from './footer/FooterHeader';
 import { gsap } from 'gsap';
 
-const Header = () => {
+const Home = () => {
 
 
   const header = useRef();
@@ -56,4 +56,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default Home;
