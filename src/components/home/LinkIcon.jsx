@@ -1,14 +1,32 @@
 import "./LinkIcon.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const LinkIcon = ({ source, alt, href }) => {
-  return (
-    <Link to={href}>
-      <li className="link">
-        <img src={source} alt={alt} />
-      </li>
-    </Link>
-  );
+const LinkIcon = ({ source, alt, href, isRoute }) => {
+
+  if (isRoute) {
+    return (
+      <NavLink
+        to={href}
+        className={({ isActive }) =>
+          isActive ? 'active' : undefined
+        }
+      >
+        <li className="link">
+          <img src={source} alt={alt} />
+        </li>
+      </NavLink>
+    );
+  } else {
+    return (
+      <a href={href} target='_blank'>
+        <li className="link">
+          <img src={source} alt={alt} />
+        </li>
+      </a>
+    );
+  }
+
+
 }
 
 export default LinkIcon;

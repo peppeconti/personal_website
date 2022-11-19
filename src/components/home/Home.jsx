@@ -8,7 +8,7 @@ import { motion as m } from 'framer-motion';
 
 const Home = () => {
 
-  const header = useRef();
+  const home = useRef();
   const tl = useRef();
   const tla = useRef();
 
@@ -45,14 +45,14 @@ const Home = () => {
             each: .5
           }
         }, "-=.6")
-    }, header);
+    }, home);
 
     return () => ctx.revert();
 
   }, []);
 
   return (
-    <section ref={header} className="header">
+    <section ref={home} className="home">
       <Nav />
       <MainHeader />
       <FooterHeader />

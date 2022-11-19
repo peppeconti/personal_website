@@ -8,8 +8,8 @@ const FooterHeader = () => {
   return (
     <nav className="footer__header">
       <ul>
-        <Link source={linkedin} alt="linkedin"/>
-        <Link source={github} alt="github"/>
+        <Link href={'https://www.linkedin.com/in/giuseppe-conti-4a806b16/'} source={linkedin} alt="linkedin"/>
+        <Link href={'https://github.com/peppeconti'} source={github} alt="github"/>
         <Link source={codewars} alt="codewars"/>
       </ul>
     </nav>
