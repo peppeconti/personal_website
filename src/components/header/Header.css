@@ -9,7 +9,7 @@
     grid-template-areas:
         "nav"
         "main"
-        "footer";
+        "footer"; 
 }
 
 .main__header {
