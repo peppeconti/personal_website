@@ -52,11 +52,11 @@ const Home = () => {
   }, []);
 
   return (
-    <section ref={home} className="home">
+    <m.section ref={home} className="home" exit={{ opacity: 0 }} transition={{ duration: 2 }}>
       <Nav />
       <MainHeader />
       <FooterHeader />
-    </section>
+    </m.section>
   );
 }
 
