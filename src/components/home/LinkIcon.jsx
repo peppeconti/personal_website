@@ -18,14 +18,13 @@ const LinkIcon = ({ source, alt, href, isRoute }) => {
     );
   } else {
     return (
-      <a href={href} target='_blank'>
+      <a href={href} target='_blank' rel="noreferrer">
         <li className="link">
           <img src={source} alt={alt} />
         </li>
       </a>
     );
   }
-
 
 }
 
