@@ -5,6 +5,7 @@ const Showcase = () => {
   return (
     <section className="portfolio">
      <Nav />
+     <h1>Portfolio</h1>
     </section>
   );
 }

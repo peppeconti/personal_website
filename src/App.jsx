@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import Portfolio from "./components/showcase/Portfolio";
+import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 
 function App() {

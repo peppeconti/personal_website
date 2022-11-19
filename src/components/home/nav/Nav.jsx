@@ -9,8 +9,8 @@ const Nav = () => {
     <nav className="nav">
       <ul>
         <LinkIcon href={'/about'} source={info} alt="about me" isRoute/>
-        <LinkIcon href={'/contact'} source={envelope} alt="contact me" isRoute/>
         <LinkIcon href={'/portfolio'} source={laptop} alt="portfolio" isRoute/>
+        <LinkIcon href={'/contact'} source={envelope} alt="contact me" isRoute/>
       </ul>
     </nav>
   );

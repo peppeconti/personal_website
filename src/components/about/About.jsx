@@ -5,6 +5,7 @@ const About = () => {
   return (
     <section className="about">
      <Nav />
+     <h1>About</h1>
     </section>
   );
 }
