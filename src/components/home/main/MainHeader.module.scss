@@ -1,10 +1,11 @@
-.main__header {
+.main__home {
+    grid-area: main;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
-.main__header div.wrapper {
+.main__home div.wrapper {
     grid-row-start: 1;
     grid-row-end: 5;
     grid-column-start: 1;

@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import styles from './Nav.module.scss';
+import classes from './Nav.module.scss';
 import LinkIcon from './LinkIcon';
 import envelope from '../assets/envelope-solid.svg';
 import info from '../assets/circle-info-solid.svg';
@@ -12,7 +12,7 @@ const Nav = () => {
   const listClass =  location.pathname !== '/' ? 'page' : undefined;
 
   return (
-    <nav className={styles.nav}>
+    <nav className={classes.nav}>
       <ul className={listClass}>
         <LinkIcon href={'/about'} source={info} alt="about me" isRoute/>
         <LinkIcon href={'/portfolio'} source={laptop} alt="portfolio" isRoute/>

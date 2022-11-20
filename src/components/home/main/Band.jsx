@@ -1,6 +1,6 @@
-import './Band.css';
+import classes from './Band.module.scss';
 
-const Band = ({ gradient, start, end, text, cl }) => {
+const Band = ({ gradient, start, end, text }) => {
 
     const style = {
         background: `linear-gradient(${gradient})`,
@@ -9,8 +9,8 @@ const Band = ({ gradient, start, end, text, cl }) => {
     }
 
     return (
-        <div className={`band ${cl}`} style={style}>
-            <p className="text"><span>{text}</span></p>
+        <div className={classes.band} style={style}>
+            <p className={classes.text}><span>{text}</span></p>
         </div>
     );
 }

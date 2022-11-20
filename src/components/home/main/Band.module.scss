@@ -1,0 +1,146 @@
+.band {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    //transform: translateY(110%);
+    border-top: .4rem solid #15263f;
+    border-bottom: .4rem solid #15263f;
+    caret-color: transparent;
+    cursor: pointer;
+    //opacity: 0;
+
+    .text {
+        grid-column-start: 5;
+        grid-column-end: 11;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: 'Zen Dots', cursive;
+        //opacity: 0;
+
+        span {
+            position: relative;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+                height: 1rem;
+                width: 1rem;
+                background-color: #fff;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:before {
+                right: -3rem;
+            }
+
+            &:after {
+                left: -3rem;
+            }
+
+
+            &:hover {
+                text-shadow: 2.5px 5px 2.5px rgb(54, 54, 54);
+            }
+
+            &:hover:after,
+            &:hover:before {
+                box-shadow: 2.5px 5px 2.5px rgb(54, 54, 54);
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .band {
+
+        .text {
+            font-size: 2.5rem;
+
+            span {
+                &:after {
+                    left: -2.5rem;
+                }
+
+                &:before {
+                    right: -2.5rem;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+
+    .band {
+
+        .text {
+            font-size: 2.3rem;
+
+            span {
+
+                &:after,
+                &:before {
+                    height: .8rem;
+                    width: .8rem;
+                }
+
+                &:after {
+                    left: -2.3rem;
+                }
+                &:before {
+                    right: -2.3rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .band {
+
+        .text {
+            font-size: 2rem;
+
+            span {
+                &:after {
+                    left: -2rem;
+                }
+
+                &:before {
+                    right: -2rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .band {
+        .text {
+            grid-column-start: 1;
+            grid-column-end: 11;
+            font-size: 2.8rem;
+        }
+    }
+
+}

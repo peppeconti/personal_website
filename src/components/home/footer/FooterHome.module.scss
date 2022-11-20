@@ -1,0 +1,25 @@
+.footer__home {
+    grid-area: footer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        /*li {
+            opacity: 0;
+            transform: rotateY(180deg);
+
+            img {
+                opacity: 0;
+            }
+        }*/
+
+
+    }
+}
