@@ -1,6 +1,7 @@
 .main__about {
     padding: 0 2rem 2rem 2rem;
     display: grid;
+    grid-gap: 1rem 0;
     grid-template-columns: 2fr 5fr;
     grid-auto-rows: 1fr 15fr;
     grid-template-areas:
@@ -23,6 +24,7 @@ h1.head {
     align-items: center;
     font-size: 2.5rem;
     font-family: 'Zen Dots', cursive;
+    color: #fff;
 }
 
 .head span {
