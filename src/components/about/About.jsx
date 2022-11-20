@@ -1,10 +1,11 @@
 import classes from './About.module.scss';
+import Nav from '../../nav/Nav';
 
 const About = () => {
 
   return (
     <div>
-        ciao
+        <Nav/>
     </div>
   );
 }

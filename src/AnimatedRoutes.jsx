@@ -9,15 +9,8 @@ const AnimatedRoutes = () => {
 
     const location = useLocation();
 
-    const styles = {
-
-    }
-
     return (
-        <div style={styles} className={classes.animated}>
-            <AnimatePresence initial={false} mode={'wait'}>
-                <Nav location={location} key={location.pathname} />
-            </AnimatePresence>
+        <div className={classes.animated}>
             <AnimatePresence initial={false} mode={'wait'}>
                 <Routes location={location} key={location.pathname}>
                     <Route path='/' element={<Home />}></Route>

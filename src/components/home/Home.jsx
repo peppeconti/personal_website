@@ -9,6 +9,7 @@ const Home = () => {
 
   return (
     <m.section className={classes.home} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
+      <Nav />
       <div>ciao</div>
     </m.section>
   );

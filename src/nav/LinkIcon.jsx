@@ -1,4 +1,4 @@
-import "./LinkIcon.css";
+import classes from "./LinkIcon.module.scss";
 import { NavLink } from "react-router-dom";
 
 const LinkIcon = ({ source, alt, href, isRoute }) => {
@@ -8,10 +8,10 @@ const LinkIcon = ({ source, alt, href, isRoute }) => {
       <NavLink
         to={href}
         className={({ isActive }) =>
-          isActive ? 'active' : undefined
+          isActive ? classes.active : undefined
         }
       >
-        <li className="link">
+        <li className={classes.link}>
           <img src={source} alt={alt} />
         </li>
       </NavLink>
@@ -19,7 +19,7 @@ const LinkIcon = ({ source, alt, href, isRoute }) => {
   } else {
     return (
       <a href={href} target='_blank' rel="noreferrer">
-        <li className="link">
+        <li className={classes.link}>
           <img src={source} alt={alt} />
         </li>
       </a>
