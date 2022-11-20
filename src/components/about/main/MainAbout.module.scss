@@ -3,24 +3,28 @@
     grid-area: main;
 
     h1 {
-        grid-area: head;
         color: #fff;
         font-size: 2.5rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        height: 10%;
+        font-family: 'Zen Dots', cursive;
     }
 
     .flex {
-        min-height: 100%;
-        background-color: yellow;
+        height: 90%;
+        display: flex;
     }
 
     aside.img__profile {
-        background-color: red;
+        width: 25%;
+        height: 100%;
+        background-color: yellow;
     }
 
     div.introduction {
+        width: 75%;
+        height: 100%;
         background-color: red;
     }
 }
