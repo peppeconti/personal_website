@@ -9,7 +9,7 @@ const Nav = () => {
 
   const location = useLocation();
 
-  const listClass =  location.pathname !== '/' ? 'page' : undefined;
+  const listClass =  location.pathname !== '/' ? classes.page : undefined;
 
   return (
     <nav className={classes.nav}>

@@ -4,7 +4,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 8fr 13fr 8fr;
+    grid-template-rows: 8fr 13fr 8fr;
     grid-template-areas:
         'nav'
         'main'

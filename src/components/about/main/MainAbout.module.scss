@@ -1,0 +1,30 @@
+.main__about {
+    padding: 0 2rem 2rem 2rem;
+    grid-area: main;
+    display: grid;
+    grid-gap: 0 2rem;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas:
+        'head head'
+        'aside introduction';
+
+    h1 {
+        grid-area: head;
+        color: #fff;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside.img__profile {
+        grid-area: aside;
+        background-color: red;
+    }
+
+    div.introduction {
+        grid-area: introduction;
+        background-color: red;
+    }
+}
