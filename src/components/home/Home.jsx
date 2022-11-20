@@ -1,14 +1,28 @@
-import { useLayoutEffect, useRef } from 'react';
-import './Home.css';
-import MainHeader from './main/MainHeader';
+import classes from './Home.module.scss';
 import Nav from '../../nav/Nav';
+import MainHeader from './main/MainHeader';
 import FooterHeader from './footer/FooterHeader';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 import { motion as m } from 'framer-motion';
 
 const Home = () => {
 
-  const home = useRef();
+  return (
+    <m.section className={classes.home} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
+      <div>ciao</div>
+    </m.section>
+  );
+}
+
+export default Home;
+
+
+
+
+
+
+
+  /*const home = useRef();
   const tl = useRef();
   const tla = useRef();
 
@@ -49,15 +63,4 @@ const Home = () => {
 
     return () => ctx.revert();
 
-  }, []);
-
-  return (
-    <m.section ref={home} className="home" exit={{ opacity: 0 }} transition={{ duration: 2 }}>
-      <Nav />
-      <MainHeader />
-      <FooterHeader />
-    </m.section>
-  );
-}
-
-export default Home;
+  }, []);*/

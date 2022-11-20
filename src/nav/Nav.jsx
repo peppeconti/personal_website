@@ -1,9 +1,10 @@
 import { useLocation } from 'react-router-dom';
-import './Nav.css';
+import styles from './Nav.module.scss';
 import LinkIcon from './LinkIcon';
 import envelope from '../assets/envelope-solid.svg';
 import info from '../assets/circle-info-solid.svg';
 import laptop from '../assets/laptop-code-solid.svg';
+import { motion as m } from 'framer-motion';
 
 const Nav = () => {
 
@@ -12,13 +13,13 @@ const Nav = () => {
   const listClass =  location.pathname !== '/' ? 'page' : undefined;
 
   return (
-    <nav className="nav">
+    <m.nav className={styles.nav} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
       <ul className={listClass}>
         <LinkIcon href={'/about'} source={info} alt="about me" isRoute/>
         <LinkIcon href={'/portfolio'} source={laptop} alt="portfolio" isRoute/>
         <LinkIcon href={'/contact'} source={envelope} alt="contact me" isRoute/>
       </ul>
-    </nav>
+    </m.nav>
   );
 }
 

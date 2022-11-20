@@ -7,19 +7,6 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 8fr 13fr 8fr;
     grid-template-areas:
-        "nav"
         "main"
         "footer"; 
-}
-
-.main__header {
-    grid-area: main;
-}
-
-.footer__header {
-    grid-area: footer;
-}
-
-.nav {
-    grid-area: nav;
 }
