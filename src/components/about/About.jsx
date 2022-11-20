@@ -1,11 +1,12 @@
 import './About.css';
 import Nav from '../home/nav/Nav';
+import MainAbout from './main/MainAbout';
 
 const About = () => {
   return (
     <section className="about">
-     <Nav />
-     <h1>About</h1>
+      <Nav />
+      <MainAbout />
     </section>
   );
 }

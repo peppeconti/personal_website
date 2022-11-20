@@ -3,3 +3,7 @@
     padding: 2rem;
     gap: 2rem;
 }
+
+.page {
+    align-items: center;
+}
