@@ -1,11 +1,19 @@
 .main__about {
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-auto-rows: 1fr 10fr;
     grid-template-areas:
         "head head"
-        "aside main"
+        "aside biographic"
+}
+
+.bio {
+    grid-area: biographic;
+}
+
+.aside {
+    grid-area: aside;
 }
 
 h1.head {
