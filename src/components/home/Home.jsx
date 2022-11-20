@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import './Home.css';
 import MainHeader from './main/MainHeader';
-import Nav from './nav/Nav';
+import Nav from '../../nav/Nav';
 import FooterHeader from './footer/FooterHeader';
 import { gsap } from 'gsap';
 import { motion as m } from 'framer-motion';

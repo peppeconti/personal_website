@@ -1,8 +1,5 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from './components/home/Home';
-import About from './components/about/About';
-import Portfolio from "./components/portfolio/Portfolio";
-import Contact from "./components/contact/Contact";
 import { AnimatePresence } from 'framer-motion';
 
 const AnimatedRoutes = () => {
@@ -18,9 +15,6 @@ const AnimatedRoutes = () => {
             <AnimatePresence initial={false} mode={'wait'}>
                 <Routes location={location} key={location.pathname}>
                     <Route path='/' element={<Home />}></Route>
-                    <Route path='/about' element={<About />}></Route>
-                    <Route path='/portfolio' element={<Portfolio />}></Route>
-                    <Route path='/contact' element={<Contact />}></Route>
                     <Route path='*' element={<Navigate replace to='/' />}></Route>
                 </Routes>
             </AnimatePresence>
