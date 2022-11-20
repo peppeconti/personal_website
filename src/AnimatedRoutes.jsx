@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import classes from './AnimatedRouter.module.scss';
-import Nav from './nav/Nav';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import { AnimatePresence } from 'framer-motion';

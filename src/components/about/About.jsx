@@ -4,9 +4,9 @@ import Nav from '../../nav/Nav';
 const About = () => {
 
   return (
-    <div>
+    <section className={classes.about}>
         <Nav/>
-    </div>
+    </section>
   );
 }
 
