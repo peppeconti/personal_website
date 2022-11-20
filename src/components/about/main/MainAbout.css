@@ -2,7 +2,7 @@
     padding: 0 2rem 2rem 2rem;
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-auto-rows: 1fr 10fr;
+    grid-auto-rows: 1fr 15fr;
     grid-template-areas:
         "head head"
         "aside biographic"
