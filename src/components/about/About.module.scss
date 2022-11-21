@@ -8,10 +8,10 @@
     display: grid;
     grid-gap: 2rem;
     grid-template-areas:
-        'nav nav nav title title title title title title title home home home'
-        'aside aside aside bio bio bio bio bio bio bio bio bio bio'
-        'aside aside aside skills skills skills skills skills skills skills skills skills skills';
-    grid-template-columns: repeat(13, 1fr);
+        'nav title home'
+        'aside bio bio'
+        'aside skills skills';
+    grid-template-columns: 3fr 7fr 3fr;
     grid-template-rows: 1fr 8fr 1fr;
 
     h1 {
