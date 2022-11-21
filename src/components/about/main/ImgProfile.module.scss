@@ -1,4 +1,5 @@
 .aside {
     grid-area: aside;
-    border: 1px solid white;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
+    border-radius: 2rem;
 }

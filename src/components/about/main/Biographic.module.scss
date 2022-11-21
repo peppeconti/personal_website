@@ -1,13 +1,13 @@
 @import '../../../styles';
 
 .bio {
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
     caret-color: transparent;
     grid-area: bio;
     font-size: $smallest;
     line-height: 2.3rem;
     overflow: auto;
-    border: 1px solid white;
+    border-radius: 2rem;
 
     p {
         padding: 1rem;
