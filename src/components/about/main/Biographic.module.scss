@@ -10,7 +10,24 @@
         text-align: center;
         padding: 1rem 0;
         font-size: $small;
+        margin-bottom: 1rem;
 
         @include decoration($small);
+    }
+
+    .logos ul {
+        display: flex;
+        // border: 1px solid white;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
