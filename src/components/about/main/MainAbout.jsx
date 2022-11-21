@@ -5,7 +5,7 @@ const MainAbout = () => {
 
     return (
         <div className={classes.main__about}>
-            <h1>About me</h1>
+            <h1><span>About me</span></h1>
             <div className={classes.flex}>
                 <aside className={classes.img__profile}>
                     cioa

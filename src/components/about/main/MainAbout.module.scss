@@ -1,3 +1,5 @@
+@import '../../../styles';
+
 .main__about {
     padding: 0 2rem 2rem 2rem;
     flex-grow: 1;
@@ -11,6 +13,8 @@
         font-family: 'Zen Dots', cursive;
         margin-bottom: 2rem;
         border: 1px solid #fff;
+
+        @include decoration();
 
     }
 
