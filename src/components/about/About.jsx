@@ -5,6 +5,7 @@ import LinkIcon from '../../nav/LinkIcon';
 import { motion as m } from 'framer-motion';
 import Biographic from './main/Biographic';
 import Skills from './main/Skills';
+import ImgProfile from './main/ImgProfile'
 
 const About = () => {
 
@@ -15,6 +16,7 @@ const About = () => {
       <div className={classes.home__icon}><LinkIcon href={'/'} source={home} alt="home" isRoute /></div>
       <Biographic />
       <Skills />
+      <ImgProfile />
     </m.section>
   );
 }

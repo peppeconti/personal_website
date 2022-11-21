@@ -4,13 +4,13 @@
     grid-area: skills;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    overflow: hidden;
+    justify-content: flex-end;
+    border: 1px solid white;
 
     h2 {
-        margin-bottom: 2rem;
         text-align: center;
         font-size: $small;
+        margin-bottom: 1rem;
 
         @include decoration($small)
     }
@@ -18,13 +18,15 @@
     ul {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         padding: 0 2rem;
 
         li {
             list-style: none;
+            height: 70%;
 
             img {
-                height: 80%;
+                height: 100%;
             }
         }
     }
