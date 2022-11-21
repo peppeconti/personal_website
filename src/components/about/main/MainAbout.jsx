@@ -1,4 +1,5 @@
 import classes from './MainAbout.module.scss';
+import Biographic from './Biographic';
 
 const MainAbout = () => {
 
@@ -9,9 +10,7 @@ const MainAbout = () => {
                 <aside className={classes.img__profile}>
                     cioa
                 </aside>
-                <div className={classes.introduction}>
-                    aloha
-                </div>
+                <Biographic />
             </div>
         </div>
     );
