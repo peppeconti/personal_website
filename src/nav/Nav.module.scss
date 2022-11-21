@@ -1,6 +1,10 @@
 .nav ul {
     display: flex;
     padding: 2rem;
-    padding-bottom: 1.5rem;
     gap: 2rem;
+}
+
+.nav ul.page {
+    padding: 0;
+    margin-bottom: 1rem;
 }
