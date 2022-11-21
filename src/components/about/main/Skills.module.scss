@@ -16,14 +16,15 @@
     }
 
     ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
         padding: 0 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 50%;
 
         li {
             list-style: none;
-            height: 70%;
+            height: 100%;
 
             img {
                 height: 100%;

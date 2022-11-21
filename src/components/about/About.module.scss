@@ -12,7 +12,7 @@
         'aside aside aside bio bio bio bio bio bio bio bio bio bio'
         'aside aside aside skills skills skills skills skills skills skills skills skills skills';
     grid-template-columns: repeat(13, 1fr);
-    grid-auto-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
 
     h1 {
         font-size: $large;

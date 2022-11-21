@@ -8,7 +8,7 @@ const Skills = () => {
 
     return (
         <div className={classes.logos}>
-            <h2><span>Skills</span></h2>
+            
             <ul>
                 <li>
                     <img src={js__logo} alt="javascript logo" />
