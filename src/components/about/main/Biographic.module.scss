@@ -1,5 +1,16 @@
+@import '../../../styles';
+
 .bio {
     width: 75%;
     height: 100%;
-    background-color: red;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
+    caret-color: transparent;
+
+    h2.skills {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: $small;
+
+        @include decoration($small);
+    }
 }

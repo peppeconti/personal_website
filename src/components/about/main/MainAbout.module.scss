@@ -7,14 +7,12 @@
     flex-direction: column;
 
     h1 {
-        color: #fff;
-        font-size: 2.5rem;
+        font-size: $large;
         text-align: center;
-        font-family: 'Zen Dots', cursive;
         margin-bottom: 2rem;
         border: 1px solid #fff;
 
-        @include decoration();
+        @include decoration($large);
 
     }
 

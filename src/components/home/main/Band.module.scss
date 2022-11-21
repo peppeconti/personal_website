@@ -15,15 +15,13 @@
     .text {
         grid-column-start: 5;
         grid-column-end: 11;
-        color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
-        font-family: 'Zen Dots', cursive;
+        font-size: $largest;
         //opacity: 0;
 
-       @include decoration($hover: true);
+       @include decoration($largest, $hover: true);
 
     }
 

@@ -1,4 +1,9 @@
-@mixin decoration($hover: false) {
+$largest: 3rem;
+$large: 2.5rem;
+$small: 1.5rem;
+
+
+@mixin decoration($font_size, $hover: false) {
     span {
         position: relative;
 
@@ -7,19 +12,19 @@
             content: '';
             position: absolute;
             border-radius: 50%;
-            height: 1rem;
-            width: 1rem;
+            height: calc($font_size / 3);;
+            width: calc($font_size / 3);;
             background-color: #fff;
             top: 50%;
             transform: translateY(-50%);
         }
 
         &:before {
-            right: -3rem;
+            right: -#{$font_size};
         }
 
         &:after {
-            left: -3rem;
+            left: -#{$font_size};
         }
 
         @if $hover {
