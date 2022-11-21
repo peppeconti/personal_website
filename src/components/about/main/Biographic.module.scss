@@ -3,44 +3,48 @@
 .bio {
     width: 75%;
     height: 100%;
-    padding: 1rem 2rem;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
     caret-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
-    .about__me {
-        margin-bottom: 1rem;
+    p.about__me {
+        height: 65%;
+        overflow: auto;
+        font-size: $smallest;
+        line-height: 2.3rem;
+        padding: 1rem 2rem;
+        background-color: red;
+    }
 
-        p {
-            font-size: $smallest;
-            line-height: 2.3rem;
+    .skills {
+        height: 35%;
+        background-color: yellow;
+
+        h2 {
+            text-align: center;
+            font-size: $small;
+            margin-bottom: 1rem;
+
+            @include decoration($small);
         }
-    }
 
-    h2.skills {
-        text-align: center;
-        padding: 1rem 0;
-        font-size: $small;
-        margin-bottom: 1rem;
-
-        @include decoration($small);
-    }
-
-    .logos ul {
-        display: flex;
-        // border: 1px solid white;
-        justify-content: space-around;
-
-        li {
-            list-style: none;
+        .logos ul {
             display: flex;
-            align-items: center;
+            // border: 1px solid white;
+            justify-content: space-around;
 
-            img {
-                width: 100%;
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
             }
         }
     }
+
 }
