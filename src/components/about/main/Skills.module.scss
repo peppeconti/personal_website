@@ -1,35 +1,20 @@
 @import '../../../styles';
 
-.logos {
+ul.logos {
     grid-area: skills;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
     border-radius: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    h2 {
-        text-align: center;
-        font-size: $small;
-        margin-bottom: 1rem;
+    li {
+        list-style: none;
+        height: 60%;
 
-        @include decoration($small)
-    }
-
-    ul {
-        padding: 0 2rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-
-        li {
-            list-style: none;
-            height: 60%;
-
-            img {
-                height: 100%;
-            }
+        img {
+            height: 100%;
         }
     }
 }

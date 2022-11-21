@@ -8,11 +8,11 @@
     display: grid;
     grid-gap: 2rem;
     grid-template-areas:
-        'nav title home'
+        'header header header'
         'aside bio bio'
         'aside skills skills';
     grid-template-columns: 3fr 7fr 3fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: .5fr 4fr .25fr;
 
     h1 {
         font-size: $large;

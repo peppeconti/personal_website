@@ -7,9 +7,7 @@ import angular__logo from '../../../assets/angular.svg';
 const Skills = () => {
 
     return (
-        <div className={classes.logos}>
-            
-            <ul>
+            <ul className={classes.logos}>
                 <li>
                     <img src={js__logo} alt="javascript logo" />
                 </li>
@@ -23,7 +21,6 @@ const Skills = () => {
                     <img src={angular__logo} alt="angular logo" />
                 </li>
             </ul>
-        </div>
     );
 }
 
