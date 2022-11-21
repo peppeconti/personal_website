@@ -2,13 +2,16 @@
 
 .about {
     height: 100vh;
+    background-color: #15263f;
     padding: 2rem;
     min-height: 600px;
     display: grid;
     grid-template-areas:
-        'nav nav nav title title title title title title home home home';
+        'nav nav nav title title title title title title home home home'
+        'aside aside aside aside bio bio bio bio bio bio bio bio'
+        'aside aside aside aside skills skills skills skills skills skills skills skills';
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: repeat(16, 1fr);
+    grid-auto-rows: 3fr 8fr 5fr;
 
     h1 {
         font-size: $large;

@@ -1,46 +1,14 @@
 @import '../../../styles';
 
 .bio {
-    width: 75%;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
     caret-color: transparent;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
+    grid-area: bio;
+    font-size: $smallest;
+    line-height: 2.3rem;
+    overflow: auto;
 
-    p.about__me {
-        font-size: $smallest;
-        line-height: 2.3rem;
-        //background-color: red;
-        margin-bottom: 3rem;
+    p {
+        padding: 1rem;
     }
-
-    .skills {
-
-        h2 {
-            text-align: center;
-            font-size: $small;
-            margin-bottom: 3rem;
-
-            @include decoration($small);
-        }
-
-        .logos ul {
-            display: flex;
-            // border: 1px solid white;
-            justify-content: space-around;
-
-            li {
-                list-style: none;
-                display: flex;
-                align-items: center;
-                height: 100%;
-
-                img {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
 }
