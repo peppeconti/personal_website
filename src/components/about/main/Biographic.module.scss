@@ -12,7 +12,7 @@
         font-size: $smallest;
         line-height: 2.3rem;
         //background-color: red;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .skills {
@@ -20,7 +20,7 @@
         h2 {
             text-align: center;
             font-size: $small;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
 
             @include decoration($small);
         }

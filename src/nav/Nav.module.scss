@@ -1,10 +1,13 @@
-.nav ul {
-    display: flex;
-    padding: 2rem;
-    gap: 2rem;
-}
+.nav {
+    grid-area: nav;
 
-.nav ul.page {
-    padding: 0;
-    margin-bottom: 1rem;
+    ul {
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    ul.page {
+        padding: 0;
+    }
 }
