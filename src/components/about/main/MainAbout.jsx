@@ -8,7 +8,7 @@ const MainAbout = () => {
             <h1><span>About me</span></h1>
             <div className={classes.flex}>
                 <aside className={classes.img__profile}>
-                    cioa
+                    
                 </aside>
                 <Biographic />
             </div>
