@@ -1,11 +1,6 @@
 .about {
     height: 100vh;
     min-height: 600px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 15fr;
-    grid-template-areas:
-        'nav'
-        'main';
+    display: flex;
+    flex-direction: column;
 }
