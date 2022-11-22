@@ -9,7 +9,7 @@
     grid-template-columns: 1fr;
     overflow: auto;
 
-    p {
+    p.text {
         padding: 2rem;
         background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
         caret-color: transparent;
@@ -23,7 +23,7 @@
         grid-row-end: 5;
     }
 
-    ul.logos {
+    .logos {
         background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
         border-radius: 2rem;
         padding: 0 2rem;
@@ -34,6 +34,7 @@
         grid-column-end: 2;
         grid-row-start: 5;
         grid-row-end: 6;
+        caret-color: transparent;
 
         li {
             list-style: none;

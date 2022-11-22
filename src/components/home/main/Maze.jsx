@@ -1,10 +1,10 @@
-import './Maze.css';
+import classes from './Maze.module.scss';
 import MazeSvg from './MazeSvg';
 
 const Maze = () => {
 
     return (
-        <div className="maze">
+        <div className={classes.maze}>
             <figure>
                 <MazeSvg />
             </figure>

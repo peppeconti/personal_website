@@ -1,5 +1,40 @@
+@import '../../../styles';
+
 .aside {
     grid-area: aside;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    caret-color: transparent;
+
+    .img__profile {
+
+        width: 75%;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .hobbies {
+        flex: 1;
+
+        h2 {
+            font-style: $small;
+            margin-bottom: 1rem;
+    
+            @include decoration($small);
+        }
+
+        li {
+            list-style: none;
+        }
+
+    }
+
 }
