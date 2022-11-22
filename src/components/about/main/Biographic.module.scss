@@ -1,15 +1,39 @@
 @import '../../../styles';
 
 .bio {
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
-    caret-color: transparent;
+
     grid-area: bio;
-    font-size: $smallest;
-    line-height: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
     overflow: auto;
-    border-radius: 2rem;
 
     p {
         padding: 1rem;
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
+        caret-color: transparent;
+        font-size: $smallest;
+        line-height: 2.3rem;
+        border-radius: 2rem;
+        flex: 1;
+    }
+
+    ul.logos {
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
+        border-radius: 2rem;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+            height: 60%;
+
+            img {
+                height: 100%;
+            }
+        }
     }
 }

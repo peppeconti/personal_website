@@ -5,7 +5,6 @@ import LinkIcon from '../../nav/LinkIcon';
 import { motion as m } from 'framer-motion';
 import Header from './main/Header';
 import Biographic from './main/Biographic';
-import Skills from './main/Skills';
 import ImgProfile from './main/ImgProfile'
 
 const About = () => {
@@ -14,7 +13,6 @@ const About = () => {
     <m.section className={classes.about} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
       <Header />
       <Biographic />
-      <Skills />
       <ImgProfile />
     </m.section>
   );
