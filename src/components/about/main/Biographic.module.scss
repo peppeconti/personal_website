@@ -3,20 +3,24 @@
 .bio {
 
     grid-area: bio;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr;
     overflow: auto;
 
     p {
-        padding: 1rem;
+        padding: 2rem;
         background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
         caret-color: transparent;
         font-size: $smallest;
         line-height: 2.3rem;
         border-radius: 2rem;
-        flex: 1;
+        overflow: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
     }
 
     ul.logos {
@@ -26,10 +30,14 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
 
         li {
             list-style: none;
-            height: 60%;
+            height: 75%;
 
             img {
                 height: 100%;
