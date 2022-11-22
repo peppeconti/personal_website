@@ -1,5 +1,3 @@
-@import '../../styles';
-
 .about {
     height: 100vh;
     background-color: #15263f;
@@ -11,25 +9,6 @@
         'header header header'
         'aside bio bio';
     grid-template-columns: 3fr 7fr 3fr;
-    grid-template-rows: 1fr 5fr;
-
-    h1 {
-        font-size: $large;
-        grid-area: title;
-        height: 3.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        @include decoration($large);
-
-    }
-
-    .home__icon {
-        display: flex;
-        justify-content: flex-end;
-        grid-area: home;
-    }
-
+    grid-template-rows: 1fr 8fr;
 
 }
