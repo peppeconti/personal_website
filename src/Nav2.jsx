@@ -34,16 +34,20 @@ const Nav2 = ({ text }) => {
   const inactive = icons.filter(e => e.to !== location.pathname);
 
   const page = location.pathname !== '/' ? classes.page : undefined;
+  const classesArray = [classes.header, page];
 
   return (
-    <nav className={classes.nav + ' ' + page}>
+    <header className={classesArray.join(' ')}>
       <h1><span>{text}</span></h1>
-      <ul>
-        <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />
-        {active.map(e => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} isRoute />)}
-        {inactive.map((e, i) => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} left={i === 0 ? true : false } isRoute />)}
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />
+          {active.map(e => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} isRoute />)}
+          {inactive.map((e, i) => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} left={i === 0 ? true : false} isRoute />)}
+        </ul>
+      </nav>
+      <button className={classes.hamburger}></button>
+    </header>
   );
 }
 
