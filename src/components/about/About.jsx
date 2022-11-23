@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <m.section className={classes.about} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
-      <Header />
+      <Header text="Projects" />
       <Biographic />
       <ImgProfile />
     </m.section>
