@@ -40,7 +40,7 @@ const Nav2 = ({ text }) => {
   return (
     <header className={classesArray.join(' ')}>
       <h1><span>{text}</span></h1>
-      <nav>
+      <nav className={classes.desktop}>
         <ul>
           <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />
           {active.map(e => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} isRoute />)}

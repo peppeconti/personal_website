@@ -1,5 +1,17 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
+import { createPortal } from 'react-dom';
 import classes from "./Menu.module.scss";
+import { motion as m } from 'framer-motion';
+
+const Modal = () => {
+    return (
+        <m.nav className={classes.modal} exit={{ opacity: 0 }} transition={{duration: 10}}>
+            <ul>
+
+            </ul>
+        </m.nav>
+    )
+}
 
 const Menu = () => {
 
@@ -13,13 +25,14 @@ const Menu = () => {
     const classesArray = [classes.hamburger, open];
 
     return (
-        <button type='button' className={classesArray.join(' ')} onClick={menuHandler}>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-        </button>
+        <Fragment>
+            <button type='button' className={classesArray.join(' ')} onClick={menuHandler}>
+                <div className={classes.line}></div>
+                <div className={classes.line}></div>
+                <div className={classes.line}></div>
+            </button>
+            {isOpen && createPortal(<Modal />, document.getElementById('overlay'))}
+        </Fragment>
     );
 }
 
