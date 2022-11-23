@@ -25,3 +25,17 @@ li.link img {
 li.link:hover {
     opacity: .8;
 }
+
+@media screen and (max-width: 950px) {
+    li.link {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    li.link {
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+}

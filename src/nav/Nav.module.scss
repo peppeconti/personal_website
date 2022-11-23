@@ -1,6 +1,6 @@
 .nav {
     grid-area: nav;
-    border: 1px solid red;
+    //border: 1px solid red;
 
     ul {
         display: flex;
@@ -14,7 +14,16 @@
 
     ul {
         padding: 0;
-        gap: 0;
-        justify-content: space-between;
+        gap: 2rem;
+        //justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .page {
+        ul {
+            gap: 0;
+            justify-content: space-between;
+        }
     }
 }
