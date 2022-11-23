@@ -1,11 +1,16 @@
 import classes from "./LinkIcon.module.scss";
 import { NavLink } from "react-router-dom";
 
-const LinkIcon = ({ source, alt, href, isRoute }) => {
+const LinkIcon = ({ source, alt, href, isRoute, left }) => {
+
+  const styles = {
+    marginLeft: left ? 'auto' : 'unset', 
+  }
 
   if (isRoute) {
     return (
       <NavLink
+        style={styles}
         to={href}
         className={({ isActive }) =>
           isActive ? classes.active : undefined

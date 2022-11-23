@@ -1,0 +1,39 @@
+@import './styles.scss';
+
+.nav {
+    grid-area: header;
+    // border: 1px solid red;
+}
+
+.page {
+
+    position: relative;
+
+    ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        
+        /*div {
+            display: flex;
+            gap: 2rem;
+        }*/
+    }
+
+    h1 {
+        font-size: $large;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include decoration($large);
+
+    }
+   
+}
+
+@media screen and (max-width: 950px) {
+   
+}
