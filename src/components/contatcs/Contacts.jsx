@@ -1,6 +1,6 @@
 import classes from './Contacts.module.scss';
 import { motion as m } from 'framer-motion';
-import Nav2 from '../../Nav2';
+import Nav2 from '../../nav_2/Nav2';
 
 const Contacts = () => {
 

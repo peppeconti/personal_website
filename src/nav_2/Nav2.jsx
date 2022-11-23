@@ -1,11 +1,12 @@
 import { useId } from 'react';
 import { useLocation } from 'react-router-dom';
 import classes from './Nav2.module.scss';
-import LinkIcon from './nav/LinkIcon';
-import home from './assets/home.svg'
-import envelope from './assets/envelope-solid.svg';
-import info from './assets/circle-info-solid.svg';
-import laptop from './assets/laptop-code-solid.svg';
+import LinkIcon from './LinkIcon';
+import Menu from './Menu';
+import home from '../assets/home.svg'
+import envelope from '../assets/envelope-solid.svg';
+import info from '../assets/circle-info-solid.svg';
+import laptop from '../assets/laptop-code-solid.svg';
 
 const Nav2 = ({ text }) => {
 
@@ -46,7 +47,7 @@ const Nav2 = ({ text }) => {
           {inactive.map((e, i) => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} left={i === 0 ? true : false} isRoute />)}
         </ul>
       </nav>
-      <button className={classes.hamburger}></button>
+      <Menu />
     </header>
   );
 }
