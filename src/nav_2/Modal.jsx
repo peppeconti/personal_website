@@ -60,6 +60,7 @@ const Modal = () => {
     const inactive = icons.filter(e => e.to !== location.pathname);
 
     const content = <m.nav
+        location={location} key={location.pathname}
         className={classes.modal}
         variants={dropIn}
         initial='hidden'

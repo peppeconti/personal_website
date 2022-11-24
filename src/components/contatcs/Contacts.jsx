@@ -7,6 +7,13 @@ const Contacts = () => {
   return (
     <m.section className={classes.contacts} exit={{ opacity: 0 }} transition={{ duration: 2 }}>
         <Nav2 text="Contacts"/>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
+        <h1>Ciao</h1>
     </m.section>
   );
 }
