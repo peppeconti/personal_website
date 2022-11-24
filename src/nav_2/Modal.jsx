@@ -34,21 +34,24 @@ const Modal = () => {
 
     const dropIn = {
         hidden: {
-            y: "-100vh",
+            y: '-100vh',
+            x: '-50%',
             opacity: 0,
         },
         visible: {
-            y: "0",
+            //transform: 'translate(-50%, 0)',
+            y: '0',
+            x: '-50%',
             opacity: 1,
             transition: {
-                duration: 0.1,
-                type: "spring",
+                duration: 0.3,
+                type: 'spring',
                 damping: 25,
                 stiffness: 500,
             },
         },
         exit: {
-            y: "100vh",
+            y: '100vh',
             opacity: 0,
         },
     };
@@ -82,7 +85,7 @@ const Modal = () => {
 
     const content = <m.nav
         className={classes.modal}
-        variants={flip}
+        variants={dropIn}
         initial='hidden'
         animate='visible'
         exit='exit'
