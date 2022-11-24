@@ -56,30 +56,6 @@ const Modal = () => {
         },
     };
 
-    const flip = {
-        hidden: {
-            transform: "scale(0) rotateX(-360deg) translate(-50%, 0)",
-            opacity: 0,
-            transition: {
-                delay: 0.3,
-            },
-        },
-        visible: {
-            transform: " scale(1) rotateX(0deg) translate(-50%, 0)",
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-            },
-        },
-        exit: {
-            transform: "scale(0) rotateX(360deg) translate(-50%, 0)",
-            opacity: 0,
-            transition: {
-                duration: 0.5,
-            },
-        },
-    };
-
     const active = icons.filter(e => e.to === location.pathname);
     const inactive = icons.filter(e => e.to !== location.pathname);
 
