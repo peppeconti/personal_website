@@ -4,7 +4,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0rem;
+    right: 0;
+    z-index: 3;
     height: 3.2rem;
     width: 3.2rem;
     border-radius: 50%;
@@ -62,13 +63,14 @@
 }
 
 nav.modal {
-    position: fixed;
+    position: absolute;
+    display: none;
     background-color: #15263f;
-    height: 10rem;
-    width: 85%;
-    top: 40%;
+    height: 40%;
+    width: 95%;
+    top: 2.5%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, 0);
     z-index: 1;
 
     ul {
@@ -79,7 +81,7 @@ nav.modal {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 4rem;
     }
 }
 
@@ -87,6 +89,10 @@ nav.modal {
 
     .hamburger {
         display: flex;
+    }
+
+    nav.modal {
+        display: block;
     }
 
 }
