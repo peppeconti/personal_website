@@ -68,9 +68,6 @@ nav.modal {
     width: 85%;
     top: 40%;
     left: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transform: translate(-50%,-50%);
     z-index: 1;
 
@@ -79,6 +76,10 @@ nav.modal {
         border-radius: 2rem;
         height: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 }
 
