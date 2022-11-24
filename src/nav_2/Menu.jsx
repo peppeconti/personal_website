@@ -1,7 +1,8 @@
 import { useState, Fragment, } from 'react';
+import {useLocation} from 'react-router-dom';
 import Modal from './Modal';
 import classes from "./Menu.module.scss";
-import { motion as m, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const Menu = () => {
 
@@ -16,7 +17,7 @@ const Menu = () => {
 
     return (
         <Fragment>
-            <m.button
+            <button
                 type='button'
                 className={classesArray.join(' ')}
                 onClick={menuHandler}
@@ -24,10 +25,11 @@ const Menu = () => {
                 <div className={classes.line}></div>
                 <div className={classes.line}></div>
                 <div className={classes.line}></div>
-            </m.button>
+            </button>
             <AnimatePresence
                 initial={false}
                 mode={'wait'}
+                onExitComplete={() => null}
             >
                 {isOpen && <Modal />}
             </AnimatePresence>

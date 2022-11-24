@@ -1,8 +1,8 @@
 import { useId } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocation } from 'react-router-dom';
-import classes from "./Menu.module.scss";
-import { motion as m, AnimatePresence } from 'framer-motion';
+import classes from "./Modal.module.scss";
+import { motion as m } from 'framer-motion';
 import LinkIcon from './LinkIcon';
 import home from '../assets/home.svg'
 import envelope from '../assets/envelope-solid.svg';
@@ -55,21 +55,21 @@ const Modal = () => {
 
     const flip = {
         hidden: {
-            transform: "scale(0) rotateX(-360deg)",
+            transform: "scale(0) rotateX(-360deg) translate(-50%, 0)",
             opacity: 0,
             transition: {
                 delay: 0.3,
             },
         },
         visible: {
-            transform: " scale(1) rotateX(0deg)",
+            transform: " scale(1) rotateX(0deg) translate(-50%, 0)",
             opacity: 1,
             transition: {
                 duration: 0.5,
             },
         },
         exit: {
-            transform: "scale(0) rotateX(360deg)",
+            transform: "scale(0) rotateX(360deg) translate(-50%, 0)",
             opacity: 0,
             transition: {
                 duration: 0.5,
@@ -83,9 +83,9 @@ const Modal = () => {
     const content = <m.nav
         className={classes.modal}
         variants={flip}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
+        initial='hidden'
+        animate='visible'
+        exit='exit'
     >
         <ul>
             <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />
@@ -94,7 +94,7 @@ const Modal = () => {
         </ul>
     </m.nav>
 
-    return createPortal(<AnimatePresence>{content}</AnimatePresence>, document.getElementById('overlay'));
+    return createPortal(content, document.getElementById('overlay'));
 
 }
 
