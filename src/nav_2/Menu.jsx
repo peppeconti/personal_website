@@ -1,6 +1,7 @@
 import { useState, Fragment, } from 'react';
 import Modal from './Modal';
 import classes from "./Menu.module.scss";
+import { motion as m, AnimatePresence } from 'framer-motion';
 
 const Menu = () => {
 
@@ -15,12 +16,21 @@ const Menu = () => {
 
     return (
         <Fragment>
-            <button type='button' className={classesArray.join(' ')} onClick={menuHandler}>
+            <m.button
+                type='button'
+                className={classesArray.join(' ')}
+                onClick={menuHandler}
+            >
                 <div className={classes.line}></div>
                 <div className={classes.line}></div>
                 <div className={classes.line}></div>
-            </button>
-            {isOpen && <Modal />}
+            </m.button>
+            <AnimatePresence
+                initial={false}
+                mode={'wait'}
+            >
+                {isOpen && <Modal />}
+            </AnimatePresence>
         </Fragment>
     );
 }
