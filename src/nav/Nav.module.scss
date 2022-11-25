@@ -1,13 +1,16 @@
 @import '../styles.scss';
 
+header nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .header__home {
     grid-area: nav;
 
     ul {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
         padding: 2rem;
     }
 }
@@ -19,13 +22,6 @@
 
     nav.desktop {
         height: 100%;
-
-        ul {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
     }
 
     h1 {
