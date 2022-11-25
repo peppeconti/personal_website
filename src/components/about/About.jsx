@@ -1,6 +1,6 @@
 import classes from './About.module.scss';
 import { motion as m } from 'framer-motion';
-import Header from './main/Header';
+import Nav from '../../nav/Nav';
 import Biographic from './main/Biographic';
 import ImgProfile from './main/ImgProfile'
 
@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <m.section className={classes.about} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
-      <Header text="Projects" />
+      <Nav text='About me' />
       <Biographic />
       <ImgProfile />
     </m.section>

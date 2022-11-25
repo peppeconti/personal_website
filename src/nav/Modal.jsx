@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocation } from 'react-router-dom';
 import classes from "./Modal.module.scss";
-import { motion as m, AnimatePresence } from 'framer-motion';
+import { motion as m } from 'framer-motion';
 import LinkIcon from './LinkIcon';
 import home from '../assets/home.svg'
 import envelope from '../assets/envelope-solid.svg';

@@ -1,6 +1,6 @@
 import classes from './Portfolio.module.scss';
 import { motion as m } from 'framer-motion';
-import Nav2 from '../../nav_2/Nav2';
+import Nav from '../../nav/Nav';
 
 const Portfolio = () => {
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
   return (
     <m.section className={classes.portfolio} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
-      <Nav2 text='Portfolio' />
+      <Nav text='Portfolio' />
     </m.section>
   );
 }
