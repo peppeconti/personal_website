@@ -7,6 +7,10 @@
   color: #fff;
 }
 
+body {
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 1.5rem;
 }
