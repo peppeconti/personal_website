@@ -2,12 +2,8 @@ import { useState, Fragment, } from 'react';
 import Modal from './Modal';
 import classes from "./Menu.module.scss";
 import { AnimatePresence } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
-import { motion as m } from 'framer-motion';
 
 const Menu = () => {
-
-    const location = useLocation();
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -30,11 +26,8 @@ const Menu = () => {
                     <div className={classes.line}></div>
                 </button>
             <AnimatePresence
-                initial={false}
-                onExitComplete={() => null}
-                mode="wait"
-            >
-                {isOpen && <Modal location={location} key={location.pathname} />}
+                initial={true}>
+                {isOpen && <Modal />}
             </AnimatePresence>
         </Fragment>
     );

@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocation } from 'react-router-dom';
 import classes from "./Modal.module.scss";
-import { motion as m } from 'framer-motion';
+import { motion as m, AnimatePresence } from 'framer-motion';
 import LinkIcon from './LinkIcon';
 import home from '../assets/home.svg'
 import envelope from '../assets/envelope-solid.svg';
@@ -39,7 +39,6 @@ const Modal = () => {
             opacity: 0,
         },
         visible: {
-            //transform: 'translate(-50%, 0)',
             y: '0',
             x: '-50%',
             opacity: 1,
@@ -53,7 +52,7 @@ const Modal = () => {
         exit: {
             y: '100vh',
             opacity: 0,
-        },
+        }
     };
 
     const active = icons.filter(e => e.to === location.pathname);
@@ -63,6 +62,9 @@ const Modal = () => {
         location={location} key={location.pathname}
         className={classes.modal}
         variants={dropIn}
+        hidden={{y: '-100vh', x: '-50%', opacity: 0,}}
+        visible={{y: '0', x: '-50%', opacity: 1,}}
+        exit={{opacity: 0, y: '100vh'}}
     >
         <ul>
             <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />
