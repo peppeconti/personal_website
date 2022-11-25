@@ -63,9 +63,6 @@ const Modal = () => {
         location={location} key={location.pathname}
         className={classes.modal}
         variants={dropIn}
-        initial='hidden'
-        animate='visible'
-        exit='exit'
     >
         <ul>
             <LinkIcon key={useId()} href={'/'} source={home} alt="home" isRoute />

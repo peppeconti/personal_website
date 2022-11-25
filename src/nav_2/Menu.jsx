@@ -32,6 +32,7 @@ const Menu = () => {
             <AnimatePresence
                 initial={false}
                 onExitComplete={() => null}
+                mode="wait"
             >
                 {isOpen && <Modal location={location} key={location.pathname} />}
             </AnimatePresence>
