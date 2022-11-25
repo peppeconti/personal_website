@@ -12,7 +12,7 @@ const AnimatedRoutes = () => {
 
     return (
         <div className={classes.animated}>
-            <AnimatePresence initial={false} mode={'wait'}>
+            <AnimatePresence initial={true} mode={'wait'}>
                 <Routes location={location} key={location.pathname}>
                     <Route path='/' element={<Home />}></Route>
                     <Route path='/about' element={<About />}></Route>

@@ -1,17 +1,34 @@
 import classes from './Band.module.scss';
+import { motion as m } from 'framer-motion';
 
-const Band = ({ gradient, start, end, text }) => {
+const Band = ({ gradient, start, end, text, order }) => {
 
     const style = {
         background: `linear-gradient(${gradient})`,
         gridRowStart: `${start}`,
         gridRowEnd: `${end}`
+    };
+
+    const fadeIn = {
+        hidden: {
+            opacity: 0,
+            y: '70%'
+        },
+        visible: {
+            opacity: 1,
+            y: '0',
+            transition: {
+                duration: .6,
+                ease: 'easeOut',
+                delay: order*.5
+            }
+        },
     }
 
     return (
-        <div className={classes.band} style={style}>
+        <m.div className={classes.band} style={style} variants={fadeIn}>
             <p className={classes.text}><span>{text}</span></p>
-        </div>
+        </m.div>
     );
 }
 

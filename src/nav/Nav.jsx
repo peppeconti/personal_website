@@ -8,7 +8,7 @@ import envelope from '../assets/envelope-solid.svg';
 import info from '../assets/circle-info-solid.svg';
 import laptop from '../assets/laptop-code-solid.svg';
 
-const Nav = ({ text }) => {
+const Nav = ({ text, order }) => {
 
   const location = useLocation();
 
@@ -30,6 +30,20 @@ const Nav = ({ text }) => {
       id: useId()
     }
   ];
+
+  const linkAnimation = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        when: 'beforeChildren',
+        delay: order*1
+      } 
+    },
+  }
 
   if (location.pathname === '/') {
     return (
