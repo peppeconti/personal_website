@@ -7,8 +7,9 @@ import home from '../assets/home.svg'
 import envelope from '../assets/envelope-solid.svg';
 import info from '../assets/circle-info-solid.svg';
 import laptop from '../assets/laptop-code-solid.svg';
+import { motion as m } from 'framer-motion';
 
-const Nav = ({ text, order }) => {
+const Nav = ({ text }) => {
 
   const location = useLocation();
 
@@ -31,16 +32,12 @@ const Nav = ({ text, order }) => {
     }
   ];
 
-  const linkAnimation = {
-    hidden: {
-      opacity: 0
-    },
+  const navAnimation = {
+    hidden: {},
     visible: {
-      opacity: 1,
       transition: {
-        duration: 2,
-        when: 'beforeChildren',
-        delay: order*1
+        staggerChildren: .6,
+        delayChildren: 3,
       } 
     },
   }
@@ -49,11 +46,11 @@ const Nav = ({ text, order }) => {
     return (
       <header className={classes.header__home}>
         <nav>
-          <ul>
+          <m.ul variants={navAnimation} initial='hidden' animate='visible'>
             <LinkIcon href='/about' source={info} alt='about page' isRoute />
             <LinkIcon href='/portfolio' source={laptop} alt='portfolio page' isRoute />
             <LinkIcon href='/contact' source={envelope} alt='contact page' isRoute />
-          </ul>
+          </m.ul>
         </nav>
       </header>
     )

@@ -2,27 +2,15 @@ import classes from './Home.module.scss';
 import Nav from '../../nav/Nav';
 import MainHome from './main/MainHeader';
 import FooterHome from './footer/FooterHome';
-// import { gsap } from 'gsap';
 import { motion as m } from 'framer-motion';
 
 const Home = () => {
 
-  const homeAnimation = {
-    hidden:{},
-    visible: {},
-    exit: { 
-      opacity: 0,
-      transition: {
-        duration: 2
-      }
-     },
-  }
-
   return (
-    <m.section className={classes.home} variants={homeAnimation} initial='hidden' animate='visible' exit='exit'>
-      <Nav order={1} />
-      <MainHome order={0} />
-      <FooterHome order={2} />
+    <m.section className={classes.home} exit={{opacity: 0}} transition={{duration:2}}>
+      <Nav />
+      <MainHome />
+      <FooterHome />
     </m.section>
   );
 }

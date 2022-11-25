@@ -1,7 +1,7 @@
 import classes from './Band.module.scss';
 import { motion as m } from 'framer-motion';
 
-const Band = ({ gradient, start, end, text, order }) => {
+const Band = ({ gradient, start, end, text }) => {
 
     const style = {
         background: `linear-gradient(${gradient})`,
@@ -19,8 +19,7 @@ const Band = ({ gradient, start, end, text, order }) => {
             y: '0',
             transition: {
                 duration: .6,
-                ease: 'easeOut',
-                delay: order*.5
+                ease: 'easeOut'
             }
         },
     }
