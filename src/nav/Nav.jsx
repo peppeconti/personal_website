@@ -48,7 +48,6 @@ const Nav = ({ text }) => {
     const active = icons.filter(e => e.to === location.pathname);
     const inactive = icons.filter(e => e.to !== location.pathname);
 
-
     return (
       <header className={classes.header__pages}>
         <h1><span>{text}</span></h1>
