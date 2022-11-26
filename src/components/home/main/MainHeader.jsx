@@ -3,7 +3,7 @@ import Band from './Band';
 import Maze from './Maze';
 import { motion as m } from 'framer-motion';
 
-const MainHeader = ({ order }) => {
+const MainHeader = () => {
 
   const mainAnimation = {
     hidden: {
