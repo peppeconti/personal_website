@@ -1,7 +1,7 @@
 import { useId } from 'react';
 import { useLocation } from 'react-router-dom';
 import classes from './Nav.module.scss';
-import LinkIcon from './LinkIcon';
+import NavLink from './LinkIcon';
 import Menu from './Menu';
 import home from '../assets/home.svg'
 import envelope from '../assets/envelope-solid.svg';
@@ -40,16 +40,21 @@ const Nav = ({ text }) => {
         delayChildren: 4.5,
       } 
     },
+    exit: {
+      transition: {
+        staggerChildren: .3,
+      } 
+    }
   }
 
   if (location.pathname === '/') {
     return (
       <header className={classes.header__home}>
         <nav>
-          <m.ul variants={navAnimation} initial='hidden' animate='visible'>
-            <LinkIcon href='/about' source={info} alt='about page' isRoute />
-            <LinkIcon href='/portfolio' source={laptop} alt='portfolio page' isRoute />
-            <LinkIcon href='/contact' source={envelope} alt='contact page' isRoute />
+          <m.ul variants={navAnimation} initial='hidden' animate='visible' exit='exit'>
+            <NavLink href='/about' source={info} alt='about page' isRoute />
+            <NavLink href='/portfolio' source={laptop} alt='portfolio page' isRoute />
+            <NavLink href='/contact' source={envelope} alt='contact page' isRoute />
           </m.ul>
         </nav>
       </header>
@@ -64,9 +69,9 @@ const Nav = ({ text }) => {
         <h1><span>{text}</span></h1>
         <nav className={classes.desktop}>
           <ul>
-            <LinkIcon href={'/'} source={home} alt="home" isRoute />
-            {active.map(e => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} isRoute />)}
-            {inactive.map((e, i) => <LinkIcon key={e.id} href={e.to} source={e.icon} alt={e.alt} left={i === 0 ? true : false} isRoute />)}
+            <NavLink href={'/'} source={home} alt="home" isRoute />
+            {active.map(e => <NavLink key={e.id} href={e.to} source={e.icon} alt={e.alt} isRoute />)}
+            {inactive.map((e, i) => <NavLink key={e.id} href={e.to} source={e.icon} alt={e.alt} left={i === 0 ? true : false} isRoute />)}
           </ul>
         </nav>
         <Menu />

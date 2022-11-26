@@ -3,7 +3,7 @@ import Band from './Band';
 import Maze from './Maze';
 import { motion as m } from 'framer-motion';
 
-const MainHeader = ({order}) => {
+const MainHeader = ({ order }) => {
 
   const mainAnimation = {
     hidden: {
@@ -17,12 +17,20 @@ const MainHeader = ({order}) => {
         when: 'beforeChildren',
         staggerChildren: .5,
         staggerDirection: -1
-      } 
+      }
     },
+    exit: {
+      opacity: 0,
+      transition: {
+        when: 'afterChildren',
+        staggerChildren: .3,
+        delayChildren: .15
+      }
+    }
   }
 
   return (
-    <m.div className={classes.main__home} variants={mainAnimation} initial='hidden' animate='visible'>
+    <m.div className={classes.main__home} variants={mainAnimation} initial='hidden' animate='visible' exit='exit'>
       <Maze />
       <div className={classes.wrapper}>
         <Band text="Giuseppe Conti" start="1" end="2" gradient="270deg, #FF005C 0%, rgba(255, 0, 92, 0) 86.39%" />

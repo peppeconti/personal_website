@@ -30,6 +30,12 @@ const LinkIcon = ({ source, alt, href, isRoute, left }) => {
         delayChildren: .3
       }
     },
+    exit: {
+      scale: 0,
+      transition: {
+        duration: .3,
+      }
+    }
   }
 
   if (isRoute) {

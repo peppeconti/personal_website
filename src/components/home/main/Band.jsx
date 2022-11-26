@@ -22,6 +22,14 @@ const Band = ({ gradient, start, end, text }) => {
                 ease: 'easeOut'
             }
         },
+        exit: {
+            opacity: 0,
+            y: '70%',
+            transition: {
+                duration: .3,
+                ease: 'easeOut'
+            } 
+          }
     }
 
     return (
