@@ -12,7 +12,8 @@ const MainHeader = ({order}) => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 2,
+        delay: 1.5,
+        duration: 2.5,
         when: 'beforeChildren',
         staggerChildren: .5,
         staggerDirection: -1

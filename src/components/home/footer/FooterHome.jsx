@@ -12,7 +12,7 @@ const FooterHeader = () => {
     visible: {
       transition: {
         staggerChildren: .6,
-        delayChildren: 4.3,
+        delayChildren: 5.8,
         staggerDirection: -1
       } 
     },

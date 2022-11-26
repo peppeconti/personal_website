@@ -37,7 +37,7 @@ const Nav = ({ text }) => {
     visible: {
       transition: {
         staggerChildren: .6,
-        delayChildren: 3,
+        delayChildren: 4.5,
       } 
     },
   }

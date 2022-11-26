@@ -1,12 +1,12 @@
 import classes from './Maze.module.scss';
-import MazeSvg from './MazeSvg';
+import maze from '../../../assets/maze2.svg';
 
 const Maze = () => {
 
     return (
         <div className={classes.maze}>
             <figure>
-                <MazeSvg />
+                <img src={maze} alt='maze'/>
             </figure>
         </div>
     );
