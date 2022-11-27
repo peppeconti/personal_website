@@ -26,8 +26,8 @@ const LinkIcon = ({ source, alt, href, isRoute, left }) => {
     visible: {
       opacity: 1, rotateY: 0,
       transition: {
-        duration: .6,
-        delayChildren: .3
+        duration: .4,
+        delayChildren: .2
       }
     },
     exit: {

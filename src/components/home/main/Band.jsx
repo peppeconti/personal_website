@@ -18,7 +18,7 @@ const Band = ({ gradient, start, end, text }) => {
             opacity: 1,
             y: '0',
             transition: {
-                duration: .6,
+                duration: .3,
                 ease: 'easeOut'
             }
         },

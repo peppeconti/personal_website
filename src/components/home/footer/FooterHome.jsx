@@ -11,8 +11,8 @@ const FooterHeader = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: .6,
-        delayChildren: 5.8,
+        staggerChildren: .4,
+        delayChildren: 1.2,
         staggerDirection: -1
       } 
     },
