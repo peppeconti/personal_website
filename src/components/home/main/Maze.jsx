@@ -6,15 +6,13 @@ const Maze = () => {
 
     const mazeAnimation = {
         hidden: {
-            x: '-100vh',
-            rotateY: 270
+            scale: 0
         },
         visible: {
-            x: '0',
-            rotateY: 0,
+            scale: 1,
             transition: {
                 delay: .5,
-                duration: .8,
+                duration: .3,
             }
         },
         exit: {
