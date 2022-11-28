@@ -1,6 +1,7 @@
 import classes from './Portfolio.module.scss';
 import { motion as m } from 'framer-motion';
 import Nav from '../../nav/Nav';
+import ProfileImg from './main/ProjectImg';
 
 const Portfolio = () => {
 
@@ -27,6 +28,7 @@ const Portfolio = () => {
   return (
     <m.section className={classes.portfolio} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
       <Nav text='Portfolio' />
+      <ProfileImg />
     </m.section>
   );
 }
