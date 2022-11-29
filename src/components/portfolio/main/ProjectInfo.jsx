@@ -9,12 +9,9 @@ const ProjectInfo = ({ description }) => {
             x: '100vw',
         },
         visible: {
-            x: '-50px',
+            x: '0',
             transition: {
-                duration: 0.3,
-                type: 'spring',
-                damping: 25,
-                stiffness: 500,
+                duration: .3,
             },
         }
     };
