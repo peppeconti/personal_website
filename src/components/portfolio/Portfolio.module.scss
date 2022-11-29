@@ -7,9 +7,14 @@
     grid-gap: 2rem;
     grid-template-areas:
         'header'
-        'images' 
-        'description';
+        'main';
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 6fr;
+    grid-template-rows: 1fr 8fr;
 
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
 }

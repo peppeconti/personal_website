@@ -1,9 +1,9 @@
 .info {
-    grid-area: description;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
     background-color: black;
     font-size: 3rem;
+    flex-grow: 6;
 }

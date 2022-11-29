@@ -33,8 +33,10 @@ const Portfolio = () => {
   return (
     <m.section className={classes.portfolio} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
       <Nav text='Portfolio' />
-      <Projects data={data} setProject={setProject} activeProject={activeProject} />
-      <ProjectInfo description={activeProject.description}/>
+      <main className={classes.main}>
+        <Projects data={data} setProject={setProject} activeProject={activeProject} />
+        <ProjectInfo description={activeProject.description} />
+      </main>
     </m.section>
   );
 }
