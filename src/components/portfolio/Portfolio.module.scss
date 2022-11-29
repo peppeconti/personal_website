@@ -6,9 +6,10 @@
     display: grid;
     grid-gap: 2rem;
     grid-template-areas:
-        'header header'
-        'image description';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 7fr;
+        'header'
+        'images' 
+        'description';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr;
 
 }
