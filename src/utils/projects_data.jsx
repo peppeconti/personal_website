@@ -1,30 +1,40 @@
-import { m } from 'framer-motion';
 import connect__4 from '../assets/connect-4.jpg';
 
 export const data = [
     {
+        id: 1,
         name: 'Connect 4',
         img: connect__4,
-        description: 'lalallalalallalall',
+        description: '1',
         url: 'https://connect-four-4b5ca.web.app/'
 
     },
     {
+        id: 2,
         name: 'Simon',
         img: connect__4,
-        description: 'lalafkfdknjeed',
+        description: '2',
         url: 'https://connect-four-4b5ca.web.app/'
     },
     {
+        id: 3,
         name: 'HappyChat',
         img: connect__4,
-        description: 'jfjfjfncdwljjnd',
+        description: '3',
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
     },
     {
+        id: 4,
         name: 'Liber der Introductione Loquendi',
         img: connect__4,
-        description: 'lrordkjvn847474u4',
+        description: '4',
+        url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
+    },
+    {
+        id: 5,
+        name: 'Borges',
+        img: connect__4,
+        description: '5',
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
     }
 ];
