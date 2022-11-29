@@ -12,7 +12,7 @@ const Portfolio = () => {
 
   const exitPage = {
     hidden: {
-      opacity: 0,
+      opacity: 1,
     },
     visible: {
       opacity: 1,
