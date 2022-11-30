@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './ProjectImg.module.scss';
 
-const ProjectImg = ({ id, index, img, name, project, setProject, data }) => {
+const ProjectImg = ({ id, index, img, name }) => {
 
-    const active = {
+    /*const active = {
         opacity: '.5'
     };
 
@@ -11,13 +11,15 @@ const ProjectImg = ({ id, index, img, name, project, setProject, data }) => {
 
     const cc = () => {
         setProject(data[index])
-    }
+    }*/
 
     return (
-            <div id={id} className={classes.project} style={isActive} onClick={cc}>
-                <img src={img} alt={name} />
+            <div id={id} className={classes.project}>
+                
             </div>
     );
 }
 
 export default ProjectImg;
+
+/*<img src={img} alt={name} />*/
