@@ -15,7 +15,9 @@ const ProjectImg = ({ id, index, img, name }) => {
 
     return (
         <div id={id} className={classes.project}>
-            <img src={img} alt={name} />
+            <figure>
+                
+            </figure>
         </div>
     );
 }
