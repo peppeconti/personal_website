@@ -16,7 +16,14 @@
 .main {
     grid-area: main;
     display: grid;
-    grid-gap: 0rem 0;
+    grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+
+
+@media screen and (max-width: 680px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

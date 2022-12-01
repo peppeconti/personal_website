@@ -1,7 +1,6 @@
 .project {
     width: auto;
     height: auto;
-    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,9 +8,31 @@
     cursor: pointer;
 
     figure {
-        width: 90%;
-        height: 90%;
-        border: 1px solid red;
+        width: 22vh;
+        height: 22vh;
+        max-width: 180px;
+        max-height: 180px;
+        min-width: 132px;
+        min-height: 132px;
         overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            background-color: red;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .project {
+    
+        figure {
+            width: 18vh;
+            height: 18vh;
+        }
     }
 }
