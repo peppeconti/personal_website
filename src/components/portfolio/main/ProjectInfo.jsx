@@ -11,11 +11,14 @@ const ProjectInfo = ({ description }) => {
         visible: {
             x: '0',
             transition: {
-                duration: 2,
+                duration: .5,
             },
         },
         exit: {
-            x: '100vw'
+            x: '100vw',
+            transition: {
+                duration: .5,
+            },
         }
     };
 
