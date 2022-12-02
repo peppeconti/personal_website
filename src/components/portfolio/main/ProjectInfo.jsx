@@ -17,7 +17,7 @@ const ProjectInfo = ({ description }) => {
         exit: {
             x: '100vw',
             transition: {
-                duration: .5,
+                duration: 0,
             },
         }
     };
