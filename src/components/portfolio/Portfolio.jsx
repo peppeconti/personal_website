@@ -1,15 +1,14 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import classes from './Portfolio.module.scss';
 import { motion as m } from 'framer-motion';
 import Nav from '../../nav/Nav';
-import ProjectImg from './main/ProjectImg';
 import Projects from './main/Projects';
 import { data } from '../../utils/projects_data';
 import ProjectInfo from './main/ProjectInfo';
 
 const Portfolio = () => {
 
-  // const [activeProject, setProject] = useState(data[0]);
+  const [activeProject, setProject] = useState(data[0]);
 
   const exitPage = {
     hidden: {
@@ -35,8 +34,8 @@ const Portfolio = () => {
     <m.section className={classes.portfolio} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
       <Nav text='Portfolio' />
       <main className={classes.main}>
-        <Projects data={data} />
-        <ProjectInfo />
+        <Projects activeProject={activeProject} setProject={setProject} />
+        <ProjectInfo description={activeProject.description} />
       </main>
     </m.section>
   );

@@ -11,7 +11,7 @@ const ProjectInfo = ({ description }) => {
         visible: {
             x: '0',
             transition: {
-                duration: .5,
+                duration: 2,
             },
         },
         exit: {

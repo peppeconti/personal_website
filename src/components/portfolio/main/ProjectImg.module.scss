@@ -6,6 +6,8 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid white;
+    flex-grow: 1;
 
     figure {
         width: 8rem;

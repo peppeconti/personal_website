@@ -1,7 +1,8 @@
 import classes from './Projects.module.scss';
 import ProjectImg from './ProjectImg';
+import { data } from '../../../utils/projects_data';
 
-const Projects = ({ data }) => {
+const Projects = ({ activeProject, setProject  }) => {
 
     return (
         <div className={classes.projects}>
@@ -11,6 +12,8 @@ const Projects = ({ data }) => {
                 index={index}
                 img={project.img}
                 name={project.name}
+                activeProject={activeProject}
+                setProject={setProject}
             />)}
         </div>
     );

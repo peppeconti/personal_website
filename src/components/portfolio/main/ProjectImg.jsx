@@ -1,20 +1,23 @@
 import React from 'react';
 import classes from './ProjectImg.module.scss';
+import { data } from '../../../utils/projects_data';
 
-const ProjectImg = ({ id, index, img, name }) => {
+const ProjectImg = ({ id, index, img, name, setProject, activeProject }) => {
 
-    /*const active = {
+    const active = {
         opacity: '.5'
     };
 
-    const isActive = project.id === id ? active : undefined; 
+    const isActive = activeProject.id === id ? active : undefined; 
 
     const cc = () => {
+        console.log(data);
+        console.log(index);
         setProject(data[index])
-    }*/
+    }
 
     return (
-        <div id={id} className={classes.project}>
+        <div id={id} className={classes.project} style={isActive} onClick={cc}>
             <figure>
                 <img src={img} alt={name} />
             </figure>
