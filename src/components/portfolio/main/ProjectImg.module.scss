@@ -8,12 +8,8 @@
     cursor: pointer;
 
     figure {
-        width: 22vh;
-        height: 22vh;
-        max-width: 180px;
-        max-height: 180px;
-        min-width: 132px;
-        min-height: 132px;
+        width: 8rem;
+        height: 8rem;
         overflow: hidden;
         border-radius: 50%;
 
@@ -22,17 +18,6 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
-            background-color: red;
-        }
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .project {
-    
-        figure {
-            width: 18vh;
-            height: 18vh;
         }
     }
 }

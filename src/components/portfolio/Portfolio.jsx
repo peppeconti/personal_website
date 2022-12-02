@@ -3,9 +3,9 @@ import classes from './Portfolio.module.scss';
 import { motion as m } from 'framer-motion';
 import Nav from '../../nav/Nav';
 import ProjectImg from './main/ProjectImg';
-// import Projects from './main/Projects';
+import Projects from './main/Projects';
 import { data } from '../../utils/projects_data';
-// import ProjectInfo from './main/ProjectInfo';
+import ProjectInfo from './main/ProjectInfo';
 
 const Portfolio = () => {
 
@@ -35,13 +35,8 @@ const Portfolio = () => {
     <m.section className={classes.portfolio} variants={exitPage} initial='hidden' animate='visible' exit='exit'>
       <Nav text='Portfolio' />
       <main className={classes.main}>
-        {data.map((project, index) => <ProjectImg
-          key={project.id}
-          id={project.id}
-          index={index}
-          img={project.img}
-          name={project.name}
-        />)}
+        <Projects data={data} />
+        <ProjectInfo />
       </main>
     </m.section>
   );

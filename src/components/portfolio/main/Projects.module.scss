@@ -1,8 +1,6 @@
 .projects {
-    padding: 2rem 0;
-    height: 20%;
     border: 1px solid white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }

@@ -43,26 +43,5 @@ export const data = [
         img: connect__4,
         description: '2',
         url: 'https://connect-four-4b5ca.web.app/'
-    },
-    {
-        id: 7,
-        name: 'HappyChat',
-        img: connect__4,
-        description: '3',
-        url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
-    },
-    {
-        id: 8,
-        name: 'Liber der Introductione Loquendi',
-        img: connect__4,
-        description: '4',
-        url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
-    },
-    {
-        id: 9,
-        name: 'Borges',
-        img: connect__4,
-        description: '5',
-        url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1'
     }
 ];
