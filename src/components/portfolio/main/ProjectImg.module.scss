@@ -6,14 +6,14 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid white;
     flex-grow: 1;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.1) 0%, rgba(196, 196, 196, 0) 120%);
+    border-radius: 2rem;
 
     figure {
-        width: 8rem;
-        height: 8rem;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        border-radius: 50%;
 
         img {
             width: 100%;
