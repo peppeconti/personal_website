@@ -1,10 +1,11 @@
 import classes from './Home.module.scss';
+import Main from './Main';
 
 const Home = () => {
 
   return (
     <section className={classes.home}>
-      <h1>Ciccio</h1>
+      <Main />
     </section>
   );
 }
