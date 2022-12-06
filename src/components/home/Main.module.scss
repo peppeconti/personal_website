@@ -6,13 +6,21 @@
     align-items: center;
 
     div {
-        width: 45%;
+        width: 50%;
         height: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 4rem;
-        //border: 1px solid white;
+        border: 1px solid white;
+        align-items: center;
+
+        div {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
 
         h1 {
             font-size: 3.5rem;
@@ -34,7 +42,7 @@
 
 
     figure {
-        width: 55%;
+        width: 50%;
         height: inherit;
         //border: 1px solid white;
         display: flex;
