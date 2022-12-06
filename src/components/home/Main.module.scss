@@ -7,27 +7,39 @@
     border: 1px solid white;
 
     div {
+        height: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        //border: 1px solid white;
+        padding-left: 8%;
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 5.5rem;
+            padding: 1.5rem;
+            font-weight: 400;
+        }
+    
+        h2 {
+            opacity: .7;
+            font-size: 1.25rem;
+            padding: 1.5rem;
+            font-weight: 400;
+        }
     }
 
-    h1 {
-        font-size: 3.5rem;
-        line-height: 5.5rem;
-        padding: 1.5rem 5rem;
-        font-weight: 400;
-    }
-
-    h2 {
-        opacity: .7;
-        font-size: 1.25rem;
-        padding: 1.5rem 5rem;
-        font-weight: 400;
-    }
 
     figure {
-        padding: 5rem;
+        height: inherit;
+        padding-right: 8%;
+        //border: 1px solid white;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
