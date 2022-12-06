@@ -6,7 +6,11 @@ const Main = () => {
   return (
     <main className={classes.main}>
       <div>
-        <h1>Giuseppe Conti<br/>Web Developer<br/>Milan</h1>
+        <h1>
+            <p>Giuseppe Conti</p>
+            <p>Web Developer</p>
+            <p>Milan</p>
+        </h1>
         <h2>Front End Developer / Milan</h2>
       </div>
       <figure>
