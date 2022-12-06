@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid white;
+        //border: 1px solid white;
         align-items: center;
 
         div {
@@ -23,7 +23,7 @@
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 4.5vw;
             margin-bottom: 2rem;
             //border: 1px solid white;
 
@@ -34,7 +34,7 @@
 
         h2 {
             color: darken(#fff, 25%);
-            font-size: 1.25rem;
+            font-size: 1.5vw;
             padding-bottom: 3rem;
             border-bottom: 2px solid #FF4975;
         }
@@ -50,7 +50,7 @@
         justify-content: center;
 
         img {
-            width: 80%;
+            width: 85%;
         }
     }
 }
