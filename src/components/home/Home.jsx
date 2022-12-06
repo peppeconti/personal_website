@@ -1,12 +1,14 @@
 import classes from './Home.module.scss';
+import Nav from './Nav';
 import Main from './Main';
 
 const Home = () => {
 
   return (
-    <section className={classes.home}>
+    <header className={classes.home}>
+      <Nav />
       <Main />
-    </section>
+    </header>
   );
 }
 

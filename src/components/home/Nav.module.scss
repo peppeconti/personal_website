@@ -1,0 +1,25 @@
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            font-size: 2vw;
+            padding: 0 1.5rem;
+
+            span {
+                color: #FF4975;
+            }
+        }
+    }
+}
