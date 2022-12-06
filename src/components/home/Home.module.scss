@@ -1,12 +1,4 @@
 .home {
     height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8fr 13fr 8fr;
-    grid-template-areas:
-        'nav'
-        'main'
-        'footer'; 
+    background-color: #1d1d1d;
 }

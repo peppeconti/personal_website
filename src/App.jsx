@@ -1,9 +1,11 @@
-import AnimatedRoutes from "./AnimatedRoutes";
+import Home from './components/home/Home';
 
 function App() {
 
   return (
-    <AnimatedRoutes />
+    <div>
+      <Home />
+    </div>
   );
 }
 
