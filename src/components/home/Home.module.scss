@@ -1,4 +1,28 @@
 .home {
     height: 100vh;
     background-color: #1d1d1d;
+    padding: 5.5rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translate(0, -50%);
+        left: calc(5.5rem - 2px);
+        height: calc(100% - 11rem + 60px);
+        width: 2px;
+        background-color: #FF4975;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: calc(5.5rem - 2px);
+        transform: translate(-50%, 0);
+        height: 2px;
+        width: calc(100% - 11rem + 60px);
+        background-color: #FF4975;
+    }
 }
