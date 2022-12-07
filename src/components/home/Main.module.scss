@@ -54,31 +54,3 @@
         }
     }
 }
-
-
-
-
-
-
-/*&::after, &::before {
-    content: '';
-    position: absolute;
-    background-color: #FF4975;
-
-}
-
-&::after {
-    top: 50%;
-    left: 0;
-    width: .1rem;
-    height: calc(100% + 4rem);
-    transform: translate(0, -50%);
-}
-
-&::before {
-    left: 50%;
-    bottom: 0;
-    height: .1rem;
-    width: calc(100% + 4rem);
-    transform: translate(-50%, 0);
-}*/
