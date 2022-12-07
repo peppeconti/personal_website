@@ -15,16 +15,17 @@
                 display: block;
                 font-size: 5vw;
                 margin-bottom: 2rem;
-                font-weight: 300;
+                font-weight: 400;
+                text-shadow: 3px 3px 2px darken(#FF4975, 25%);
             }
         }
 
         .small {
             color: darken(#fff, 25%);
             font-size: 1.8vw;
-            font-weight: 300;
+            font-weight: 400;
             padding-bottom: 3rem;
-            border-bottom: 2px solid #FF4975;
+            border-bottom: 2px dotted #FF4975;
         }
     }
 }

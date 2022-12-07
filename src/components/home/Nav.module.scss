@@ -15,9 +15,12 @@
             list-style: none;
             font-size: 1.5rem;
             font-weight: 300;
+            text-shadow: 1px 1px 1px darken(#FF4975, 25%);
 
             span {
                 color: #FF4975;
+                text-shadow: none;
+                font-weight: 400;
             }
         }
     }
