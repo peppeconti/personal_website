@@ -6,7 +6,6 @@ const Home = () => {
 
   return (
     <header className={classes.home}>
-      <Nav />
       <Main />
     </header>
   );
