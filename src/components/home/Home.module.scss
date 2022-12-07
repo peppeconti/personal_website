@@ -6,3 +6,9 @@
     caret-color: transparent;
     position: relative;
 }
+
+@media screen and (max-width: 1000px) {
+    .home {
+        padding: 1rem;
+    }
+}
