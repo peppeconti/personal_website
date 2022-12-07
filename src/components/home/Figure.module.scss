@@ -17,10 +17,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: .5;
 
         img {
-            width: 90%;
+            width: auto;
+            height: 250px;
         }
     }
 }
