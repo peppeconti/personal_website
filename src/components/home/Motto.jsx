@@ -1,16 +1,16 @@
 import classes from './Motto.module.scss';
 
-const Motto = () => {
+const Motto = ({firstLine, secondLine, thirdLine, small}) => {
 
     return (
         <div className={classes.main}>
-            <div className={classes.wrapper}>
+            <div className={classes.col}>
                 <h1 className={classes.motto}>
-                    <span className={classes.line}>Giuseppe Conti</span>
-                    <span className={classes.line}>Web Developer</span>
-                    <span className={classes.line}>Milan</span>
+                    <span className={classes.line}>{firstLine}</span>
+                    <span className={classes.line}>{secondLine}</span>
+                    <span className={classes.line}>{thirdLine}</span>
                 </h1>
-                <h2 className={classes.small}>Front End Developer / Milan</h2>
+                <h2 className={classes.small}>{small}</h2>
             </div>
         </div>
     );

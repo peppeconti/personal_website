@@ -1,5 +1,5 @@
 import classes from './Home.module.scss';
-import Nav from './Nav';
+// import Nav from './Nav';
 import Main from './Main';
 
 const Home = () => {

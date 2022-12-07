@@ -1,11 +1,10 @@
 import classes from './Figure.module.scss';
-import laptop from '../../assets/laptop.svg';
 
-const Figure = () => {
+const Figure = ({image}) => {
 
     return (
         <figure className={classes.laptop}>
-            <img src={laptop} alt='laptop' />
+            <img src={image} alt='laptop' />
         </figure>
     );
 }
