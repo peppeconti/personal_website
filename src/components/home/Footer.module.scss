@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+
+    .social {
+        display: flex;
+        gap: 2.5rem;
+
+
+        li {
+            list-style: none;
+        }
+    }
+}

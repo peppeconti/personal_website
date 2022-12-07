@@ -1,6 +1,7 @@
 import classes from './Home.module.scss';
 import Nav from './Nav';
 import Main from './Main';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -8,6 +9,7 @@ const Home = () => {
     <header className={classes.home}>
       <Nav />
       <Main />
+      <Footer />
     </header>
   );
 }
