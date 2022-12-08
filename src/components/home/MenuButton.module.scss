@@ -21,13 +21,7 @@
 
     .menu {
         display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .menu[data-open="true"] {
-        justify-content: space-around !important;
-        align-items: center !important;
+        flex-direction: column !important;
     }
 
 }
