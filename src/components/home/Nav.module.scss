@@ -1,7 +1,12 @@
 .nav {
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
+
+    height: 5vh;
+    min-height: 3rem;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid white;
 
     ul {
         display: flex;
@@ -24,4 +29,8 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1000px) {
+    
 }

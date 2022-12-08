@@ -8,19 +8,13 @@
     img {
         width: 85%;
     }
+
+    p {
+        display: none;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    .laptop {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        img {
-            width: auto;
-            height: 250px;
-        }
-    }
+    
 }

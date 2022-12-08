@@ -1,14 +1,7 @@
 .home {
-    height: 100vh;
-    min-height: 600px;
     background-color: #1d1d1d;
-    padding: 2rem 4rem;
     caret-color: transparent;
-    position: relative;
 }
 
 @media screen and (max-width: 1000px) {
-    .home {
-        padding: 1rem;
-    }
 }
