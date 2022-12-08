@@ -9,17 +9,15 @@
     outline: none;
     display: none;
     cursor: pointer;
-    border: 1px solid white;
 
     .line {
         height: 5px;
         background-color: darken(#fff, 5%);
         border-radius: 30px;
         margin: 4px 0;
-        transition: .2s ease-out;
     }
 
-    .line:nth-child(1) {
+    /*.line:nth-child(1) {
         width: 70%;
     }
 
@@ -33,7 +31,7 @@
 
     .point {
         width: 5px !important;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1000px) {
