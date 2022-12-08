@@ -16,9 +16,9 @@ const MenuButton = () => {
             onClick={menuHandler}
             data-open={open}
         >
-            <motion.div className={classes.line} animate={open ? { width: '5px' } : { width: '70%' }}></motion.div>
-            <motion.div className={classes.line} animate={open ? { width: '5px' } : { width: '40%' }}></motion.div>
-            <motion.div className={classes.line} animate={open ? { width: '5px' } : { width: '90%' }}></motion.div>
+            <motion.div layout className={classes.line} animate={open ? { width: '5px', margin: '0' } : { width: '70%', margin: '4px 0' }}></motion.div>
+            <motion.div layout className={classes.line} animate={open ? { width: '5px', margin: '0' } : { width: '40%', margin: '4px 0' }}></motion.div>
+            <motion.div layout className={classes.line} animate={open ? { width: '5px', margin: '0' } : { width: '90%', margin: '4px 0' }}></motion.div>
         </motion.button>
     );
 }
