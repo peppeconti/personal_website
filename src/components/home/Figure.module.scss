@@ -20,11 +20,23 @@
     .laptop {
         width: 100%;
         margin-bottom: 3rem;
+        position: relative;
 
         img {
             width: 530px;
             padding-bottom: 3rem;
-            border-bottom: 2px solid #FF4975;
+
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 0;
+            height: 2px;
+            width: 630px;
+            background-color: #FF4975;
         }
     }
 
