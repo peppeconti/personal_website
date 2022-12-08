@@ -1,0 +1,47 @@
+.menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 2.7rem;
+    width: 2.7rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: none;
+    cursor: pointer;
+    border: 1px solid white;
+
+    .line {
+        height: 5px;
+        background-color: darken(#fff, 5%);
+        border-radius: 30px;
+        margin: 4px 0;
+        transition: .2s;
+    }
+
+    .line:nth-child(1) {
+        width: 70%;
+    }
+
+    .line:nth-child(2) {
+        width: 40%;
+    }
+
+    .line:nth-child(3) {
+        width: 90%;
+    }
+
+    .point {
+        width: 5px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
