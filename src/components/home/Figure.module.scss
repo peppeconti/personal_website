@@ -16,5 +16,16 @@
 }
 
 @media screen and (max-width: 1000px) {
-    
+
+    .laptop {
+        width: 100%;
+        margin-bottom: 3rem;
+
+        img {
+            width: 530px;
+            padding-bottom: 3rem;
+            border-bottom: 2px solid #FF4975;
+        }
+    }
+
 }
