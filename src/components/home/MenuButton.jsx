@@ -12,8 +12,10 @@ const MenuButton = () => {
 
     return (
         <motion.button
+            layout
             className={classes.menu}
             onClick={menuHandler}
+            animate={open ? { rotateZ: 90 } : { rotateZ: 0 }}
             data-open={open}
         >
             <motion.div layout className={classes.line} animate={open ? { width: '5px', margin: '0' } : { width: '70%', margin: '4px 0' }}></motion.div>
