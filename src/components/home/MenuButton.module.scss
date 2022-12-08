@@ -4,10 +4,10 @@
     right: 1.5rem;
     height: 2.7rem;
     width: 2.7rem;
-    border: none;
+    border: 1px solid white;
     background-color: transparent;
     outline: none;
-    display: none;
+    display: none !important;
     cursor: pointer;
 
     .line {
@@ -16,30 +16,20 @@
         border-radius: 30px;
         margin: 4px 0;
     }
-
-    /*.line:nth-child(1) {
-        width: 70%;
-    }
-
-    .line:nth-child(2) {
-        width: 40%;
-    }
-
-    .line:nth-child(3) {
-        width: 90%;
-    }
-
-    .point {
-        width: 5px !important;
-    }*/
 }
 
 @media screen and (max-width: 1000px) {
 
     .menu {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .menu[data-open="true"] {
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
     }
 
 }
