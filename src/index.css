@@ -6,22 +6,3 @@
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
 }
-
-body {
-  overflow: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 1.5rem;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #5d747e;
-  border-radius: 20px;
-  border: .5rem solid transparent;
-  background-clip: content-box;
-}
