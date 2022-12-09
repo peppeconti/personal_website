@@ -1,14 +1,14 @@
-import React from 'react';
+import classes from './App.module.scss';
 import Home from './components/home/Home';
 import About from './components/about/About';
 
 function App() {
 
   return (
-    <React.Fragment>
+    <div className={classes.App}>
       <Home />
       <About />
-    </React.Fragment>
+    </div>
   );
 }
 

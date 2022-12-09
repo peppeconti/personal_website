@@ -5,7 +5,9 @@
     flex-direction: column;
     background-color: #1d1d1d;
     caret-color: transparent;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: -1;
 }
 
 @media screen and (max-width: 1000px) {
