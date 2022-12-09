@@ -1,0 +1,17 @@
+.wrapper {
+    height: 50%;
+    display: flex;
+    align-items: center;
+
+    .image {
+        width: 50%;
+        height: 100%;
+        background-color: #FF4975;
+        border-radius: 2rem;
+    }
+
+    .skills {
+        width: 50%;
+        height: 100%;
+    }
+}
