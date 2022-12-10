@@ -1,21 +1,15 @@
 import { useRef } from 'react';
 import classes from './Infos.module.scss';
+import about from '../../assets/laptop.svg';
 import { motion, useScroll } from 'framer-motion';
 
 const Infos = () => {
 
-    //const { scrollYProgress } = useScroll();
-
-    const scrollRef = useRef(null)
-
     return (
-        <article ref={scrollRef} className={classes.infos}>
-            <motion.div
-                className={classes.image}
-                initial={{ x: '-100%' }}
-                whileInView={{ x: '0%' }}
-                viewport={{ root: scrollRef }}
-            >About me</motion.div>
+        <article className={classes.infos}>
+            <div className={classes.image}>
+                <img src={about} alt='about me'/>
+            </div>
             <div className={classes.curriculum}></div>
         </article>
     );
