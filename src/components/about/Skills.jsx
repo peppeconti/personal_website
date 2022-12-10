@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <article className={classes.wrapper}>
            <div className={classes.skills}></div>
-           <div className={classes.image}></div>
+           <div className={classes.image}>Skills</div>
         </article>
     );
 }
