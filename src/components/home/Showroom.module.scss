@@ -1,4 +1,4 @@
-.about {
+.showroom {
     list-style: none;
     height: 90%;
     flex-grow: 1;
@@ -30,9 +30,11 @@
         height: 100%;
         background-color: darken(#FF498C, 15%);
         transition: .5s;
+        border-radius: 10rem;
     }
 
     .right {
+        border-radius: 20px;
         flex-grow: 1;
         height: 100%;
         display: flex;

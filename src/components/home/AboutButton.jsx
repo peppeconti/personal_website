@@ -4,9 +4,9 @@ const AboutButton = () => {
 
     return (
         <li className={classes.about}>
-            <span className={classes.left}></span>
-            <span className={classes.right}></span>
-            <p>About</p>
+            <div className={classes.left}/>
+            <div className={classes.right}/>
+            <p><span>A</span>bout me</p>
         </li>
     );
 }
