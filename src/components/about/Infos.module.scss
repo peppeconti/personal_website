@@ -8,17 +8,18 @@
         width: 50%;
         height: 100%;
         background-color: inherit;
+        border: 3px solid #FF4975;
+        font-size: 4.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        img {
-            width: 70%;
-        }
+        border-radius: 2rem;
     }
 
     .curriculum {
         width: 50%;
         height: 100%;
+        background-color: #424242;
+        border-radius: 5rem;
     }
 }
