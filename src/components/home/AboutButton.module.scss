@@ -1,0 +1,51 @@
+.about {
+    list-style: none;
+    height: 90%;
+    background-color: #1d1d1d;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: .25rem;
+    cursor: pointer;
+
+    p {
+        position: absolute;
+        font-size: 3rem;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 2s;
+    }
+
+    .left {
+        flex-grow: 1;
+        height: 100%;
+        background-color: darken(#FF498C, 15%);
+        transition: 1s;
+    }
+
+    .right {
+        flex-grow: 1;
+        height: 100%;
+        background-color: #FF498C;
+        transition: 1s;
+    }
+
+    &:hover p {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &:hover .left {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    &:hover .right {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
