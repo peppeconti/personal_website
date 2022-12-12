@@ -3,10 +3,6 @@
     height: 90%;
     flex-grow: 1;
     position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    gap: .25rem;
     cursor: pointer;
 
     p {
@@ -26,23 +22,26 @@
     }
 
     .left {
-        flex-grow: 1;
-        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        aspect-ratio: 1/1;
+        height: 90%;
         background-color: darken(#FF498C, 15%);
         transition: .5s;
-        border-radius: 10rem;
+        border-radius: 50%;
+        z-index: 10;
     }
 
     .right {
-        border-radius: 20px;
-        flex-grow: 1;
+        position: absolute;
+        border-radius: 10rem;
+        width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: #FF498C;
         transition: .5s;
-        position: relative;
+        border: 3px solid #1d1d1d;
     }
 
     &:hover p {
@@ -51,12 +50,11 @@
     }
 
     &:hover .left {
-        transform: translateX(100%);
+        transform: translateX(100%) translateY(-50%);
         opacity: 0;
     }
 
     &:hover .right {
-        transform: translateX(-100%);
         opacity: 0;
     }
 }
