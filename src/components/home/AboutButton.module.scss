@@ -17,21 +17,21 @@
         left: 50%;
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
-        transition: 2s;
+        transition: .5s;
     }
 
     .left {
         flex-grow: 1;
         height: 100%;
         background-color: darken(#FF498C, 15%);
-        transition: 1s;
+        transition: .5s;
     }
 
     .right {
         flex-grow: 1;
         height: 100%;
         background-color: #FF498C;
-        transition: 1s;
+        transition: .5s;
     }
 
     &:hover p {
