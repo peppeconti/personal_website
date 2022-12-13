@@ -2,7 +2,9 @@
     list-style: none;
     height: 90%;
     flex-grow: 1;
+    overflow: hidden;
     position: relative;
+    border-radius: 10rem;
     cursor: pointer;
 
     p {
@@ -23,25 +25,24 @@
 
     .left {
         position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-        height: 90%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
+        top: 0;
         background-color: darken(#FF498C, 15%);
+        border-radius: inherit;
+        border: .5rem solid #FF498C;
+        z-index: 2;
+        transform: translateX(-50%);
         transition: .5s;
-        border-radius: 50%;
-        z-index: 10;
     }
 
     .right {
         position: absolute;
-        border-radius: 10rem;
+        border-radius: inherit;
         width: 100%;
         height: 100%;
         background-color: #FF498C;
         transition: .5s;
-        border: 3px solid #1d1d1d;
     }
 
     &:hover p {
@@ -50,7 +51,7 @@
     }
 
     &:hover .left {
-        transform: translateX(100%) translateY(-50%);
+        transform: translateX(0);
         opacity: 0;
     }
 

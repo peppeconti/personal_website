@@ -1,12 +1,16 @@
 .nav {
     height: 40vh;
     padding: 0 3rem;
+    display: flex;
+    align-items: center;
   
     ul {
-        height: 100%;
+        height: 230px;
         width: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 3rem;
+        flex-wrap: wrap;
     }
 }
