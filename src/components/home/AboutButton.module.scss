@@ -16,8 +16,8 @@
         text-align: center;
         top: 50%;
         left: 50%;
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
         transition: .5s;
         z-index: 0;
 
@@ -32,6 +32,7 @@
         background-color: darken(#FF498C, 15%);
         transition: .5s;
         z-index: 1;
+        border-right: 4px solid #1d1d1d;
     }
 
     .right {
@@ -43,7 +44,13 @@
         background-color: #FF498C;
         transition: .5s;
         position: relative;
+        border-left: 4px solid #1d1d1d;
         z-index: 1;
+    }
+
+    &:hover p {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 
     &:hover .left {
