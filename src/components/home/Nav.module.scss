@@ -1,5 +1,5 @@
 .nav {
-    height: 40vh;
+    flex-grow: 1;
     padding: 0 3rem;
     display: flex;
     align-items: center;
@@ -12,5 +12,15 @@
         align-items: center;
         gap: 3rem;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        padding: 0rem;
+      
+        ul {
+            gap: 2rem;
+        }
     }
 }

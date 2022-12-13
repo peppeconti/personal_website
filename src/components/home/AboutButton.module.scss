@@ -63,3 +63,12 @@
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .about {
+        
+        p {
+            font-size: 2.8rem;
+        }
+    }
+}

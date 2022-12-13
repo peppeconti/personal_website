@@ -1,6 +1,7 @@
 import classes from './Nav.module.scss';
 import AboutButton from './AboutButton';
 import Showroom from './Showroom';
+import Contact from './Contact';
 
 const Nav = () => {
 
@@ -9,7 +10,7 @@ const Nav = () => {
             <ul>
                 <AboutButton />
                 <Showroom />
-                <AboutButton />
+                <Contact />
             </ul>
         </nav>
     );
