@@ -10,8 +10,8 @@ const Nav = () => {
         <nav className={classes.nav}>
             <ul>
                 <Link text='About me' target='#about' />
-                <Link text='Showroom' target='#showroom' />
-                <Link text='Contact' target='#contact' />
+                <Link text='Showroom' target='#showroom' layout='round' />
+                <Link text='Contact' target='#contact' layout='vertical' />
             </ul>
         </nav>
     );
