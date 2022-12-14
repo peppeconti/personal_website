@@ -1,0 +1,19 @@
+.skill {
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .bar {
+        background-color: lighten(#FF498C, 15%);
+        height: 20px;
+        border-radius: 2rem;
+
+        .filling {
+            background-color: darken(#FF498C, 15%);
+            border-radius: inherit;
+            height: 100%;
+        }
+    }
+}
