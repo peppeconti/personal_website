@@ -1,16 +1,31 @@
 import classes from './SingleSkill.module.scss';
+import { motion as m } from 'framer-motion';
 
 const SingleSkill = ({ name, percentage }) => {
 
-    const size = {
-        width: percentage
+    const filling = {
+        hidden: {
+            width: 0
+        },
+        visible: {
+            width: percentage,
+            transition: {
+                duration: 1
+            }
+        }
     }
 
     return (
         <div className={classes.skill}>
             <h3>{name}</h3>
             <div className={classes.bar}>
-                <div className={classes.filling} style={size} />
+                <m.div
+                    className={classes.filling}
+                    variants={filling}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                />
             </div>
         </div>
     );
