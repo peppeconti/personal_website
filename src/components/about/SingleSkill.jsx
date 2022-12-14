@@ -10,7 +10,7 @@ const SingleSkill = ({ name, percentage }) => {
         visible: {
             width: percentage,
             transition: {
-                duration: 1
+                duration: 1.25
             }
         }
     }
