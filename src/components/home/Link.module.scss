@@ -101,22 +101,22 @@
     }
 
     &:hover .left {
-        transform: translateX(100%);
-        opacity: 0;
+        transform: translateX(100%) !important;
+        opacity: 0 !important;
     }
 
     &:hover .right {
-        transform: translateX(-100%);
-        opacity: 0;
+        transform: translateX(-100%) !important;
+        opacity: 0 !important;
     }
 
     &:hover .top {
-        transform: translateY(100%);
-        opacity: 0;
+        transform: translateY(100%) !important;
+        opacity: 0 !important;
     }
 
     &:hover .bottom {
-        transform: translateY(-100%);
-        opacity: 0;
+        transform: translateY(-100%) !important;
+        opacity: 0 !important;
     }
 }

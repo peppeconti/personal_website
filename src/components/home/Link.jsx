@@ -1,4 +1,5 @@
 import classes from './Link.module.scss';
+import { motion as m } from 'framer-motion';
 
 const Link = ({ target, text, layout }) => {
 
@@ -17,13 +18,70 @@ const Link = ({ target, text, layout }) => {
         classListRight = [classes.vertical, classes.bottom].join(' ');
     };
 
+    const opening = {
+        hidden: {},
+        visible: {}
+    }
+
+    const openLeft = {
+        hidden: {opacity: 0, x: '100%'},
+        visible: {
+            opacity: 1,
+            x: '0%',
+            transition: {
+                type: 'normal',
+                ease: 'linear',
+                duration: .2
+            }
+        }
+    }
+
+    const openRight = {
+        hidden: {opacity: 0, x: '-100%'},
+        visible: {
+            opacity: 1,
+            x: '0%',
+            transition: {
+                type: 'normal',
+                ease: 'linear',
+                duration: .2
+            }
+        }
+    }
+
+    const openTop = {
+        hidden: {opacity: 0, y: '100%'},
+        visible: {
+            opacity: 1,
+            y: '0%',
+            transition: {
+                type: 'normal',
+                ease: 'linear',
+                duration: .2
+            }
+        }
+    }
+
+    const openBottom = {
+        hidden: {opacity: 0, y: '-100%'},
+        visible: {
+            opacity: 1,
+            y: '0%',
+            transition: {
+                type: 'normal',
+                ease: 'linear',
+                duration: .2
+            }
+        }
+    }
+
     return (
         <a className={classes.anchor} href={target}>
-            <li className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
-                <div className={classListLeft}/>
-                <div className={classListRight}/>
+            <m.li variants={opening} className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
+                <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft}/>
+                <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight}/>
                 <p>{letters}</p>
-            </li>
+            </m.li>
         </a>
     );
 }
