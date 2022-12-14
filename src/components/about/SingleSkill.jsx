@@ -25,7 +25,9 @@ const SingleSkill = ({ name, percentage }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                />
+                >
+                    <span className={classes.tooltip}>{percentage}</span>
+                </m.div>
             </div>
         </div>
     );
