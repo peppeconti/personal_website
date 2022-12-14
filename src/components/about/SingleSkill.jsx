@@ -3,7 +3,7 @@ import { motion as m } from 'framer-motion';
 
 const SingleSkill = ({ name, percentage }) => {
 
-    const filling = {
+    const fillingAnimation = {
         hidden: {
             width: 0
         },
@@ -17,11 +17,11 @@ const SingleSkill = ({ name, percentage }) => {
 
     return (
         <div className={classes.skill}>
-            <h3>{name}</h3>
+            <h3 className={classes.name}>{name}</h3>
             <div className={classes.bar}>
                 <m.div
                     className={classes.filling}
-                    variants={filling}
+                    variants={fillingAnimation}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
