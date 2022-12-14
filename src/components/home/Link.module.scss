@@ -1,0 +1,44 @@
+.anchor {
+
+    height: 90%;
+    flex-grow: 1;
+
+    .link {
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border: 1px solid white;
+
+        p {
+            position: absolute;
+            font-size: 3rem;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+            transition: .5s;
+            z-index: 0;
+
+            span {
+                color: #FF498C;
+            }
+        }
+    }
+
+    &:hover .link p {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &:hover .link .left {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

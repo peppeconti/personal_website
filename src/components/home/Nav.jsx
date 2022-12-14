@@ -1,16 +1,17 @@
 import classes from './Nav.module.scss';
-import AboutButton from './AboutButton';
-import Showroom from './Showroom';
-import Contact from './Contact';
+import Link from './Link';
+// import AboutButton from './AboutButton';
+//import Showroom from './Showroom';
+//import Contact from './Contact';
 
 const Nav = () => {
 
     return (
         <nav className={classes.nav}>
             <ul>
-                <AboutButton />
-                <Showroom />
-                <Contact />
+                <Link text='About me' target='#about' />
+                <Link text='Showroom' target='#showroom' />
+                <Link text='Contact' target='#contact' />
             </ul>
         </nav>
     );
