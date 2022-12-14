@@ -1,14 +1,22 @@
 .infos {
-    padding: 0 3rem;
+    padding: 0 10rem;
+    margin: 2rem 0 4rem 0;
+    
 
     h1 {
         font-size: 3.3rem;
         text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        line-height: 3rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .infos {
-        padding: 0;
+        padding: 0 6rem;
     }
 }

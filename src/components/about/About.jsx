@@ -5,7 +5,7 @@ import Infos from './Infos';
 const About = () => {
 
     return (
-        <section className={classes.about}>
+        <section id='about' className={classes.about}>
             <Infos />
         </section>
     );
