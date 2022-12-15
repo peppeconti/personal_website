@@ -1,0 +1,12 @@
+.showroom {
+    height: auto;
+    caret-color: transparent;
+    background-color: #1d1d1d;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+    .showroom {
+        padding: 1rem
+    }
+}

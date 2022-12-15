@@ -1,4 +1,4 @@
-.home {
+.header {
     height: 100vh;
     min-height: 600px;
     padding: 2rem;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .home {
+    .header {
         padding: 1rem
     }
 }
