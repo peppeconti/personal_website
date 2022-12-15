@@ -1,6 +1,10 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="90" fill="#D03A71"/>
-<path d="M16 90C16 49.1309 49.1309 16 90 16V16C130.869 16 164 49.1309 164 90V90C164 130.869 130.869 164 90 164V164C49.1309 164 16 130.869 16 90V90Z" fill="#A72756"/>
-<path d="M31 90C31 57.4152 57.4152 31 90 31V31C122.585 31 149 57.4152 149 90V90C149 122.585 122.585 149 90 149V149C57.4152 149 31 122.585 31 90V90Z" fill="#721B3B"/>
-<path d="M45 90C45 65.1472 65.1472 45 90 45V45C114.853 45 135 65.1472 135 90V90C135 114.853 114.853 135 90 135V135C65.1472 135 45 114.853 45 90V90Z" fill="#521229"/>
+<svg width="249" height="166" viewBox="0 0 249 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:screen">
+<circle cx="166" cy="83" r="79.5" fill="#FF498C"/>
+<circle cx="166" cy="83" r="79.5" stroke="#AEAEAE" stroke-width="7"/>
+</g>
+<g style="mix-blend-mode:screen">
+<circle cx="83" cy="83" r="79.5" fill="#C70049"/>
+<circle cx="83" cy="83" r="79.5" stroke="#AEAEAE" stroke-width="7"/>
+</g>
 </svg>

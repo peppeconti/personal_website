@@ -6,7 +6,7 @@ const Showroom = () => {
 
     return (
         <section id='showroom' className={classes.showroom}>
-            {projects.map(e => <Project key={e.id} />)}
+            {projects.map(e => <Project key={e.id} name={e.name} description={e.description} />)}
         </section>
     );
 }

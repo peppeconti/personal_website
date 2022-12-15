@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import classes from './Project.module.scss';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
 
-const Project = () => {
+const Project = ({ name, description, url }) => {
 
     const scrollRef = useRef(null)
 
@@ -27,8 +27,12 @@ const Project = () => {
     return (
         <article ref={scrollRef} className={classes.project}>
             <div className={classes.extension} />
-            <m.div style={{ x: openLeft }} viewport={{ root: scrollRef }} className={classes.description} />
-            <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name} />
+            <m.div style={{ x: openLeft }} viewport={{ root: scrollRef }} className={classes.description}>
+                <p>{description}</p>
+            </m.div>
+            <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
+                <h3>{name}</h3>
+            </m.div>
         </article>
     );
 }
