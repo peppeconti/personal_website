@@ -6,7 +6,15 @@ const Showroom = () => {
 
     return (
         <section id='showroom' className={classes.showroom}>
-            {projects.map(e => <Project key={e.id} name={e.name} description={e.description} />)}
+            {projects.map(e => <Project
+                key={e.id}
+                title={e.title}
+                subtitle={e.subtitle}
+                description={e.description}
+                keywords={e.keywords}
+                url={e.url}
+                repository={e.repository}
+            />)}
         </section>
     );
 }

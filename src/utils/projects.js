@@ -1,7 +1,8 @@
 export const data = [
     {
         id: 1,
-        name: 'Connect 4',
+        title: 'Connect 4',
+        subtitle: 'a classic game',
         description: 'A version of the classical game',
         keywords: ['2D Array', 'React'],
         url: 'https://connect-four-4b5ca.web.app/',
@@ -10,7 +11,8 @@ export const data = [
     },
     {
         id: 2,
-        name: 'Simon',
+        title: 'Simon',
+        subtitle: 'a memory game by Hasbro',
         description: 'A React version of the vintage memory game',
         keywords: ['Memory Game', 'React'],
         url: 'https://connect-four-4b5ca.web.app/',
@@ -18,7 +20,8 @@ export const data = [
     },
     {
         id: 3,
-        name: 'Liber de introductione loquendi',
+        title: 'Ms. Clm 16126',
+        subtitle: 'a digital edition',
         description: 'A digital edition of the manuscript Clm 16126 of the Bayerische Staatsbibliothek of Munich based on the TEI-XML format',
         keywords: ['Digital Humanities', 'Angular', 'TEI-XML'],
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1',
