@@ -1,0 +1,24 @@
+.project {
+    position: relative;
+    margin-bottom: 4rem;
+    height: 12rem;
+
+    .description, .name {
+        position: absolute;
+        height: 100%;
+        width: 55%;
+        top: 0;
+        border-radius: 10rem;
+    }
+
+    .description {
+        background-color: #FF498C;
+        border-radius: 10rem 0 0 10rem;
+        left: 0;
+    }
+
+    .name {
+        background-color: darken(#FF498C, 20%);
+        right: 0;
+    }
+}

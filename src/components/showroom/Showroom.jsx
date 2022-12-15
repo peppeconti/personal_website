@@ -5,7 +5,9 @@ const Showroom = () => {
 
     return (
         <section id='showroom' className={classes.showroom}>
-           
+            <Project />
+            <Project />
+            <Project />
         </section>
     );
 }
