@@ -32,10 +32,17 @@
         right: 0;
 
         figure {
+            position: absolute;
+            top: 50%;
+            left: 3rem;
+            transform: translateY(-50%); 
             height: 80px;
             width: 80px;
-            background-color: white;
             border-radius: 50%;
+
+            img {
+                width: 100%;
+            }
         }
 
         .title {
@@ -45,10 +52,10 @@
             h3 {
                 font-size: 3rem;
                 text-align: center;
-                padding: 1rem;
+                padding: .5rem;
                 position: relative;
 
-                &::after {
+                /*&::after {
                     content: '';
                     position: absolute;
                     bottom: 0;
@@ -58,13 +65,13 @@
                     height: 1px;
                     background-color: #fff;
                     filter: blur(.09rem);
-                }
+                }*/
             }
     
             h4 {
                 font-size: 1.2rem;
                 text-align: center;
-                padding: 1.5rem;
+                padding: .5rem;
                 color: darken(#fff, 10%);
             }
 

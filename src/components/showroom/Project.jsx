@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import classes from './Project.module.scss';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
 
-const Project = ({ title, subtitle, description, url, repository, keywords }) => {
+const Project = ({ title, subtitle, logo, description, url, repository, keywords }) => {
 
     const scrollRef = useRef(null)
 
@@ -31,6 +31,9 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
                 <p>{description}</p>
             </m.div>
             <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
+                <figure>
+                    <img src={logo} alt='project logo'/>
+                </figure>
                 <div className={classes.title}>
                     <h3>{title}</h3>
                     <h4>{subtitle}</h4>
