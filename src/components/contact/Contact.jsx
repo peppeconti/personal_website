@@ -7,7 +7,6 @@ const Contact = () => {
   return (
     <section className={classes.contact}>
       <Form />
-      <Footer />
     </section>
   );
 }
