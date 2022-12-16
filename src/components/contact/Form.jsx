@@ -11,7 +11,7 @@ const Form = () => {
 
         emailjs.sendForm(
             process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATR_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
             form.current,
             process.env.REACT_APP_USER_ID)
             .then((result) => {
