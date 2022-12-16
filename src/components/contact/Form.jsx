@@ -25,7 +25,7 @@ const Form = () => {
         <div className={classes.wrapper}>
             <h1>Contact</h1>
             <form ref={form} onSubmit={sendEmail} className={classes.form}>
-                <div>
+                <div className={classes.flex}>
                     <div className={classes.group}>
                         <label htmlFor='user_name'>Name</label>
                         <input type='text' name='user_name' />
@@ -40,7 +40,7 @@ const Form = () => {
                     <textarea name='message' />
                 </div>
                 <div className={classes.group}>
-                    <button type='submit'>Submit</button>
+                    <button type='submit'>SEND</button>
                 </div>
             </form>
         </div>
