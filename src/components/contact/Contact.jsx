@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Contact = () => {
 
   return (
-    <section className={classes.contact}>
+    <section id='contact' className={classes.contact}>
       <Form />
     </section>
   );
