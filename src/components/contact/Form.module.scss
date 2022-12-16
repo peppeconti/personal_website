@@ -1,9 +1,48 @@
 .form {
     width: 70%;
-    border: 1px solid white;
-    height: 300px;
-    
-    input, textarea {
-        color: #1d1d1d;
+    // border: 1px solid white;
+    padding: 0 4rem;
+
+    .group {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            color: #1d1d1d;
+            margin-bottom: 2rem;
+            outline: none;
+            caret-color: #1d1d1d;
+            border-radius: 2rem;
+            border: none;
+        } 
+
+        label {
+            font-size: 1.3rem;
+            padding: .75rem .5rem;
+        }
+
+        input {
+            height: 2.5rem;
+            padding: .5rem 1rem;
+        }
+
+        textarea {
+            border-radius: 1.5rem;
+            padding: 1rem;
+            height: 10rem;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: .7rem 0;
+            font-size: 1.5rem;
+            background-color: red;
+            outline: none;
+            border-radius: 2rem;
+            border: none;
+            cursor: pointer;
+        }
     }
-} 
+}
