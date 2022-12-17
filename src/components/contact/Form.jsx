@@ -27,7 +27,7 @@ const ContactForm = () => {
         <div className={classes.wrapper}>
             <h1>Contact me</h1>
             <Formik
-                initialValues={{ user_email: '' }}
+                initialValues={{ user_email: '', user_name: '', subject: '', message: '', }}
                 validate={values => {
                     const errors = {};
                     if (!values.user_email) {
@@ -39,6 +39,9 @@ const ContactForm = () => {
                     }
                     if (!values.user_name) {
                         errors.user_name = 'Required';
+                    }
+                    if (!values.message) {
+                        errors.message = 'Required';
                     }
                     return errors;
                 }}
@@ -53,17 +56,22 @@ const ContactForm = () => {
                     isSubmitting
                 }) => (
                     <Form className={classes.form}>
-                        <div className={classes.input}>
-                            <Field className={classes.text} type="text" name="user_name" placeholder='your name' />
-                            <ErrorMessage className={classes.err} name="user_name" component='div' />
+                        <div className={classes.row}>
+                            <div className={classes.input}>
+                                <Field className={classes.text} type="text" name="user_name" placeholder='your name' />
+                                <ErrorMessage className={classes.err} name="user_name" component='div' />
+                            </div>
+                            <div className={classes.input}>
+                                <Field className={classes.text} type="email" name="user_email" placeholder='your@email.com' />
+                                <ErrorMessage className={classes.err} name="user_email" component='div' />
+                            </div>
                         </div>
                         <div className={classes.input}>
-                            <Field className={classes.text} type="email" name="user_email" placeholder='your@email.com' />
-                            <ErrorMessage className={classes.err} name="user_email" component='div' />
+                            <Field className={classes.text} type="text" name="subject" placeholder='subject' />
                         </div>
                         <div className={classes.input}>
-                            <Field className={classes.text} type="subject" name="subject" placeholder='subject' />
-                            <ErrorMessage className={classes.err} name="subject" component='div' />
+                            <Field className={classes.message} as='textarea' type="text" name="message" placeholder='your message' />
+                            <ErrorMessage className={classes.err} name="message" component='div' />
                         </div>
                         <button type="submit" disabled={isSubmitting}>
                             Submit
