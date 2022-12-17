@@ -9,6 +9,37 @@
         margin-bottom: 4rem;
     }
 
+    .form {
+
+        .row {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .input {
+
+            position: relative;
+
+            .text,
+            .message {
+                width: 100%;
+                color: #1d1d1d;
+                caret-color: #1d1d1d;
+                margin-bottom: 2rem;
+                padding: 1rem;
+                outline: none;
+                border: none;
+                font-size: 1.1rem;
+                overflow: hidden;
+            }
+
+            .message {
+                resize: none;
+            }
+
+        }
+    }
+
     button {
         width: 100%;
         padding: .7rem 0;
