@@ -2,14 +2,12 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import classes from './Form.module.scss';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import Input from './Input';
 
 const ContactForm = () => {
 
     const form = useRef();
 
     const sendEmail = (e) => {
-        e.preventDefault();
 
         emailjs.sendForm(
             process.env.REACT_APP_SERVICE_ID,
@@ -47,15 +45,17 @@ const ContactForm = () => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
+                        // alert(JSON.stringify(values, null, 2));
+                        console.log(JSON.stringify(values, null, 2));
                         setSubmitting(false);
+                        sendEmail();
                     }, 400);
                 }}
             >
                 {({
                     isSubmitting
                 }) => (
-                    <Form className={classes.form}>
+                    <Form ref={form} className={classes.form}>
                         <div className={classes.row}>
                             <div className={classes.input}>
                                 <Field className={classes.text} type="text" name="user_name" placeholder='your name' />
