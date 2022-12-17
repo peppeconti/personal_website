@@ -6,16 +6,18 @@ const Showroom = () => {
 
     return (
         <section id='showroom' className={classes.showroom}>
-            {projects.map(e => <Project
-                key={e.id}
-                title={e.title}
-                subtitle={e.subtitle}
-                logo={e.logo}
-                description={e.description}
-                keywords={e.keywords}
-                url={e.url}
-                repository={e.repository}
-            />)}
+            <div className={classes.projects__wrapper}>
+                {projects.map(e => <Project
+                    key={e.id}
+                    title={e.title}
+                    subtitle={e.subtitle}
+                    logo={e.logo}
+                    description={e.description}
+                    keywords={e.keywords}
+                    url={e.url}
+                    repository={e.repository}
+                />)}
+            </div>
         </section>
     );
 }

@@ -17,19 +17,10 @@
 
 @media screen and (max-width: 1000px) {
     .nav {
-        padding: 0rem;
+        padding: 0;
 
         ul {
             gap: 2rem;
-        }
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .nav {
-
-        ul {
-            gap: 1rem;
         }
     }
 }

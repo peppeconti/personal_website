@@ -1,11 +1,8 @@
 .project {
     width: 100%;
     position: relative;
-    //background-color: #FF498C;
     border-radius: 4rem;
-    margin-bottom: 1rem;
     height: 14rem;
-    //border: 2px solid white;
 
 
     .description, .name, .extension {
@@ -54,18 +51,6 @@
                 text-align: center;
                 padding: .5rem;
                 position: relative;
-
-                /*&::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 60%;
-                    height: 1px;
-                    background-color: #fff;
-                    filter: blur(.09rem);
-                }*/
             }
     
             h4 {
