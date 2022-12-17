@@ -14,13 +14,13 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
     const openRight = useTransform(
         scrollYProgress,
         [0, 1],
-        ['-50%', '0%']
+        ['0%', '0%'] // [-50%, 0%]
     )
 
     const openLeft = useTransform(
         scrollYProgress,
         [0, 1],
-        ['50%', '0%']
+        ['0%', '0%'] // [50%, 0%]
     )
 
 

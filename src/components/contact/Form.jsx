@@ -29,24 +29,20 @@ const ContactForm = () => {
                 validate={values => {
                     const errors = {};
                     if (!values.user_email) {
-                        errors.user_email = 'Required';
+                        errors.user_email = 'please insert a valid email';
                     } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.user_email)
                     ) {
-                        errors.user_email = 'Invalid email address';
-                    }
-                    if (!values.user_name) {
-                        errors.user_name = 'Required';
+                        errors.user_email = 'invalid email address';
                     }
                     if (!values.message) {
-                        errors.message = 'Required';
+                        errors.message = 'please insert your message';
                     }
                     return errors;
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                        // alert(JSON.stringify(values, null, 2));
-                        console.log(JSON.stringify(values, null, 2));
+                        alert(JSON.stringify(values, null, 2));
                         setSubmitting(false);
                         sendEmail();
                     }, 400);
@@ -63,7 +59,7 @@ const ContactForm = () => {
                             </div>
                             <div className={classes.input}>
                                 <Field className={classes.text} type="email" name="user_email" placeholder='your@email.com' />
-                                <ErrorMessage className={classes.err} name="user_email" component='div' />
+                                <ErrorMessage className={classes.err} name="user_email" component='span' />
                             </div>
                         </div>
                         <div className={classes.input}>
