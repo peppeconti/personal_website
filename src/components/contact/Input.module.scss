@@ -1,4 +1,25 @@
 .input {
     display: flex;
     flex-direction: column;
+    width: 100%;
+
+    .text,
+    .message {
+        color: #1d1d1d;
+        caret-color: #1d1d1d;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        font-size: 1.1rem;
+        overflow: hidden;
+    }
+
+    .message {
+        resize: none;
+    }
+
+    .text:focus, .message:focus {
+        
+    }
 }
