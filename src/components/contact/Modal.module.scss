@@ -1,0 +1,33 @@
+.back {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(56, 56, 56, 0.1);
+}
+
+.message {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    caret-color: transparent;
+
+    .confirm {
+        font-size: 3rem;
+        color: #1d1d1d;
+    }
+}

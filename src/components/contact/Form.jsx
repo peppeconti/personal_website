@@ -1,13 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import classes from './Form.module.scss';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import Modal from './Modal';
 
 const ContactForm = () => {
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const sendEmail = () => {
 
         emailjs.sendForm(
             process.env.REACT_APP_SERVICE_ID,
@@ -15,9 +18,11 @@ const ContactForm = () => {
             form.current,
             process.env.REACT_APP_USER_ID)
             .then((result) => {
-                console.log(result.text);
+                setModalOpen(true);
+                //console.log(result.text);
             }, (error) => {
-                console.log(error.text);
+                setModalOpen(true);
+                //console.log(error.text);
             });
     };
 
@@ -40,10 +45,10 @@ const ContactForm = () => {
                     }
                     return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={(values, { resetForm }) => {
                     setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
+                        // alert(JSON.stringify(values, null, 2));
+                        resetForm();
                         sendEmail();
                     }, 400);
                 }}
@@ -59,7 +64,7 @@ const ContactForm = () => {
                             </div>
                             <div className={classes.input}>
                                 <Field className={classes.text} type="email" name="user_email" placeholder='your@email.com' />
-                                <ErrorMessage className={classes.err} name="user_email" component='span' />
+                                <ErrorMessage className={classes.err} name="user_email" component='div' />
                             </div>
                         </div>
                         <div className={classes.input}>
@@ -75,6 +80,7 @@ const ContactForm = () => {
                     </Form>
                 )}
             </Formik>
+            {modalOpen && <Modal setModalOpen={setModalOpen} />}
         </div>
     );
 }
