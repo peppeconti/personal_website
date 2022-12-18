@@ -82,7 +82,7 @@ const ContactForm = () => {
                     </Form>
                 )}
             </Formik>
-            {modalOpen && <Modal setModalOpen={setModalOpen} message={modalMessage} />}
+            {modalOpen && <Modal setModalOpen={setModalOpen} message={modalMessage} resetMessage={setModalMessage} />}
         </div>
     );
 }
