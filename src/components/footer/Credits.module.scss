@@ -1,9 +1,17 @@
 .credits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
     .copyright, time {
         font-size: 1.3rem;
         color: darken(#fff, 25%);
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
     }
 }
