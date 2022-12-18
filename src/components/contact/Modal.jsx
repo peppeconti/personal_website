@@ -20,32 +20,58 @@ const Backdrop = ({ setModalOpen, resetMessage, unLockScroll }) => {
 const Message = ({ message }) => {
 
     const rotate = {
-        squareA: { 
+        squareA: {
             x: [0, 35, 35, 0, 0],
             y: [0, 0, 35, 35, 0],
-            scale: [1, .8, 1, .8, 1],
+            scale: [.8, 1, .8, 1, .8],
             transition: {
-                type: 'spring', 
-                duration: 1.2,
+                type: 'spring',
+                duration: 1.5,
                 repeat: Infinity
             }
         },
-        squareB: { 
+        squareB: {
             x: [0, -35, -35, 0, 0],
             y: [0, 0, -35, -35, 0],
             scale: [1, .8, 1, .8, 1],
             transition: {
                 type: 'spring',
-                duration: 1.2,
+                duration: 1.5,
+                repeat: Infinity
+            }
+        },
+        squareC: {
+            x: [0, 0, -35, -35, 0],
+            y: [0, 35, 35, 0, 0],
+            scale: [.8, 1, .8, 1, .8],
+            transition: {
+                type: 'spring',
+                duration: 1.5,
+                repeat: Infinity
+            }
+        },
+        squareD: {
+            x: [0, 0, 35, 35, 0],
+            y: [0, -35, -35, 0, 0],
+            scale: [1, .8, 1, .8, 1],
+            transition: {
+                type: 'spring',
+                duration: 1.5,
                 repeat: Infinity
             }
         }
     }
 
     const loader = <p className={classes.loader}>
-        <m.span variants={rotate} animate='squareA'  className={classes.squareA}/>
-        <m.span variants={rotate} animate='squareB' className={classes.squareB}/>
+        <m.span variants={rotate} animate='squareA' className={classes.squareA} />
+        <m.span variants={rotate} animate='squareB' className={classes.squareB} />
+        <m.span variants={rotate} animate='squareC' className={classes.squareC} />
+        <m.span variants={rotate} animate='squareD' className={classes.squareD} />
     </p>
+
+    /**<m.span variants={rotate} animate='squareA'  className={classes.squareA}/>
+        <m.span variants={rotate} animate='squareB' className={classes.squareB}/>
+        <m.span variants={rotate} animate='squareC' className={classes.squareC}/> */
 
     return (
         <div className={classes.message}>

@@ -26,7 +26,6 @@
     background-color: #1d1d1d;
     transform: translate(-50%, -50%);
     font-size: 6rem;
-    border-radius: .8rem;
     caret-color: transparent;
 
     .confirm {
@@ -36,15 +35,19 @@
 
         .loader {
             position: relative;
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
+            //border: 1px solid white;
 
             .squareA,
-            .squareB {
+            .squareB,
+            .squareC,
+            .squareD {
                 position: absolute;
                 height: 65%;
                 width: 65%;
-                border-radius: 50%;
+                opacity: .8
+                //border-radius: 50%;
             }
 
             .squareA {
@@ -59,6 +62,18 @@
                 bottom: 0;
                 right: 0;
                 background-color: #FF498C;
+            }
+            .squareC {
+                top: 0;
+                right: 0;
+                background-color: darken(#FF498C, 20%);
+            }
+
+            .squareD {
+                bottom: 0;
+                left: 0;
+                mix-blend-mode: screen;
+                background-color: darken(#FF498C, 20%);
             }
         }
     }
