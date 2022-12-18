@@ -1,10 +1,10 @@
-<svg width="249" height="166" viewBox="0 0 249 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="226" height="228" viewBox="0 0 226 228" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:exclusion">
 <g style="mix-blend-mode:screen">
-<circle cx="166" cy="83" r="79.5" fill="#FF498C"/>
-<circle cx="166" cy="83" r="79.5" stroke="#AEAEAE" stroke-width="7"/>
+<rect x="91" y="94" width="135" height="133.005" fill="#FF498C"/>
 </g>
 <g style="mix-blend-mode:screen">
-<circle cx="83" cy="83" r="79.5" fill="#C70049"/>
-<circle cx="83" cy="83" r="79.5" stroke="#AEAEAE" stroke-width="7"/>
+<rect width="185" height="188" fill="#FF0C65"/>
+</g>
 </g>
 </svg>
