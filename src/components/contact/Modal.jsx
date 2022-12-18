@@ -49,9 +49,9 @@ const Message = ({ message }) => {
 
     return (
         <div className={classes.message}>
-            <p className={classes.confirm}>
+            <div className={classes.confirm}>
                 {message ? message : loader}
-            </p>
+            </div>
         </div>
     );
 };

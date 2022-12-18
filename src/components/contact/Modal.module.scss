@@ -9,8 +9,8 @@
     height: 100%;
     width: 100%;
     overflow-y: hidden;
-    //backdrop-filter: blur(.05rem);
-    background-color: rgba(134, 134, 134, 0.2);
+    backdrop-filter: blur(.08rem);
+    background-color: rgba(134, 134, 134, 0.3);
 }
 
 .message {
@@ -18,15 +18,15 @@
     z-index: 10;
     top: 50%;
     left: 50%;
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1d1d1d;
     transform: translate(-50%, -50%);
     font-size: 6rem;
-    border-radius: 1.4rem;
+    border-radius: .8rem;
     caret-color: transparent;
 
     .confirm {
