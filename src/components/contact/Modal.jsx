@@ -16,23 +16,25 @@ const Backdrop = ({setModalOpen}) => {
     );
 };
 
-const Message = () => {
+const Message = ({message}) => {
 
     return (
         <div className={classes.message}>
-            <p className={classes.confirm}>Your message was successfully sent!</p>
+            <p className={classes.confirm}>
+                {message ? message : '...wait...'}
+            </p>
         </div>
     );
 };
 
 const portalElement = document.getElementById('overlay');
 
-const Modal = ({setModalOpen}) => {
+const Modal = ({setModalOpen, message}) => {
 
     return (
         <Fragment>
             {ReactDOM.createPortal(<Backdrop setModalOpen={setModalOpen} />, portalElement)}
-            {ReactDOM.createPortal(<Message />, portalElement)}
+            {ReactDOM.createPortal(<Message message={message} />, portalElement)}
         </Fragment>
     );
 };

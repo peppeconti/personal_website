@@ -9,6 +9,7 @@ const ContactForm = () => {
     const form = useRef();
 
     const [modalOpen, setModalOpen] = useState(false);
+    const [modalMessage, setModalMessage] = useState('');
 
     const sendEmail = () => {
 
@@ -18,11 +19,11 @@ const ContactForm = () => {
             form.current,
             process.env.REACT_APP_USER_ID)
             .then((result) => {
-                setModalOpen(true);
-                //console.log(result.text);
+                setModalMessage('Your message was successfully sent');
+                console.log(result.text);
             }, (error) => {
-                setModalOpen(true);
-                //console.log(error.text);
+                setModalMessage('An error occurred, try again');
+                console.log(error.text);
             });
     };
 
@@ -49,6 +50,7 @@ const ContactForm = () => {
                     setTimeout(() => {
                         // alert(JSON.stringify(values, null, 2));
                         resetForm();
+                        setModalOpen(true);
                         sendEmail();
                     }, 400);
                 }}
@@ -80,7 +82,7 @@ const ContactForm = () => {
                     </Form>
                 )}
             </Formik>
-            {modalOpen && <Modal setModalOpen={setModalOpen} />}
+            {modalOpen && <Modal setModalOpen={setModalOpen} message={modalMessage} />}
         </div>
     );
 }
