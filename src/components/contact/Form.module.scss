@@ -58,9 +58,9 @@
         border-radius: 2rem;
         border: none;
         cursor: pointer;
-    }
 
-    button:hover {
-        opacity: .8;
+        &:hover {
+            opacity: .8;
+        }
     }
 }

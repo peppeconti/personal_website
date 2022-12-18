@@ -11,7 +11,7 @@ const ContactForm = () => {
 
     const { lockScroll, unlockScroll } = useScrollLock();
 
-    const [modalOpen, setModalOpen] = useState(true);
+    const [modalOpen, setModalOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
 
     const sendEmail = () => {
@@ -22,7 +22,7 @@ const ContactForm = () => {
             form.current,
             process.env.REACT_APP_USER_ID)
             .then((result) => {
-                setModalMessage('Your message was successfully sent');
+                setModalMessage('Your message was successfully sent!');
                 console.log(result.text);
             }, (error) => {
                 setModalMessage('An error occurred, try again');
@@ -49,14 +49,13 @@ const ContactForm = () => {
                     }
                     return errors;
                 }}
-                onSubmit={(values, { resetForm }) => {
+                onSubmit={(_, { resetForm }) => {
+                    resetForm();
+                    setModalOpen(true);
+                    lockScroll();
                     setTimeout(() => {
-                        // alert(JSON.stringify(values, null, 2));
-                        resetForm();
-                        setModalOpen(true);
-                        lockScroll();
                         sendEmail();
-                    }, 400);
+                    }, 2000);
                 }}
             >
                 {({

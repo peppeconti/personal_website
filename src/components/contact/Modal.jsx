@@ -3,21 +3,13 @@ import ReactDOM from 'react-dom';
 import classes from './Modal.module.scss';
 import { motion as m } from 'framer-motion';
 
-const Backdrop = ({ setModalOpen, resetMessage, unLockScroll }) => {
+const Backdrop = ({ closeModal }) => {
     return (
-        <div
-            className={classes.back}
-            onClick={() => {
-                setModalOpen(false);
-                unLockScroll();
-                resetMessage('');
-            }}
-
-        />
+        <div className={classes.back} onClick={closeModal}/>
     );
 };
 
-const Message = ({ message }) => {
+const Message = ({ message, closeModal }) => {
 
     const rotate = {
         squareA: {
@@ -69,15 +61,17 @@ const Message = ({ message }) => {
         <m.span variants={rotate} animate='squareD' className={classes.squareD} />
     </p>
 
-    /**<m.span variants={rotate} animate='squareA'  className={classes.squareA}/>
-        <m.span variants={rotate} animate='squareB' className={classes.squareB}/>
-        <m.span variants={rotate} animate='squareC' className={classes.squareC}/> */
+    const messageContainer = <Fragment>
+        <p className={classes.message__header} />
+        <p className={classes.message__body}>
+            <span>{message}</span>
+            <button onClick={closeModal}>Close</button>
+        </p>
+    </Fragment>
 
     return (
         <div className={classes.message}>
-            <div className={classes.confirm}>
-                {message ? message : loader}
-            </div>
+            {message ? messageContainer : loader}
         </div>
     );
 };
@@ -86,10 +80,16 @@ const portalElement = document.getElementById('overlay');
 
 const Modal = ({ setModalOpen, message, resetMessage, unLockScroll }) => {
 
+    const closeModal = () => {
+        setModalOpen(false);
+        unLockScroll();
+        resetMessage('');
+    }
+
     return (
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop setModalOpen={setModalOpen} resetMessage={resetMessage} unLockScroll={unLockScroll} />, portalElement)}
-            {ReactDOM.createPortal(<Message message={message} />, portalElement)}
+            {ReactDOM.createPortal(<Backdrop closeModal={closeModal}/>, portalElement)}
+            {ReactDOM.createPortal(<Message message={message} closeModal={closeModal}/>, portalElement)}
         </Fragment>
     );
 };
