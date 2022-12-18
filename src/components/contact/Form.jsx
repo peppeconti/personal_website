@@ -2,11 +2,14 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import classes from './Form.module.scss';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useScrollLock } from '../../hooks/useScrollLock';
 import Modal from './Modal';
 
 const ContactForm = () => {
 
     const form = useRef();
+
+    const { lockScroll, unlockScroll } = useScrollLock();
 
     const [modalOpen, setModalOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
@@ -51,6 +54,7 @@ const ContactForm = () => {
                         // alert(JSON.stringify(values, null, 2));
                         resetForm();
                         setModalOpen(true);
+                        lockScroll();
                         sendEmail();
                     }, 400);
                 }}
@@ -82,7 +86,7 @@ const ContactForm = () => {
                     </Form>
                 )}
             </Formik>
-            {modalOpen && <Modal setModalOpen={setModalOpen} message={modalMessage} resetMessage={setModalMessage} />}
+            {modalOpen && <Modal setModalOpen={setModalOpen} message={modalMessage} resetMessage={setModalMessage} unLockScroll={unlockScroll} />}
         </div>
     );
 }

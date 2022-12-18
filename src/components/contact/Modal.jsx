@@ -1,17 +1,14 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import classes from './Modal.module.scss';
-import { motion as m } from 'framer-motion';
 
-const Backdrop = ({setModalOpen, resetMessage}) => {
+const Backdrop = ({ setModalOpen, resetMessage, unLockScroll }) => {
     return (
-        <m.div
+        <div
             className={classes.back}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: .5 }}
             onClick={() => {
                 setModalOpen(false);
+                unLockScroll();
                 resetMessage('');
             }}
 
@@ -19,7 +16,7 @@ const Backdrop = ({setModalOpen, resetMessage}) => {
     );
 };
 
-const Message = ({message}) => {
+const Message = ({ message }) => {
 
     return (
         <div className={classes.message}>
@@ -32,11 +29,11 @@ const Message = ({message}) => {
 
 const portalElement = document.getElementById('overlay');
 
-const Modal = ({setModalOpen, message, resetMessage}) => {
+const Modal = ({ setModalOpen, message, resetMessage, unLockScroll }) => {
 
     return (
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop setModalOpen={setModalOpen} resetMessage={resetMessage} />, portalElement)}
+            {ReactDOM.createPortal(<Backdrop setModalOpen={setModalOpen} resetMessage={resetMessage} unLockScroll={unLockScroll} />, portalElement)}
             {ReactDOM.createPortal(<Message message={message} />, portalElement)}
         </Fragment>
     );

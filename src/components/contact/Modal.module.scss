@@ -6,9 +6,11 @@
     z-index: 10;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(56, 56, 56, 0.1);
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    //backdrop-filter: blur(.05rem);
+    background-color: rgba(134, 134, 134, 0.2);
 }
 
 .message {
