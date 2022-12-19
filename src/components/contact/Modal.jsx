@@ -2,6 +2,8 @@ import { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import classes from './Modal.module.scss';
 import { motion as m } from 'framer-motion';
+import success from '../../assets/circle-check-solid.svg';
+import error from '../../assets/triangle-exclamation-solid.svg';
 
 const Backdrop = ({ closeModal }) => {
     return (
@@ -63,7 +65,7 @@ const Message = ({ message, closeModal }) => {
 
     const messageContainer = <Fragment>
         <p className={classes.message__header}>
-            <img src=''/>
+            <img src={message && message.result === 'ok' ? success : error} alt={message && message.result === 'ok' ? 'success' : 'error'}/>
         </p>
         <p className={classes.message__body}>
             <span>{message && message.text}</span>
