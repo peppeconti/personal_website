@@ -68,7 +68,7 @@ const ContactForm = () => {
                                 <ErrorMessage className={classes.err} name="user_name" component='div' />
                             </div>
                             <div className={classes.input}>
-                                <Field className={classes.text} type="email" name="user_email" placeholder='your@email.com' />
+                                <Field className={classes.text} type="email" name="user_email" placeholder='username@domain.com' />
                                 <ErrorMessage className={classes.err} name="user_email" component='div' />
                             </div>
                         </div>
