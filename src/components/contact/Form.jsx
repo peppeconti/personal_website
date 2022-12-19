@@ -50,11 +50,11 @@ const ContactForm = () => {
                     return errors;
                 }}
                 onSubmit={(_, { resetForm }) => {
-                    resetForm();
                     setModalOpen(true);
                     lockScroll();
                     setTimeout(() => {
                         sendEmail();
+                        resetForm();
                     }, 2000);
                 }}
             >
