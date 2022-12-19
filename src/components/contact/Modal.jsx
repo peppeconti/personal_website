@@ -62,9 +62,11 @@ const Message = ({ message, closeModal }) => {
     </p>
 
     const messageContainer = <Fragment>
-        <p className={classes.message__header} />
+        <p className={classes.message__header}>
+            <img src=''/>
+        </p>
         <p className={classes.message__body}>
-            <span>{message}</span>
+            <span>{message && message.text}</span>
             <button onClick={closeModal}>Close</button>
         </p>
     </Fragment>
