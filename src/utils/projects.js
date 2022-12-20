@@ -28,7 +28,7 @@ export const data = [
         subtitle: 'a digital edition',
         logo: logo,
         description: 'A digital edition of the manuscript Clm 16126 of the Bayerische Staatsbibliothek of Munich based on the TEI-XML format.',
-        keywords: ['Digital Humanities', 'Angular', 'TEI-XML'],
+        keywords: ['Digital Humanities', 'TEI-XML', 'Angular'],
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1',
         repository: 'https://github.com/peppeconti/liber_de_introductione_loquendi'
     },
