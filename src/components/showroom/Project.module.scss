@@ -5,21 +5,42 @@
     height: 14rem;
 
 
-    .description, .name, .extension {
+    .description,
+    .name,
+    .extension {
         position: absolute;
         height: 100%;
         width: 50%;
         top: 0;
         border-radius: inherit;
-        padding: 2rem 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 2rem 0;
     }
 
     .description {
+        display: flex;
         background-color: #FF498C;
         left: 0;
+
+        .repository {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+        }
+
+        p {
+            width: 80%;
+            font-size: 1.2rem;
+            padding: 1rem 0rem;
+            padding-right: 2rem;
+            line-height: 1.6rem;
+            //border: 1px solid white;
+        }
     }
 
     .name {
@@ -32,7 +53,7 @@
             position: absolute;
             top: 50%;
             left: 3rem;
-            transform: translateY(-50%); 
+            transform: translateY(-50%);
             height: 80px;
             width: 80px;
             border-radius: 50%;
@@ -52,7 +73,7 @@
                 padding: .5rem;
                 position: relative;
             }
-    
+
             h4 {
                 font-size: 1.2rem;
                 text-align: center;
