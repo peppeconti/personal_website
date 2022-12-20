@@ -48,11 +48,11 @@
             }
 
             p.keywords {
-                // border: 1px solid white;
+                display: flex;
+                gap: .5rem;
 
                 .keyword {
                     text-decoration: none;
-                    padding: 0 .25rem;
 
                     span {
                         background-color: #fff;
@@ -62,7 +62,7 @@
 
                         &:hover {
                             color: #fff;
-                            background-color: darken(#999999, 15%);
+                            background-color: #1d1d1d;
                         }
                     }
 
