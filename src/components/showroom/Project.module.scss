@@ -5,9 +5,9 @@
     height: 14rem;
 
 
-    .description,
-    .name,
-    .extension {
+    div.description,
+    div.name,
+    div.extension {
         position: absolute;
         height: 100%;
         width: 50%;
@@ -16,7 +16,7 @@
         padding: 2rem 0;
     }
 
-    .description {
+    div.description {
         display: flex;
         background-color: #FF498C;
         left: 0;
@@ -28,18 +28,48 @@
             align-items: center;
 
             img {
-                width: 2.8rem;
-                height: 2.8rem;
+                width: 2.6rem;
+                height: 2.6rem;
             }
         }
 
-        p {
+        div {
+
             width: 80%;
-            font-size: 1.2rem;
-            padding: 1rem 0rem;
-            padding-right: 2rem;
-            line-height: 1.6rem;
-            //border: 1px solid white;
+            padding: 1rem 2rem 1rem 0;
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p.description {
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
+
+            p.keywords {
+                // border: 1px solid white;
+
+                .keyword {
+                    text-decoration: none;
+                    padding: 0 .25rem;
+
+                    span {
+                        background-color: #fff;
+                        padding: .5rem .5rem;
+                        color: #FF498C;
+                        border-radius: 1rem;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: darken(#999999, 15%);
+                        }
+                    }
+
+                }
+
+            }
+
         }
     }
 

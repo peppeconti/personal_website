@@ -16,13 +16,15 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
         scrollYProgress,
         [0, 1],
         ['0%', '0%'] // [-50%, 0%]
-    )
+    );
 
     const openLeft = useTransform(
         scrollYProgress,
         [0, 1],
         ['0%', '0%'] // [50%, 0%]
-    )
+    );
+
+    const keywordsList = keywords.map((e, i) => <a key={i} href={`https://github.com/topics/${e}`} target='_blank' rel='noreferrer' className={classes.keyword}><span>{e}</span></a>);
 
 
     return (
@@ -34,7 +36,10 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
                         <img src={github} alt='github repository' />
                     </a>
                 </figure>
-                <p>{description}</p>
+                <div>
+                    <p className={classes.description}>{description}</p>
+                    <p className={classes.keywords}>{keywordsList}</p>
+                </div>
             </m.div>
             <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                 <figure>
