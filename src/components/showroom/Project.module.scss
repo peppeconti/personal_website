@@ -18,7 +18,11 @@
 
     div.description {
         display: flex;
-        background-color: #FF498C;
+        background-color: lighten(#1d1d1d, 5%);
+        //border: 3px solid darken(#FF498C, 20%);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
         left: 0;
 
         .repository {
@@ -56,13 +60,14 @@
 
                     span {
                         background-color: #fff;
+                        background-color: #1d1d1d;
                         padding: .5rem .5rem;
-                        color: #FF498C;
+                        color: #fff;
                         border-radius: 1rem;
 
                         &:hover {
-                            color: #fff;
-                            background-color: #1d1d1d;
+                            color: #1d1d1d;
+                            background-color: #fff;
                         }
                     }
 
@@ -108,7 +113,7 @@
                 font-size: 1.2rem;
                 text-align: center;
                 padding: .5rem;
-                color: darken(#fff, 10%);
+                color: #fff;
             }
 
         }
@@ -116,7 +121,10 @@
     }
 
     .extension {
-        background-color: #FF498C;
+        ///background-color: #FF498C;
+        background-color: lighten(#1d1d1d, 5%);
+        //border: 3px solid darken(#FF498C, 20%);
+        border-right: none;
         left: 50%;
         transform: translateX(-50%);
     }

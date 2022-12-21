@@ -15,13 +15,13 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
     const openRight = useTransform(
         scrollYProgress,
         [0, 1],
-        ['0%', '0%'] // [-50%, 0%]
+        ['-50%', '0%'] // [-50%, 0%]
     );
 
     const openLeft = useTransform(
         scrollYProgress,
         [0, 1],
-        ['0%', '0%'] // [50%, 0%]
+        ['50%', '0%'] // [50%, 0%]
     );
 
     const keywordsList = keywords.map((e, i) => <a key={i} href={`https://github.com/topics/${e}`} target='_blank' rel='noreferrer' className={classes.keyword}><span>{e}</span></a>);
