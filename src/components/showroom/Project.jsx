@@ -33,7 +33,7 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
             <m.div style={{ x: openLeft }} viewport={{ root: scrollRef }} className={classes.description}>
                 <figure className={classes.repository}>
                     <a href={repository} target='_blank' rel='noreferrer'>
-                        <img src={github} alt='github repository' />
+                        <img width={30} height={30} src={github} alt='github repository' />
                     </a>
                 </figure>
                 <div>
@@ -42,9 +42,6 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
                 </div>
             </m.div>
             <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
-                <figure>
-                    <img src={logo} alt='project logo' />
-                </figure>
                 <div className={classes.title}>
                     <h3>{title}</h3>
                     <h4>{subtitle}</h4>
