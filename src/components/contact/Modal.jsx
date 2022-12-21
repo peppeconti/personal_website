@@ -65,7 +65,7 @@ const Message = ({ message, closeModal }) => {
 
     const messageContainer = <Fragment>
         <p className={classes.message__header}>
-            <img src={message && message.result === 'ok' ? success : error} alt={message && message.result === 'ok' ? 'success' : 'error'}/>
+            <img width={48} height={48} src={message && message.result === 'ok' ? success : error} alt={message && message.result === 'ok' ? 'success' : 'error'}/>
         </p>
         <p className={classes.message__body}>
             <span>{message && message.text}</span>
