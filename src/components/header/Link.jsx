@@ -77,9 +77,11 @@ const Link = ({ target, text, layout }) => {
 
     return (
         <m.li variants={opening} className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
-            <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft} />
-            <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight} />
-            <a className={classes.anchor} href={target}><p>{letters}</p></a>
+            <a className={classes.anchor} href={target}>
+                <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft} />
+                <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight} />
+                <p>{letters}</p>
+            </a>
         </m.li>
     );
 }
