@@ -1,16 +1,11 @@
-.anchor {
-
-    height: 90%;
-    flex-grow: 1;
-
     .link.round {
         border-radius: 10rem;
         overflow: visible;
     }
 
     .link {
-        height: 100%;
-        width: 100%;
+        flex-grow: 1;
+        height: 90%;
         list-style: none;
         position: relative;
         overflow: hidden;
@@ -93,9 +88,35 @@
             border-radius: inherit;
             border-left: none;
         }
+
+        &:hover p {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        &:hover .left {
+            transform: translateX(100%) !important;
+            opacity: 0 !important;
+        }
+
+        &:hover .right {
+            transform: translateX(-100%) !important;
+            opacity: 0 !important;
+        }
+
+        &:hover .top {
+            transform: translateY(100%) !important;
+            opacity: 0 !important;
+        }
+
+        &:hover .bottom {
+            transform: translateY(-100%) !important;
+            opacity: 0 !important;
+        }
     }
 
-    &:hover p {
+
+    /*&:hover p {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
@@ -118,5 +139,4 @@
     &:hover .bottom {
         transform: translateY(-100%) !important;
         opacity: 0 !important;
-    }
-}
+    }*/

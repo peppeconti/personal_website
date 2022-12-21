@@ -24,7 +24,7 @@ const Link = ({ target, text, layout }) => {
     }
 
     const openLeft = {
-        hidden: {opacity: 0, x: '100%'},
+        hidden: { opacity: 0, x: '100%' },
         visible: {
             opacity: 1,
             x: '0%',
@@ -37,7 +37,7 @@ const Link = ({ target, text, layout }) => {
     }
 
     const openRight = {
-        hidden: {opacity: 0, x: '-100%'},
+        hidden: { opacity: 0, x: '-100%' },
         visible: {
             opacity: 1,
             x: '0%',
@@ -50,7 +50,7 @@ const Link = ({ target, text, layout }) => {
     }
 
     const openTop = {
-        hidden: {opacity: 0, y: '100%'},
+        hidden: { opacity: 0, y: '100%' },
         visible: {
             opacity: 1,
             y: '0%',
@@ -63,7 +63,7 @@ const Link = ({ target, text, layout }) => {
     }
 
     const openBottom = {
-        hidden: {opacity: 0, y: '-100%'},
+        hidden: { opacity: 0, y: '-100%' },
         visible: {
             opacity: 1,
             y: '0%',
@@ -76,13 +76,11 @@ const Link = ({ target, text, layout }) => {
     }
 
     return (
-        <a className={classes.anchor} href={target}>
-            <m.li variants={opening} className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
-                <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft}/>
-                <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight}/>
-                <p>{letters}</p>
-            </m.li>
-        </a>
+        <m.li variants={opening} className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
+            <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft} />
+            <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight} />
+            <a className={classes.anchor} href={target}><p>{letters}</p></a>
+        </m.li>
     );
 }
 
