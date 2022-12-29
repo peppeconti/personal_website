@@ -64,3 +64,9 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        padding: 0 6rem;
+    }
+}
