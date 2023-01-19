@@ -3,6 +3,7 @@
     position: relative;
     border-radius: 4rem;
     height: 14rem;
+    overflow: hidden;
 
 
     div.description,
@@ -128,5 +129,22 @@
         border-right: none;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .project {
+
+        border-radius: 0;
+
+        .name,
+        .extension {
+            display: none;
+        }
+
+        div.description {
+            width: 100%;
+            border-radius: 4rem;
+        }
     }
 }
