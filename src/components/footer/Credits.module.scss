@@ -20,6 +20,7 @@
 @media screen and (max-width: 700px) {
     .credits {
         flex-direction: column-reverse;
+        padding: 0;
 
         .social {
             margin-bottom: 3rem;        }

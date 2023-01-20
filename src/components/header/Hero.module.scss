@@ -17,3 +17,23 @@
         color: darken(#fff, 25%);
     }
 }
+
+@media screen and (max-width: 500px) {
+    .hero {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero {
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+    }
+}
