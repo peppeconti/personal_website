@@ -15,8 +15,20 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
     .infos {
         padding: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .infos {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .infos {
+        padding: 0;
     }
 }
