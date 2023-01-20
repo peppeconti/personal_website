@@ -24,7 +24,6 @@
                 position: absolute;
                 bottom: .5rem;
                 font-size: 1rem;
-                left: 1rem;
                 color: darken(#FF498C, 15%);
             }
 
@@ -80,5 +79,12 @@
 @media screen and (max-width: 600px) {
     .wrapper {
         padding: 0;
+
+        .form {
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
     }
 }
