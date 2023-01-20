@@ -21,7 +21,13 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
+    .infos {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .infos {
         padding: 0 2rem;
     }
