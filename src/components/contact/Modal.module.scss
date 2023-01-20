@@ -115,3 +115,9 @@
             }
         }
     }
+
+    @media screen and (max-width: 420px) {
+        .message {
+            width: 95%;
+        }
+    }
