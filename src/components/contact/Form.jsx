@@ -11,7 +11,7 @@ const ContactForm = () => {
 
     const { lockScroll, unlockScroll } = useScrollLock();
 
-    const [modalOpen, setModalOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(true);
     const [modalMessage, setModalMessage] = useState(null);
 
     const sendEmail = () => {
