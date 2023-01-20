@@ -15,3 +15,9 @@
         background-color: darken(#fff, 25%);
     }*/
 }
+
+@media screen and (max-width: 500px) {
+    .footer {
+        padding: 3rem 1rem;
+    }
+}

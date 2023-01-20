@@ -32,3 +32,14 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .skills {
+        padding: 0;
+
+        .skill__list {
+            grid-template-columns: 1fr;
+            grid-gap: 3rem;
+        }
+    }
+}

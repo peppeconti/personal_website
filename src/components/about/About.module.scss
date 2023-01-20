@@ -4,3 +4,9 @@
     background-color: #1d1d1d;
     padding: 2rem;
 }
+
+@media screen and (max-width: 500px) {
+    .about {
+        padding: 1rem;
+    }
+}

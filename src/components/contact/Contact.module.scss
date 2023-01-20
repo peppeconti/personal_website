@@ -3,3 +3,9 @@
     background-color: #1d1d1d;
     caret-color: transparent;
 }
+
+@media screen and (max-width: 500px) {
+    .contact {
+        padding: 1rem;
+    }
+}

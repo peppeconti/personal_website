@@ -16,3 +16,12 @@
         gap: 2rem;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .credits {
+        flex-direction: column-reverse;
+
+        .social {
+            margin-bottom: 3rem;        }
+    }
+}

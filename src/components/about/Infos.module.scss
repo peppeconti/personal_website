@@ -30,5 +30,10 @@
 @media screen and (max-width: 600px) {
     .infos {
         padding: 0;
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+        }
     }
 }
