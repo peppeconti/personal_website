@@ -2,15 +2,16 @@
     width: 100%;
     position: relative;
     border-radius: 4rem;
-    height: 14rem;
+    //height: auto;
     overflow: hidden;
+    display: flex;
 
 
     div.description,
     div.name,
     div.extension {
-        position: absolute;
-        height: 100%;
+        position: static;
+        height: auto;
         width: 50%;
         top: 0;
         border-radius: inherit;
@@ -20,14 +21,15 @@
     div.description {
         display: flex;
         background-color: lighten(#1d1d1d, 5%);
-        //border: 3px solid darken(#FF498C, 20%);
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: none;
+        padding: 2.5rem;
         left: 0;
 
         .repository {
-            width: 20%;
+            //width: 20%;
+            padding-right: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,21 +42,23 @@
 
         div {
 
-            width: 80%;
-            padding: 1rem 2rem 1rem 0;
+            //width: 80%;
+            //padding: 1rem 2rem 1rem 0;
             // border: 1px solid white;
-            display: flex;
+            //display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             p.description {
                 font-size: 1.2rem;
                 line-height: 1.6rem;
+                margin-bottom: 2rem;
             }
 
             p.keywords {
                 display: flex;
                 gap: .5rem;
+                flex-wrap: wrap;
 
                 .keyword {
                     text-decoration: none;
@@ -145,15 +149,6 @@
         div.description {
             width: 100%;
             border-radius: 4rem;
-
-            .repository {
-                width: 20%;
-            }
-
-            div {
-                width: 80%;
-                padding: 1rem 2rem;
-            }
         }
     }
 }
