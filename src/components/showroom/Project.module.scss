@@ -52,7 +52,7 @@
             p.description {
                 font-size: 1.2rem;
                 line-height: 1.6rem;
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
             }
 
             p.keywords {
@@ -62,19 +62,15 @@
 
                 .keyword {
                     text-decoration: none;
+                    padding: .5rem .5rem;
+                    background-color: #fff;
+                    background-color: #1d1d1d;
+                    border-radius: 1rem;
 
-                    span {
-                        background-color: #fff;
-                        background-color: #1d1d1d;
-                        padding: .5rem .5rem;
-                        color: #fff;
-                        border-radius: 1rem;
-
-                        &:hover {
-                            color: #1d1d1d;
-                            background-color: #fff;
-                        }
+                    &:hover {
+                        background-color: rgb(61, 61, 61);
                     }
+
 
                 }
 
