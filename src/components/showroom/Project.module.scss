@@ -2,7 +2,6 @@
     width: 100%;
     position: relative;
     border-radius: 4rem;
-    //height: auto;
     overflow: hidden;
     display: flex;
 
@@ -10,10 +9,7 @@
     div.description,
     div.name,
     div.extension {
-        position: static;
-        height: auto;
         width: 50%;
-        top: 0;
         border-radius: inherit;
         padding: 2rem 0;
     }
@@ -24,7 +20,7 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: none;
-        padding: 2.5rem;
+        padding: 2rem;
         left: 0;
 
         .repository {
@@ -123,10 +119,11 @@
     }
 
     .extension {
-        ///background-color: #FF498C;
+        position: absolute;
         background-color: lighten(#1d1d1d, 5%);
-        //border: 3px solid darken(#FF498C, 20%);
         border-right: none;
+        //top: 0;
+        height: 100%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -145,6 +142,22 @@
         div.description {
             width: 100%;
             border-radius: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        div.description {
+            div {
+                p.description {
+                    margin: 0;
+                }
+
+                p.keywords {
+                    display: none;
+                }
+            }
         }
     }
 }

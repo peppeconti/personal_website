@@ -29,6 +29,7 @@ const Project = ({ title, subtitle, logo, description, url, repository, keywords
 
     return (
         <article ref={scrollRef} className={classes.project}>
+            <div className={classes.extension} />
             <m.div style={{ x: openLeft }} viewport={{ root: scrollRef }} className={classes.description}>
                 <figure className={classes.repository}>
                     <a href={repository} target='_blank' rel='noreferrer'>
