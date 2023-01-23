@@ -46,7 +46,6 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
                 <div className={classes.title}>
                     <h3>{title}</h3>
                     <h4>{subtitle}</h4>
-                    <span><img src={link} /></span>
                 </div>
             </m.a>
         </article>
@@ -55,4 +54,4 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
 
 export default Project;
 
-//<div className={classes.extension} />
+// <span><img src={link} /></span>

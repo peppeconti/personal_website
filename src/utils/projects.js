@@ -3,7 +3,7 @@ export const data = [
         id: 1,
         title: 'Connect 4',
         subtitle: 'a classic game',
-        description: 'A version of the classical game. It\'s not still possible to play against the CPU, but i\'m working on it! Hope you\'ll enjoy it!',
+        description: 'A version of the classical game. It\'s not still possible to play against the CPU, but I\'m working on it. Hope you\'ll enjoy it!',
         keywords: ['2D Array', 'React'],
         url: 'https://connect-four-4b5ca.web.app/',
         repository: 'https://github.com/peppeconti/connect-4'
