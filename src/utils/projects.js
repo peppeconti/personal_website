@@ -15,7 +15,7 @@ export const data = [
         subtitle: 'a memory game by Hasbro',
         description: 'The memory game from the \'80s, with animations and sound effects. How many series are you able to keep in mind?',
         keywords: ['Memory Game', 'React'],
-        url: 'https://connect-four-4b5ca.web.app/',
+        url: 'https://simon-conti.netlify.app/',
         repository: 'https://github.com/peppeconti/simon'
     },
     {
