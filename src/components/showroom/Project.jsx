@@ -3,7 +3,7 @@ import classes from './Project.module.scss';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
 import github from '../../assets/github__repository.svg';
 
-const Project = ({ title, subtitle, logo, description, url, repository, keywords }) => {
+const Project = ({ title, subtitle, description, url, repository, keywords }) => {
 
     const scrollRef = useRef(null)
 
