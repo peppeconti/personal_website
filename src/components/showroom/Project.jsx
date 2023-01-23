@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import classes from './Project.module.scss';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
 import github from '../../assets/github__repository.svg';
+import link from '../../assets/link-icon.svg';
 
 const Project = ({ title, subtitle, description, url, repository, keywords }) => {
 
@@ -37,16 +38,17 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
                     </a>
                 </figure>
                 <div>
-                    <p className={classes.description}>{description}</p>
+                    <p className={classes.text__description}>{description}</p>
                     <p className={classes.keywords}>{keywordsList}</p>
                 </div>
             </m.div>
-            <m.div style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
+            <m.a href={url} target='_blank' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                 <div className={classes.title}>
+                    <span><img src={link} /></span>
                     <h3>{title}</h3>
                     <h4>{subtitle}</h4>
                 </div>
-            </m.div>
+            </m.a>
         </article>
     );
 }
