@@ -44,9 +44,9 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
             </m.div>
             <m.a href={url} target='_blank' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                 <div className={classes.title}>
-                    <span><img src={link} /></span>
                     <h3>{title}</h3>
                     <h4>{subtitle}</h4>
+                    <span><img src={link} /></span>
                 </div>
             </m.a>
         </article>
