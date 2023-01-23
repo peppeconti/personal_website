@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import classes from './Project.module.scss';
 import { motion as m, useScroll, useTransform } from 'framer-motion';
 import github from '../../assets/github__repository.svg';
-import link from '../../assets/link-icon.svg';
+//import link from '../../assets/link-icon.svg';
 
 const Project = ({ title, subtitle, description, url, repository, keywords }) => {
 
