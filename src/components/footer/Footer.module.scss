@@ -2,22 +2,16 @@
     background-color: #1d1d1d;
     padding: 3rem 2rem;
     position: relative;
-    //border-top: 1px solid #fff;
-
-    /*&::after {
-        content: '';
-        position: absolute;
-        width: 70%;
-        height: 1px;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: darken(#fff, 25%);
-    }*/
 }
 
 @media screen and (max-width: 500px) {
     .footer {
         padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .footer {
+        padding: .5rem;
     }
 }
