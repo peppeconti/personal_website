@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import classes from './App.module.scss';
 import Header from './components/header/Header';
 import About from './components/about/About';
@@ -6,6 +7,10 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
 
   return (
     <div className={classes.App}>
