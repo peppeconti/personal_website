@@ -62,28 +62,25 @@
         top: 0;
         background-color: darken(#FF498C, 15%);
         border-bottom: 4px solid #1d1d1d;
-        z-index: 1;
+      
     }
 
     div.bottom {
         bottom: 0;
         background-color: #FF498C;
         border-top: 4px solid #1d1d1d;
-        z-index: 1;
     }
 
     div.left {
         left: 0;
         background-color: darken(#FF498C, 15%);
         border-right: 4px solid #1d1d1d;
-        z-index: 1;
     }
 
     div.right {
         right: 0;
         background-color: #FF498C;
         border-left: 4px solid #1d1d1d;
-        z-index: 0;
     }
 
     .left.round {
@@ -102,6 +99,7 @@
     &:hover .anchor {
         opacity: 1;
         transform: scale(1);
+        z-index: 10;
     }
 
     &:hover .left {
