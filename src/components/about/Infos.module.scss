@@ -39,7 +39,17 @@
 
         p {
             font-size: 1.2rem;
-            line-height: 2.5rem;
+            line-height: 2.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .infos {
+
+        p {
+            font-size: 1.1rem;
+            line-height: 2rem;
         }
     }
 }
