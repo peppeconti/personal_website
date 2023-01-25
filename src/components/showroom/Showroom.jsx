@@ -11,6 +11,7 @@ const Showroom = () => {
                     key={e.id}
                     title={e.title}
                     subtitle={e.subtitle}
+                    img={e.img}
                     description={e.description}
                     keywords={e.keywords}
                     url={e.url}

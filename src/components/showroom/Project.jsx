@@ -4,7 +4,7 @@ import { motion as m, useScroll, useTransform } from 'framer-motion';
 import github from '../../assets/github__repository.svg';
 //import link from '../../assets/link-icon.svg';
 
-const Project = ({ title, subtitle, description, url, repository, keywords }) => {
+const Project = ({ title, subtitle, img, description, url, repository, keywords }) => {
 
     const scrollRef = useRef(null)
 
@@ -44,8 +44,7 @@ const Project = ({ title, subtitle, description, url, repository, keywords }) =>
             </m.div>
             <m.a href={url} target='_blank' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                 <div className={classes.title}>
-                    <h3>{title}</h3>
-                    <h4>{subtitle}</h4>
+                    <img src={img} alt={title} />
                 </div>
             </m.a>
         </article>
