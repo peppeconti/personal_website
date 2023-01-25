@@ -4,7 +4,7 @@ import { motion as m, useScroll, useTransform } from 'framer-motion';
 import github from '../../assets/github__repository.svg';
 //import link from '../../assets/link-icon.svg';
 
-const Project = ({ title, subtitle, img, description, url, repository, keywords }) => {
+const Project = ({ title, subtitle, logo, font, description, url, repository, keywords }) => {
 
     const scrollRef = useRef(null)
 
@@ -27,6 +27,16 @@ const Project = ({ title, subtitle, img, description, url, repository, keywords 
 
     const keywordsList = keywords.map((e, i) => <a key={i} href={`https://github.com/topics/${e}`} target='_blank' rel='noreferrer' className={classes.keyword}><span>{e}</span></a>);
 
+    const titleStyle = {
+        fontSize: title.size,
+        fontFamily: font
+    }
+
+    const subtitleStyle = {
+        fontSize: subtitle.size,
+        fontFamily: font
+    }
+
 
     return (
         <article ref={scrollRef} className={classes.project}>
@@ -44,7 +54,9 @@ const Project = ({ title, subtitle, img, description, url, repository, keywords 
             </m.div>
             <m.a href={url} target='_blank' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                 <div className={classes.title}>
-                    <img src={img} alt={title} />
+                    <span className={classes.logo}><img src={logo} alt={title.text}/></span>
+                    <h3 style={titleStyle}>{title.text}</h3>
+                    <h4 style={subtitleStyle}>{subtitle.text}</h4>
                 </div>
             </m.a>
         </article>
