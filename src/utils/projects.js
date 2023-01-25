@@ -1,4 +1,6 @@
+import connect from '../assets/connect.svg';
 import simon from '../assets/simon.svg';
+import liber from '../assets/liber.svg';
 
 export const data = [
     {
@@ -12,7 +14,7 @@ export const data = [
             size: '1.4rem'
         },
         font: '\'Odibee Sans\', cursive',
-        logo: simon,
+        logo: connect,
         description: 'A version of the classical game. It\'s not still possible to play against the CPU, but I\'m working on it. Hope you\'ll enjoy it!',
         keywords: ['2D Array', 'React'],
         url: 'https://connect-four-4b5ca.web.app/',
@@ -47,7 +49,7 @@ export const data = [
             size: '1rem'
         },
         font: '\'Eagle Lake\', cursive',
-        logo: simon,
+        logo: liber,
         description: 'A digital edition of the manuscript Clm 16126 of the Bayerische Staatsbibliothek of Munich. Something completely different...',
         keywords: ['Digital Humanities', 'TEI-XML', 'Angular'],
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1',
