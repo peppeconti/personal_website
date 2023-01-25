@@ -10,3 +10,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+}
