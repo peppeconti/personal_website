@@ -6,7 +6,7 @@ import { scrollIntoView } from "seamless-scroll-polyfill";
 const Contact = () => {
 
   useEffect(() => {
-    scrollIntoView(document.querySelector("#target"), { behavior: "smooth", block: "center", inline: "center" });
+    scrollIntoView(document.querySelector("#contact"), { behavior: "smooth", block: "center", inline: "center" });
   },[]) 
 
 
