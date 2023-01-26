@@ -5,6 +5,7 @@
   font-weight: 400;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
