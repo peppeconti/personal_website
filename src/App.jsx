@@ -7,11 +7,12 @@ import Showroom from './components/showroom/Showroom';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
+smoothscroll.polyfill();
+
 function App() {
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
-    smoothscroll.polyfill();
   }, []);
 
   return (
