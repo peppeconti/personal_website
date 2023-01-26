@@ -1,4 +1,5 @@
 import classes from './Link.module.scss';
+import AnchorLink from 'react-anchor-link-smooth-scroll-v2'
 import { motion as m } from 'framer-motion';
 
 const Link = ({ target, text, layout }) => {
@@ -79,9 +80,9 @@ const Link = ({ target, text, layout }) => {
         <m.li variants={opening} className={layout === 'round' ? [classes.link, classes.round].join(' ') : classes.link}>
             <m.div variants={layout === 'vertical' ? openTop : openLeft} className={classListLeft} />
             <m.div variants={layout === 'vertical' ? openBottom : openRight} className={classListRight} />
-            <a href={target} className={classes.anchor}>
+            <AnchorLink href={target} className={classes.anchor}>
                 <p>{letters}</p>
-            </a>
+            </AnchorLink>
         </m.li>
     );
 }
