@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import classes from './App.module.scss';
 import Header from './components/header/Header';
 import About from './components/about/About';
@@ -9,7 +10,8 @@ import Footer from './components/footer/Footer';
 function App() {
 
   useEffect(() => {
-    window.history.scrollRestoration = 'manual'
+    window.history.scrollRestoration = 'manual';
+    smoothscroll.polyfill();
   }, []);
 
   return (
