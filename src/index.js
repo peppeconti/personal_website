@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import smoothscroll from 'smoothscroll-polyfill';
 import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+smoothscroll.polyfill();
+window.__forceSmoothScrollPolyfill__ = true;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
