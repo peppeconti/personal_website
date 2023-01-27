@@ -40,10 +40,10 @@ const Project = ({ title, subtitle, logo, font, description, url, repository, ke
 
     return (
         <Fragment>
-            <div className={classes.title}>
+            <a href={url} target='_blank' className={classes.title}>
                 <h3 style={titleStyle}>{title.text}</h3>
                 <span className={classes.logo}><img src={logo} alt={title.text} /></span>
-            </div>
+            </a>
             <article ref={scrollRef} className={classes.project}>
                 <div className={classes.extension} />
                 <m.div style={{ x: openLeft }} viewport={{ root: scrollRef }} className={classes.description}>
