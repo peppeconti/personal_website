@@ -40,9 +40,9 @@ const Project = ({ title, subtitle, logo, font, description, url, repository, ke
 
     return (
         <Fragment>
-            <a href={url} target='_blank' className={classes.title}>
+            <a href={url} target='_blank' rel='noreferrer' className={classes.title}>
                 <h3 style={titleStyle}>{title.text}</h3>
-                <span className={classes.logo}><img src={logo} alt={title.text} /></span>
+                <span className={classes.logo}><img width={50} height={50} src={logo} alt={title.text} /></span>
             </a>
             <article ref={scrollRef} className={classes.project}>
                 <div className={classes.extension} />
@@ -57,9 +57,9 @@ const Project = ({ title, subtitle, logo, font, description, url, repository, ke
                         <p className={classes.keywords}>{keywordsList}</p>
                     </div>
                 </m.div>
-                <m.a href={url} target='_blank' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
+                <m.a href={url} target='_blank' rel='noreferrer' style={{ x: openRight }} viewport={{ root: scrollRef }} className={classes.name}>
                     <div className={classes.title}>
-                        <span className={classes.logo}><img src={logo} alt={title.text} /></span>
+                        <span className={classes.logo}><img width={30} height={30} src={logo} alt={title.text} /></span>
                         <h3 style={titleStyle}>{title.text}</h3>
                         <h4 style={subtitleStyle}>{subtitle.text}</h4>
                     </div>
