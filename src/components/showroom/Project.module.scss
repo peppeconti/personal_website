@@ -1,3 +1,26 @@
+.title {
+    display: none;
+    justify-content: center;
+    align-content: center;
+
+    h3 {
+        padding: 1rem;
+    }
+
+    .logo {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 1rem;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
 .project {
     display: flex;
     width: 100%;
@@ -112,6 +135,7 @@
 
             span {
                 padding: .5rem;
+
                 img {
                     height: 30px;
                     width: 30px;
@@ -132,7 +156,12 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
+
+    .title {
+        display: flex;
+    }
+
     .project {
 
         border-radius: 0;
@@ -152,6 +181,10 @@
 @media screen and (max-width: 600px) {
     .project {
         .description {
+            .repository {
+                display: none;
+            }
+
             div {
                 .text__description {
                     margin: 0;
@@ -160,6 +193,23 @@
                 p.keywords {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project {
+        .description {
+
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+        
+            div {
+                .text__description {
+                    font-size: 1rem;
+                }
+
             }
         }
     }
