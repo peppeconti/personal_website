@@ -16,7 +16,49 @@
             height: 100%;
             position: relative;
 
-            .tooltip {
+            &::before {
+                content: attr(data-percentage);
+                position: absolute;
+                background-color: rgb(56, 56, 56);
+                bottom: 15px;
+                right: 0;
+                padding: .8rem;
+                border-radius: .3rem;
+                opacity: 0;
+                transition: .5s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 10px;
+                background-color: rgb(56, 56, 56);
+                right: 3px;
+                bottom: 13px;
+                transform: rotateZ(45deg);
+                opacity: 0;
+                transition: .5s;
+            }
+        }
+
+    }
+
+    &:hover .bar .filling::after, &:hover .bar .filling::before  {
+        opacity:1;
+    }
+
+}
+
+
+
+/* 
+
+&:hover .bar .filling .tooltip {
+        opacity: 1;
+    }
+
+ .tooltip {
                 position: absolute;
                 background-color: rgb(56, 56, 56);;
                 bottom: 15px;
@@ -37,10 +79,5 @@
                     transform: rotateZ(45deg);
                 }
             }
-        }
-    }
 
-    &:hover .bar .filling .tooltip {
-        opacity: 1;
-    } 
-}
+*/
