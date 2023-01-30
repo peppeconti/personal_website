@@ -8,6 +8,8 @@
 
     h3 {
         padding: 0 1rem;
+        display: flex;
+        align-items: center;
     }
 
     .logo {
@@ -211,7 +213,31 @@
         
             div {
                 .text__description {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .title {
+        h3 {
+            font-size: 160%!important;
+        }
+    }
+
+    .project {
+        .description {
+
+            padding: 1rem 1rem;
+            border-radius: 1rem;
+        
+            div {
+                .text__description {
+                    font-size: .9rem;
                 }
 
             }

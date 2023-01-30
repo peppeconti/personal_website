@@ -48,8 +48,17 @@
     .infos {
 
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             line-height: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .infos {
+
+        p {
+            font-size: .9rem;
         }
     }
 }
