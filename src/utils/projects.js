@@ -50,7 +50,7 @@ export const data = [
         },
         font: '\'Eagle Lake\', cursive',
         logo: liber,
-        description: 'A digital edition of the manuscript Clm 16126 of the Bayerische Staatsbibliothek of Munich. Something different...',
+        description: 'A digital edition of the manuscript Clm 16126 of the Bavarian State Library. Something completely different...',
         keywords: ['Digital Humanities', 'TEI-XML', 'Angular'],
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1',
         repository: 'https://github.com/peppeconti/liber_de_introductione_loquendi'
