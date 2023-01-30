@@ -19,6 +19,6 @@ export const data = [
         id: 3,
         name: 'codewars',
         logo: codewars,
-        url: 'https://github.com/peppeconti',
+        url: 'https://www.codewars.com/users/Syphante',
     }
 ]
