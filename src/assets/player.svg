@@ -1,10 +1,10 @@
 <svg width="398" height="398" viewBox="0 0 398 398" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="199" cy="199" r="199" fill="#3D3D3D"/>
-<circle cx="199" cy="199" r="184.5" stroke="#494949"/>
-<circle cx="199" cy="199" r="171.5" stroke="#494949"/>
-<circle cx="199" cy="199" r="158.5" stroke="#494949"/>
-<circle cx="199" cy="199" r="145.5" stroke="#494949"/>
-<circle cx="199" cy="199" r="132.5" stroke="#494949"/>
+<circle cx="199" cy="199" r="184.5" stroke="#1d1d1d"/>
+<circle cx="199" cy="199" r="171.5" stroke="#1d1d1d"/>
+<circle cx="199" cy="199" r="158.5" stroke="#1d1d1d"/>
+<circle cx="199" cy="199" r="145.5" stroke="#1d1d1d"/>
+<circle cx="199" cy="199" r="132.5" stroke="#1d1d1d"/>
 <path d="M118 199C118 154.265 154.265 118 199 118V118C243.735 118 280 154.265 280 199V199H118V199Z" fill="#5738D2"/>
 <path d="M118 199C118 243.735 154.265 280 199 280V280C243.735 280 280 243.735 280 199V199H118V199Z" fill="#9382DB"/>
 <mask id="path-9-inside-1_43_18" fill="white">
