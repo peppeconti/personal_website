@@ -1,6 +1,7 @@
 import connect from '../assets/connect.svg';
 import simon from '../assets/simon.svg';
 import liber from '../assets/liber.svg';
+import player from '../assets/player.svg';
 
 export const data = [
     {
@@ -54,5 +55,22 @@ export const data = [
         keywords: ['Digital Humanities', 'TEI-XML', 'Angular'],
         url: 'https://divine--comedy-digital.firebaseapp.com/inferno/inferno-1',
         repository: 'https://github.com/peppeconti/liber_de_introductione_loquendi'
+    },
+    {
+        id: 4,
+        title: {
+            text: 'Record Player',
+            size: '2.2rem'
+        },
+        subtitle: {
+            text: 'CSS animation',
+            size: '1rem'
+        },
+        font: '\'Eagle Lake\', cursive',
+        logo: player,
+        description: 'A custom record player using CSS for the graphic, Framer Motion for animations and the Audio API',
+        keywords: ['CSS only', 'Framer Motion', 'React'],
+        url: 'https://record-player-css.netlify.app/',
+        repository: 'https://github.com/peppeconti/record-player'
     },
 ];
