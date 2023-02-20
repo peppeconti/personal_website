@@ -66,9 +66,9 @@ export const data = [
             text: 'CSS animation',
             size: '1rem'
         },
-        font: '\'Eagle Lake\', cursive',
+        font: '\'Fredoka One\', cursive',
         logo: player,
-        description: 'A custom record player using CSS for the graphic, Framer Motion for animations and the Audio API',
+        description: 'A custom animated record player using CSS for the graphic, Framer Motion for animations and the Web Audio API',
         keywords: ['CSS only', 'Framer Motion', 'React'],
         url: 'https://record-player-css.netlify.app/',
         repository: 'https://github.com/peppeconti/record-player'
