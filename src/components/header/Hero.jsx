@@ -24,7 +24,8 @@ const Hero = () => {
     }
 
     return (
-        <m.div variants={opening} initial='hidden' animate='visible' className={classes.hero}>
+        <m.div variants={opening} initial='hidden' whileInView="visible"
+        viewport={{ once: true }} className={classes.hero}>
             <m.h1 variants={fadeIn}>Giuseppe Conti</m.h1>
             <m.h2 variants={fadeIn}>Web Developer</m.h2>
         </m.div>

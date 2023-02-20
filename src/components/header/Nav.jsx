@@ -16,7 +16,8 @@ const Nav = () => {
 
     return (
         <nav className={classes.nav}>
-            <m.ul variants={opening} initial='hidden' animate='visible'>
+            <m.ul variants={opening} initial='hidden' whileInView="visible"
+                viewport={{ once: true }}>
                 <Link text='About me' target='#about' />
                 <Link text='Showroom' target='#showroom' layout='round' />
                 <Link text='Contact' target='#contact' layout='vertical' />
