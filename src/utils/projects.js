@@ -59,11 +59,11 @@ export const data = [
     {
         id: 4,
         title: {
-            text: 'Record Player',
+            text: 'CSS Player',
             size: '2.2rem'
         },
         subtitle: {
-            text: 'CSS animation',
+            text: ' a CSS animation',
             size: '1rem'
         },
         font: '\'Fredoka One\', cursive',
