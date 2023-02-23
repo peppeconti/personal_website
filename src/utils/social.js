@@ -7,7 +7,7 @@ export const data = [
         id: 1,
         name: 'linkedin',
         logo: linkedin,
-        url: 'https://www.linkedin.com/in/giuseppe-conti-4a806b16/',
+        url: 'https://it.linkedin.com/in/giuseppe-conti-4a806b16/',
     },
     {
         id: 2,
