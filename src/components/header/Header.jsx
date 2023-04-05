@@ -6,7 +6,7 @@ import Nav from "./Nav";
 const Header = () => {
   const mobile = useMediaQuery("max-width: 1024px");
 
-  let minHeight;
+  let height;
 
   if (mobile) {
     height = `${window.innerHeight}px`;
@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const setHeight = {
-    minHeight: minHeight,
+    minHeight: height,
   };
 
   return (
