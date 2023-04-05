@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const setHeight = {
-    minHeight: height,
+    height: height,
   };
 
   return (
