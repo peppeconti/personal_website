@@ -6,11 +6,11 @@ import Nav from "./Nav";
 
 const Header = () => {
  
-  const headerHeight = useRef();
-  useAppHeight(headerHeight);
+  const header = useRef();
+  useAppHeight(header);
 
   return (
-    <header ref={headerHeight} className={classes.header}>
+    <header ref={header} className={classes.header}>
       <Hero />
       <Nav />
     </header>
