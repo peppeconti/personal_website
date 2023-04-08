@@ -1,14 +1,17 @@
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 
 const useAppHeight = (ref) => {
+
+  const appHeight = useCallback(() => {
+    ref.current.style.setProperty("--app-height", `${window.innerHeight}px`);
+  }, [ref])
+
   useEffect(() => {
-    const appHeight = () => {
-      ref.current.style.setProperty("--app-height", `${window.innerHeight}px`);
-    };
 
     window.addEventListener("resize", appHeight);
     appHeight();
-  }, []);
+
+  }, [appHeight]);
 };
 
 export { useAppHeight };
