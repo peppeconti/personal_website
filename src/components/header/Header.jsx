@@ -1,27 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import classes from "./Header.module.scss";
 //import { useAppHeight } from "../../hooks/useAppHeight";
 import Hero from "./Hero";
 import Nav from "./Nav";
 
 const Header = () => {
-  //const header = useRef();
+  const header = useRef();
   /*const [resized, setResized] = useState(false);*/
 
-  const altezza = `${window.innerHeight}px`;
+  //let deviceWidth = window.matchMedia("(max-width: 1024px)");
 
-  /*useEffect(() => {
+  useEffect(() => {
+
+    header.current.style.minHeight = window.innerHeight + "px";
+
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 1024) setResized(prev => !prev)
+      header.current.style.minHeight = window.innerHeight + "px";
     })
-  }, [resized]);*/
-
-  const alt = {
-    height: altezza
-  }
+  }, []);
 
   return (
-    <header style={alt} className={classes.header}>
+    <header ref={header} className={classes.header}>
       <Hero />
       <Nav />
     </header>
