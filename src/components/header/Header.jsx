@@ -6,20 +6,19 @@ import Nav from "./Nav";
 
 const Header = () => {
   //const header = useRef();
-  const [resized, setResized] = useState(false);
+  /*const [resized, setResized] = useState(false);*/
 
   const altezza = `${window.innerHeight}px`;
 
-  useEffect(() => {
+  /*useEffect(() => {
     window.addEventListener('resize', () => {
-      setResized(prev => !prev)
+      if (window.innerWidth < 1024) setResized(prev => !prev)
     })
-  }, [resized]);
+  }, [resized]);*/
 
   const alt = {
     height: altezza
   }
-
 
   return (
     <header style={alt} className={classes.header}>
