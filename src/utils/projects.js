@@ -7,18 +7,18 @@ export const data = [
   {
     id: 1,
     title: {
-      text: "Spacial",
-      size: "2.5rem",
+      text: "Spaceship",
+      size: "2.4rem",
     },
     subtitle: {
-      text: "scrollytelling",
-      size: "1.1rem",
+      text: "a scrollytelling",
+      size: "1.05rem",
     },
     font: "'Wallpoet', cursive",
     logo: connect,
     description:
-      "A experimetal scrollytelling",
-    keywords: ["gsap", "scrolltrigger", "scrollytelling"],
+      "My first scrollytelling using the Scrolltrigger and the Observer of Gsap to manage the touch events in mobile version.",
+    keywords: ["Gsap", "Scrolltrigger", "Scrollytelling"],
     url: "https://space-voyage.netlify.app/",
     repository: "https://github.com/peppeconti/space-voyage",
   },
