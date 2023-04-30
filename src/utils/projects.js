@@ -7,12 +7,12 @@ export const data = [
   {
     id: 1,
     title: {
-      text: "Space Voyage",
-      size: "2.7rem",
+      text: "Spacial",
+      size: "2.5rem",
     },
     subtitle: {
       text: "scrollytelling",
-      size: "1rem",
+      size: "1.1rem",
     },
     font: "'Wallpoet', cursive",
     logo: connect,
