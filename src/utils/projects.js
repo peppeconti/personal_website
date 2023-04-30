@@ -8,11 +8,11 @@ export const data = [
     id: 1,
     title: {
       text: "Space Voyage",
-      size: "3.2rem",
+      size: "2.7rem",
     },
     subtitle: {
       text: "scrollytelling",
-      size: "1.4rem",
+      size: "1rem",
     },
     font: "'Wallpoet', cursive",
     logo: connect,
