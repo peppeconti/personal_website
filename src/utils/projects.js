@@ -2,6 +2,7 @@ import connect from "../assets/connect.svg";
 import simon from "../assets/simon.svg";
 import liber from "../assets/liber.svg";
 import player from "../assets/player.svg";
+import movie from "../assets/movie.png";
 
 export const data = [
   {
@@ -33,7 +34,7 @@ export const data = [
       size: "1.05rem",
     },
     font: "'Della Respira', serif",
-    logo: connect,
+    logo: movie,
     description:
       "Interface for the OMDb API. Main issues are implementing filtering, pagination, using search parameter.",
     keywords: ["OMDb API", "Restfull API", "Pagination"],
