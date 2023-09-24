@@ -8,7 +8,7 @@ export const data = [
     id: 1,
     title: {
       text: "Spaceship",
-      size: "2.4rem",
+      size: "2.1rem",
     },
     subtitle: {
       text: "a scrollytelling",
@@ -24,6 +24,24 @@ export const data = [
   },
   {
     id: 2,
+    title: {
+      text: "Movie Search",
+      size: "2.1rem",
+    },
+    subtitle: {
+      text: "a movie database",
+      size: "1.05rem",
+    },
+    font: "'Della Respira', serif",
+    logo: connect,
+    description:
+      "Interface for the OMDb API. Main issues are implementing filtering, pagination, using search parameter.",
+    keywords: ["OMDb API", "Restfull API", "Pagination"],
+    url: "https://movie-db-4ae0e.web.app",
+    repository: "https://github.com/peppeconti/movie-database",
+  },
+  {
+    id: 3,
     title: {
       text: "Simon says",
       size: "3.2rem",
@@ -41,7 +59,7 @@ export const data = [
     repository: "https://github.com/peppeconti/simon",
   },
   {
-    id: 3,
+    id: 4,
     title: {
       text: "Connect 4",
       size: "3.2rem",
@@ -59,7 +77,7 @@ export const data = [
     repository: "https://github.com/peppeconti/connect-4",
   },
   {
-    id: 4,
+    id: 5,
     title: {
       text: "Clm 16126",
       size: "2.2rem",
@@ -77,7 +95,7 @@ export const data = [
     repository: "https://github.com/peppeconti/liber_de_introductione_loquendi",
   },
   {
-    id: 5,
+    id: 6,
     title: {
       text: "CSS Player",
       size: "2.2rem",
