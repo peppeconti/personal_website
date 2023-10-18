@@ -21,7 +21,7 @@ export const data = [
     description:
       "Vanilla Javascript Arcade Game (Canvas, OOP). My very first attempt to create a Canvas JS Game. No Libraries.",
     keywords: ["Canvas Game", "Canvas2D", "OOP"],
-    url: "cave-arcade-game.netlify.app/",
+    url: "https://cave-arcade-game.netlify.app/",
     repository: "https://github.com/peppeconti/The-Cave-Arcade-Game",
   },
   {
