@@ -3,10 +3,29 @@ import simon from "../assets/simon.svg";
 import liber from "../assets/liber.svg";
 import player from "../assets/player.svg";
 import movie from "../assets/movie.png";
+import cave from "../assets/cave.svg";
 
 export const data = [
   {
     id: 1,
+    title: {
+      text: "The Cave",
+      size: "2.1rem",
+    },
+    subtitle: {
+      text: "a scrollytelling",
+      size: "1.05rem",
+    },
+    font: "'Wallpoet', cursive",
+    logo: cave,
+    description:
+      "Vanilla Javascript Arcade Game (Canvas, OOP). My very first attempt to create a Canvas JS Game. No Libraries.",
+    keywords: ["Canvas Game", "Canvas2D", "OOP"],
+    url: "cave-arcade-game.netlify.app/",
+    repository: "https://github.com/peppeconti/The-Cave-Arcade-Game",
+  },
+  {
+    id: 2,
     title: {
       text: "Spaceship",
       size: "2.1rem",
@@ -24,7 +43,7 @@ export const data = [
     repository: "https://github.com/peppeconti/space-voyage",
   },
   {
-    id: 2,
+    id: 3,
     title: {
       text: "Movie Search",
       size: "2.1rem",
@@ -42,7 +61,7 @@ export const data = [
     repository: "https://github.com/peppeconti/movie-database",
   },
   {
-    id: 3,
+    id: 4,
     title: {
       text: "Simon says",
       size: "3.2rem",
@@ -60,7 +79,7 @@ export const data = [
     repository: "https://github.com/peppeconti/simon",
   },
   {
-    id: 4,
+    id: 5,
     title: {
       text: "Connect 4",
       size: "3.2rem",
@@ -78,7 +97,7 @@ export const data = [
     repository: "https://github.com/peppeconti/connect-4",
   },
   {
-    id: 5,
+    id: 6,
     title: {
       text: "Clm 16126",
       size: "2.2rem",
@@ -96,7 +115,7 @@ export const data = [
     repository: "https://github.com/peppeconti/liber_de_introductione_loquendi",
   },
   {
-    id: 6,
+    id: 7,
     title: {
       text: "CSS Player",
       size: "2.2rem",
