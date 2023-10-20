@@ -13,7 +13,7 @@ export const data = [
       size: "2.1rem",
     },
     subtitle: {
-      text: "arcade style game",
+      text: "an arcade game",
       size: "1.05rem",
     },
     font: "'Wallpoet', cursive",
