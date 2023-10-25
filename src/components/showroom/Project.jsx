@@ -70,5 +70,3 @@ const Project = ({ title, subtitle, logo, font, description, url, repository, ke
 }
 
 export default Project;
-
-// <span><img src={link} /></span>
