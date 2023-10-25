@@ -4,6 +4,7 @@ import liber from "../assets/liber.svg";
 import player from "../assets/player.svg";
 import movie from "../assets/movie.png";
 import cave from "../assets/cave.svg";
+import numerology from "../assets/numerology.svg";
 
 export const data = [
   {
@@ -27,6 +28,24 @@ export const data = [
   {
     id: 2,
     title: {
+      text: "Numerology",
+      size: "2.2rem",
+    },
+    subtitle: {
+      text: "a RestFull API",
+      size: "1.1rem",
+    },
+    font: "'Josefin Sans', sans-serif",
+    logo: numerology,
+    description:
+      "Vanilla Javascript Arcade Game (Canvas, OOP). My very first attempt to create a Canvas JS Game. No Libraries.",
+    keywords: ["Node.js", "RestFull API"],
+    url: "https://numerology-mpm7.onrender.com/",
+    repository: "https://github.com/peppeconti/numerology",
+  },
+  {
+    id: 3,
+    title: {
       text: "Spaceship",
       size: "2.1rem",
     },
@@ -43,7 +62,7 @@ export const data = [
     repository: "https://github.com/peppeconti/space-voyage",
   },
   {
-    id: 3,
+    id: 4,
     title: {
       text: "Movie Search",
       size: "2.1rem",
@@ -61,7 +80,7 @@ export const data = [
     repository: "https://github.com/peppeconti/movie-database",
   },
   {
-    id: 4,
+    id: 5,
     title: {
       text: "Simon says",
       size: "3.2rem",
@@ -79,7 +98,7 @@ export const data = [
     repository: "https://github.com/peppeconti/simon",
   },
   {
-    id: 5,
+    id: 6,
     title: {
       text: "Connect 4",
       size: "3.2rem",
@@ -97,7 +116,7 @@ export const data = [
     repository: "https://github.com/peppeconti/connect-4",
   },
   {
-    id: 6,
+    id: 7,
     title: {
       text: "Clm 16126",
       size: "2.2rem",
@@ -115,7 +134,7 @@ export const data = [
     repository: "https://github.com/peppeconti/liber_de_introductione_loquendi",
   },
   {
-    id: 7,
+    id: 8,
     title: {
       text: "CSS Player",
       size: "2.2rem",
