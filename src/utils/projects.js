@@ -38,7 +38,7 @@ export const data = [
     font: "'Josefin Sans', sans-serif",
     logo: numerology,
     description:
-      "Vanilla Javascript Arcade Game (Canvas, OOP). My very first attempt to create a Canvas JS Game. No Libraries.",
+      "A simple API built using Node and Express for numerology calculations based on names and birthdays.",
     keywords: ["Node.js", "RestFull API"],
     url: "https://numerology-mpm7.onrender.com/",
     repository: "https://github.com/peppeconti/numerology",
