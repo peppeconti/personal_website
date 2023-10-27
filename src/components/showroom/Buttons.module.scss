@@ -31,3 +31,26 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+    .buttons {
+        margin-top: 3rem;
+        gap: 2rem;
+    
+        button {
+          padding: 1rem 2rem;
+          font-size: 1rem;
+        }
+      }
+}
+
+@media screen and (max-width: 380px) {
+    .buttons {
+        gap: 1.5rem;
+    
+        button {
+          padding: .8rem 1.8rem;
+          font-size: .8rem;
+        }
+      }
+}
