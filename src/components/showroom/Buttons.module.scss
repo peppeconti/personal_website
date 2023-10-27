@@ -1,27 +1,33 @@
 .buttons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 6rem;
 }
 
 .buttons button {
-    padding: 1.5rem 3rem;
-    font-size: 1.5rem;
-    background-color: darken(#FF498C, 20%);
-    outline: none;
-    border-radius: 2rem;
-    border: none;
-    cursor: pointer;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  background-color: darken(#ff498c, 20%);
+  outline: none;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-        opacity: .8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 @media screen and (max-width: 1150px) {
-    .buttons {
-        margin-top: 5rem;
+  .buttons {
+    margin-top: 5rem;
+    gap: 3rem;
+
+    button {
+      padding: 1.25rem 2.75rem;
+      font-size: 1.25rem;
     }
+  }
 }

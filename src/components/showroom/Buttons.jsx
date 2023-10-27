@@ -2,27 +2,29 @@ import classes from "./Buttons.module.scss";
 import { useRef, useEffect } from "react";
 
 const Buttons = ({ more, less, setArrayItems, arrayItems }) => {
-  const a = useRef(0);
-  const b = useRef(0);
+  const buttons = useRef(null);
+  const scroll = useRef(false);
 
   useEffect(() => {
-    a.current = document.body.clientHeight;
-    if (b.current) {
-      window.scrollBy({
-        top: a.current - b.current,
+    if (scroll.current)
+      window.scrollTo({
+        top:
+          buttons.current.offsetTop +
+          buttons.current.clientHeight / 2 -
+          window.innerHeight / 2,
         left: 0,
         behavior: "smooth",
       });
-    }
+      scroll.current = false;
   }, [arrayItems]);
 
   const changeNum = (n) => {
-    b.current = document.body.clientHeight;
+    scroll.current = true;
     setArrayItems((prev) => (prev += n));
   };
 
   return (
-    <div className={classes.buttons}>
+    <div className={classes.buttons} ref={buttons}>
       {more && (
         <button type="button" onClick={() => changeNum(3)}>
           More
