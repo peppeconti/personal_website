@@ -6,7 +6,7 @@ import github from '../../assets/github__repository.svg';
 
 const Project = ({ title, subtitle, logo, font, description, url, repository, keywords }) => {
 
-    const scrollRef = useRef(null)
+    const scrollRef = useRef(null);
 
     const { scrollYProgress } = useScroll({
         target: scrollRef,

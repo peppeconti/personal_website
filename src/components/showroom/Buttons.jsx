@@ -1,20 +1,20 @@
 import classes from "./Buttons.module.scss";
-import { useRef } from "react";
 
 const Buttons = ({ more, less, setArrayItems }) => {
-  const buttonsRef = useRef(null);
-
+  
   const changeNum = (n) => {
     setArrayItems((prev) => (prev += n));
-    window.scrollTo({
-      top: buttonsRef.current.offsetBottom,
+    //console.log(projectHeight.clientHeight);
+    window.scrollBy({
+      top: 200*n,
       left: 0,
       behavior: "smooth",
     });
+    
   };
 
   return (
-    <div className={classes.buttons} ref={buttonsRef}>
+    <div className={classes.buttons}>
       {more && (
         <button type="button" onClick={() => changeNum(3)}>
           SHOW MORE
