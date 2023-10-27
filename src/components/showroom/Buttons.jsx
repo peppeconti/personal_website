@@ -1,16 +1,24 @@
 import classes from "./Buttons.module.scss";
+import { useRef, useEffect } from "react";
 
-const Buttons = ({ more, less, setArrayItems }) => {
-  
+const Buttons = ({ more, less, setArrayItems, arrayItems }) => {
+  const a = useRef(0);
+  const b = useRef(0);
+
+  useEffect(() => {
+    a.current = document.body.clientHeight;
+    if (b.current) {
+      window.scrollBy({
+        top: a.current - b.current,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [arrayItems]);
+
   const changeNum = (n) => {
+    b.current = document.body.clientHeight;
     setArrayItems((prev) => (prev += n));
-    //console.log(projectHeight.clientHeight);
-    window.scrollBy({
-      top: 200*n,
-      left: 0,
-      behavior: "smooth",
-    });
-    
   };
 
   return (
