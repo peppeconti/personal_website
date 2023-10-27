@@ -25,12 +25,12 @@ const Buttons = ({ more, less, setArrayItems, arrayItems }) => {
     <div className={classes.buttons}>
       {more && (
         <button type="button" onClick={() => changeNum(3)}>
-          SHOW MORE
+          More
         </button>
       )}
       {less && (
         <button type="button" onClick={() => changeNum(-3)}>
-          SHOW LESS
+          Less
         </button>
       )}
     </div>

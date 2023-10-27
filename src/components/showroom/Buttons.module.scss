@@ -1,5 +1,27 @@
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 6rem;
+}
+
 .buttons button {
-    color: #000;
-    padding: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    background-color: darken(#FF498C, 20%);
+    outline: none;
+    border-radius: 2rem;
+    border: none;
     cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .buttons {
+        margin-top: 5rem;
+    }
 }
