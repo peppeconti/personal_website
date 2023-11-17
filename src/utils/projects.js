@@ -112,7 +112,7 @@ export const data = [
     description:
       "A version of the classical game. It's not still possible to play against the CPU, but I'm working on it. Hope you'll enjoy it!",
     keywords: ["2D Array", "React"],
-    url: "https://connect-four-4b5ca.web.app/",
+    url: "https://connect-4-conti.netlify.app/",
     repository: "https://github.com/peppeconti/connect-4",
   },
   {
