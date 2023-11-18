@@ -32,14 +32,14 @@ export const data = [
       size: "2.2rem",
     },
     subtitle: {
-      text: "a RestFull API",
+      text: "a RESTful API",
       size: "1.1rem",
     },
     font: "'Josefin Sans', sans-serif",
     logo: numerology,
     description:
       "A simple API built using Node and Express for numerology calculations based on names and birthdays.",
-    keywords: ["Node.js", "RestFull API"],
+    keywords: ["Node.js", "RESTful API"],
     url: "https://numerology-mpm7.onrender.com/",
     repository: "https://github.com/peppeconti/numerology",
   },
