@@ -22,7 +22,7 @@ export const data = [
     description:
       "A digital edition of the manuscript Clm 16126 of the Bavarian State Library. Something completely different...",
     keywords: ["Digital Humanities", "TEI-XML", "Angular"],
-    url: "https://liber-de-introductione.web.app/home",
+    url: "https://liber-loquendi-3cd55.web.app/home",
     repository: "https://github.com/peppeconti/liber_de_introductione-loquendi_2.0",
   },
   {
